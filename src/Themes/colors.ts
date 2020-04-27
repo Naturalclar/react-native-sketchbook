@@ -4,6 +4,8 @@ export const lightTheme = {
   tertiaryColor: '#00AAAA',
   negativeColor: '#d400a6',
   warningColor: '#ff8800',
+  disabledColor: 'rgba(0,0,0,0.4)',
+  overlay: 'rgba(0,0,0,0.4)',
   // TextColors
   baseTextColor: '#222',
   disabledTextColor: '#ccc',
@@ -20,12 +22,9 @@ export const darkTheme = {
   baseBackgroundColor: '#222',
 };
 
-// TODO: allow override of theme color
-export const createDefaultTheme = () => {
-  return {
-    light: lightTheme,
-    dark: darkTheme,
-  };
+export const DefaultTheme = {
+  light: lightTheme,
+  dark: darkTheme,
 };
 
 export type Color = keyof typeof lightTheme;
