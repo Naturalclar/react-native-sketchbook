@@ -1,0 +1,11 @@
+node_modules/
+# build folder
+dist
+# storybook generated files
+storybook-static
+# eslint cache
+.eslintcache
+# yarn error logs
+yarn-error.log
+
+.now

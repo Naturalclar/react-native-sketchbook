@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    /*BasicOptions*/
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["es2020"],
+    "jsx": "react",
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "types":["react-native"],
+  },
+  "include": ["src"],
+  "exclude": ["**/*.stories.tsx"]
+}

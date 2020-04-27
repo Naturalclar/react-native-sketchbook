@@ -1,0 +1,50 @@
+{
+  "name": "react-native-sketchbook",
+  "version": "0.0.0",
+  "description": "Design System for React Native",
+  "author": "Jesse Katsumata <jesse.katsumata@gmail.com>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/Naturalclar/react-native-sketchbook#readme",
+  "bugs": {
+    "url": "https://github.com/Naturalclar/react-native-sketchbook/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naturalclar/react-native-sketchbook.git"
+  },
+  "license": "MIT",
+  "files":["dist"],
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-docs": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addon-viewport": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "@types/react-native": "^0.62.4",
+    "babel-loader": "^8.1.0",
+    "babel-preset-expo": "^8.1.0",
+    "eslint": "^6.8.0",
+    "now": "^18.0.0",
+    "prettier": "^2.0.5",
+    "react": "16.11",
+    "react-dom": "16.11",
+    "react-native": "^0.62.2",
+    "react-native-web": "^0.12.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {},
+  "scripts": {
+    "prepare": "yarn build",
+    "build": "tsc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "lint": "eslint src --ext .ts,.tsx --cache",
+    "type-check": "tsc --noEmit",
+    "deploy":"now"
+  }
+}
