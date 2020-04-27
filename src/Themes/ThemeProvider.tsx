@@ -1,8 +1,8 @@
 import React from 'react';
 import {ColorSchemeName} from 'react-native';
-import {Color, createDefaultTheme} from './colors';
+import {DefaultTheme} from './colors';
 
-type Colors = Record<Color, string>;
+type Colors = Record<string, string>;
 
 type ThemeProp = {
   theme: ColorSchemeName;
@@ -11,7 +11,7 @@ type ThemeProp = {
 
 const ThemeContext = React.createContext<ThemeProp>({
   theme: 'light',
-  colors: createDefaultTheme(),
+  colors: DefaultTheme,
 });
 
 const {Provider} = ThemeContext;
@@ -22,7 +22,7 @@ export const useTheme = () => {
 
 export const ThemeProvider: React.FC<Partial<ThemeProp>> = ({
   theme,
-  colors = createDefaultTheme(),
+  colors = DefaultTheme,
   children,
 }) => {
   return <Provider value={{theme, colors}}>{children}</Provider>;

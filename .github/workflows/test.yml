@@ -1,4 +1,3 @@
-
 name: CI
 on: pull_request
 
@@ -32,7 +31,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Display version of Node.js, npm, Yarn
       - name: Get yarn cache
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"

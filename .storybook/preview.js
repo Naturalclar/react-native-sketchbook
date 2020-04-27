@@ -5,10 +5,8 @@ import {StoryDecorator} from './StoryDecorator';
 
 
 const loadStories = () => {
-  const allExports = [];
   const req = require.context('../src', true, /\.stories\.tsx$/);
-  req.keys().forEach(fname => allExports.push(req(fname)));
-  return allExports;
+  return req.keys().map(fname => req(fname));
 };
 
 addDecorator(
