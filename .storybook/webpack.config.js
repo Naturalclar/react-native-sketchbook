@@ -1,6 +1,5 @@
 const path = require("path");
 
-
 const externalLibs = [
   path.resolve(__dirname,'../node_modules/react-native')
 ];
