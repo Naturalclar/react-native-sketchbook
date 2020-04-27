@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "./storybook-static/**", "use": "@now/static" }
-  ],
   "routes": [
     { "src": "/(.*)", "dest": "storybook-static/$1" }
   ]
