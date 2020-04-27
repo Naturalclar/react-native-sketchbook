@@ -29,7 +29,7 @@ export const Stack: React.FC<Props> = ({
         return (
           <Fragment key={index}>
             {child}
-            <Margin type={type} size={space} />
+            <Margin size={space} />
           </Fragment>
         );
       })}
