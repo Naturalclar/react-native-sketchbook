@@ -27,6 +27,7 @@
     "@storybook/addon-viewport": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
+    "@storybook/theming": "^5.3.18",
     "@types/react-native": "^0.62.4",
     "babel-loader": "^8.1.0",
     "babel-preset-expo": "^8.1.0",
