@@ -1,6 +1,6 @@
 {
   "name": "react-native-sketchbook",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Design System for React Native",
   "author": "Jesse Katsumata <jesse.katsumata@gmail.com>",
   "main": "dist/index.js",
