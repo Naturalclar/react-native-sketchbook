@@ -1,8 +1,8 @@
 export const lightTheme = {
-  primaryColor: '#1400d3',
-  secondaryColor: '#0fd402',
-  tertiaryColor: '#00AAAA',
-  negativeColor: '#d400a6',
+  primaryColor: '#bb86fc',
+  secondaryColor: '#03dac5',
+  tertiaryColor: '#3700b3',
+  negativeColor: '#cd6679',
   warningColor: '#ff8800',
   disabledColor: 'rgba(0,0,0,0.4)',
   overlay: 'rgba(0,0,0,0.4)',

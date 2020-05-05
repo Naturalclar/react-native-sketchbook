@@ -8,13 +8,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     transform: [{rotateZ: '45deg'}],
   },
-  horizontalLine: {height: 4, position: 'absolute'},
-  verticalLine: {width: 4, position: 'absolute'},
+  horizontalLine: {height: 2, position: 'absolute'},
+  verticalLine: {width: 2, position: 'absolute'},
 });
 
 type Props = {size?: number; color?: string};
 
-export const IconClose: React.FC<Props> = ({size = 12, color}) => {
+export const IconTimes: React.FC<Props> = ({size = 16, color}) => {
   const {baseTextColor} = useColors();
   const iconColor = color || baseTextColor;
   return (
