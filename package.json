@@ -17,6 +17,10 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "react-native",
+    "design-system"
+  ],
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@react-native-community/eslint-config": "^1.1.0",
