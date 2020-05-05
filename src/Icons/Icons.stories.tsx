@@ -9,13 +9,14 @@ import * as Icons from './index';
 import {View, FlatList, StyleSheet} from 'react-native';
 import {useColors} from '../Themes';
 
-const icons = [
-  {name: 'IconCaretLeft', component: Icons.IconCaretLeft},
-  {name: 'IconCaretTop', component: Icons.IconCaretTop},
-  {name: 'IconCaretBottom', component: Icons.IconCaretBottom},
-  {name: 'IconCaretRight', component: Icons.IconCaretRight},
-  {name: 'IconClose', component: Icons.IconClose},
-];
+console.log(Object.keys(Icons));
+
+const icons = Object.keys(Icons).map((key) => {
+  return {
+    name: key,
+    component: Icons[key],
+  };
+});
 
 const styles = StyleSheet.create({
   showCaseContainer: {

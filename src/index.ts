@@ -1,6 +1,10 @@
 export {SlideUpView} from './Animations';
 export {BaseButton, PrimaryButton} from './Buttons';
 export {
+  IconAdd,
+  IconDivide,
+  IconMinus,
+  IconTimes,
   IconClose,
   IconCaretBottom,
   IconCaretLeft,
