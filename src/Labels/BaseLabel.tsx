@@ -2,14 +2,12 @@ import * as React from 'react';
 import {StyleSheet, View, ViewProps, TouchableOpacity} from 'react-native';
 import {IconClose} from '../Icons';
 import {Margin} from '../Utils';
-import {useColors, marginSize} from '../Themes';
+import {useColors, useSpaceSizes} from '../Themes';
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: marginSize.xsmall,
-    paddingHorizontal: marginSize.small,
     backgroundColor: 'red',
     borderRadius: 10,
   },
@@ -33,9 +31,18 @@ export const BaseLabel: React.FC<Props> = ({
 }) => {
   const {dimBackgroundColor, lightTextColor} = useColors();
   const labelColor = color || dimBackgroundColor;
+  const spaceSize = useSpaceSizes();
   return (
     <View
-      style={[styles.container, {backgroundColor: labelColor}, style]}
+      style={[
+        styles.container,
+        {
+          paddingHorizontal: spaceSize.small,
+          paddingVertical: spaceSize.xsmall,
+          backgroundColor: labelColor,
+        },
+        style,
+      ]}
       {...rest}>
       {leadingComponent && (
         <>

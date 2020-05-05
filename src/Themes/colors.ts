@@ -26,9 +26,9 @@ export const darkTheme = {
   dimBackgroundColor: '#3d3d3d',
 };
 
-export const DefaultTheme = {
+export const DefaultColorTheme = {
   light: lightTheme,
   dark: darkTheme,
-};
+} as const;
 
 export type Color = keyof typeof lightTheme;

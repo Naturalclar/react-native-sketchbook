@@ -16,7 +16,7 @@ export const StoryDecorator = (story: () => React.ReactNode) => {
  * Component Wrapper for Light Mode
  */
 export const LightThemeDecorator = (story: () => React.ReactNode) => {
-  return <ThemeProvider theme="light" ><View style={{flex:1}}>{story()}</View></ThemeProvider>;
+  return <ThemeProvider appearance="light" ><View style={{flex:1}}>{story()}</View></ThemeProvider>;
 };
 
 /**
@@ -24,5 +24,5 @@ export const LightThemeDecorator = (story: () => React.ReactNode) => {
  * Component Wrapper for Dark Mode
  */
 export const DarkThemeDecorator = (story: () => React.ReactNode) => {
-  return <ThemeProvider theme="dark" ><View style={{flex:1,backgroundColor:'#222'}}>{story()}</View></ThemeProvider>;
+  return <ThemeProvider appearance="dark" ><View style={{flex:1,backgroundColor:'#222'}}>{story()}</View></ThemeProvider>;
 };

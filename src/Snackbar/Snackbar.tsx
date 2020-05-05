@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 import {Typography} from '../Typography';
-import {marginSize, useColors} from '../Themes';
+import {useColors, useSpaceSizes} from '../Themes';
 
 const styles = StyleSheet.create({
   container: {
@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
     bottom: 0,
   },
   main: {
-    margin: marginSize.medium,
     borderRadius: 8,
     backgroundColor: 'rgba(0,0,0,0.8)',
     padding: 16,
@@ -47,6 +46,7 @@ export const Snackbar: React.FC<Props> = ({
 }) => {
   const animated = React.useRef(new Animated.Value(0)).current;
   const {white} = useColors();
+  const spaceSize = useSpaceSizes();
 
   const appear = React.useCallback(() => {
     Animated.timing(animated, {
@@ -81,6 +81,7 @@ export const Snackbar: React.FC<Props> = ({
       <Animated.View
         style={[
           styles.main,
+          {margin: spaceSize.medium},
           {
             opacity: animated,
             transform: [

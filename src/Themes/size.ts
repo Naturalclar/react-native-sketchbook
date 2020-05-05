@@ -1,4 +1,4 @@
-export const fontSize = {
+export const DefaultFontSize = {
   xxsmall: 8,
   xsmall: 10,
   small: 14,
@@ -6,11 +6,11 @@ export const fontSize = {
   large: 20,
   xlarge: 24,
   xxlarge: 40,
-};
+} as const;
 
-export type FontSize = keyof typeof fontSize;
+export type FontSize = keyof typeof DefaultFontSize;
 
-export const marginSize = {
+export const DefaultSpaceSize = {
   xxsmall: 2,
   xsmall: 4,
   small: 8,
@@ -18,6 +18,6 @@ export const marginSize = {
   large: 24,
   xlarge: 32,
   xxlarge: 48,
-};
+} as const;
 
-export type MarginSize = keyof typeof marginSize;
+export type SpaceSize = keyof typeof DefaultSpaceSize;
