@@ -1,10 +1,10 @@
 import React from 'react';
 import {ColorSchemeName} from 'react-native';
-import {DefaultTheme} from './theme';
+import {DefaultTheme, Theme} from './theme';
 
 type ThemeProp = {
   appearance: ColorSchemeName;
-  theme: typeof DefaultTheme;
+  theme: Theme;
 };
 
 const ThemeContext = React.createContext<ThemeProp>({
