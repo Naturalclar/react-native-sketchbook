@@ -29,4 +29,5 @@ The library is released under the MIT licence. For more information see [`LICENS
 
 [npm-link]: https://www.npmjs.com/package/react-native-sketchbook
 [npm-badge]: https://img.shields.io/npm/v/react-native-sketchbook.svg?style=flat-square
+[license-badge]: https://img.shields.io/npm/l/react-native-sketchbook.svg?style=flat-square
 [license]: https://opensource.org/licenses/MIT
