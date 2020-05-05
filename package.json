@@ -1,6 +1,10 @@
 {
   "name": "react-native-sketchbook",
+<<<<<<< HEAD
   "version": "0.0.2-alpha.3",
+=======
+  "version": "0.0.2-alpha.2",
+>>>>>>> 5779d8ff194bf22491b9853099feced2cf8d55d2
   "description": "Design System for React Native",
   "author": "Jesse Katsumata <jesse.katsumata@gmail.com>",
   "main": "dist/index.js",
@@ -16,6 +20,10 @@
   "license": "MIT",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react-native",
+    "design-system"
   ],
   "devDependencies": {
     "@babel/core": "^7.9.0",
