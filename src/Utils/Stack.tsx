@@ -1,10 +1,10 @@
 import React, {Children, Fragment} from 'react';
 import {Margin} from './Margin';
 import {View, StyleSheet, StyleProp, ViewStyle} from 'react-native';
-import {MarginSize} from '../Themes';
+import {SpaceSize} from '../Themes';
 
 type Props = {
-  space: MarginSize;
+  space: SpaceSize;
   type?: 'horizontal' | 'vertical';
   style?: StyleProp<ViewStyle>;
 };
