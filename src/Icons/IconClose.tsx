@@ -24,7 +24,6 @@ export const IconClose: React.FC<Props> = ({size = 12, color}) => {
           styles.horizontalLine,
           {
             width: size,
-
             backgroundColor: iconColor,
           },
         ]}
