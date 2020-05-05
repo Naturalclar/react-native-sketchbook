@@ -25,5 +25,5 @@ dark.story = {
 };
 
 export default {
-  title: 'atoms/SlideUpView',
+  title: 'Animations/SlideUpView',
 };
