@@ -11,6 +11,7 @@ export const DefaultFontSize = {
 export type FontSize = keyof typeof DefaultFontSize;
 
 export const DefaultSpaceSize = {
+  none: 0,
   xxsmall: 2,
   xsmall: 4,
   small: 8,
