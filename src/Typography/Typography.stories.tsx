@@ -4,11 +4,13 @@ import {
   DarkThemeDecorator,
 } from '../../.storybook/StoryDecorator';
 import {Heading} from './Heading';
+import {SubHeading} from './SubHeading';
 
 const Story = () => {
   return (
     <>
       <Heading>Heading</Heading>
+      <SubHeading>SubHeading</SubHeading>
     </>
   );
 };

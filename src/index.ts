@@ -13,6 +13,7 @@ export {
 } from './Icons';
 export {VerificationInput} from './Inputs';
 export {BaseLabel} from './Labels';
+export {RadioButton, RadioButtonItem} from './RadioButtons';
 export {Snackbar} from './Snackbar';
 export {
   ThemeProvider,
@@ -25,7 +26,7 @@ export {
   DefaultSpaceSize,
   DefaultTheme,
 } from './Themes';
-export {Heading, Typography} from './Typography';
+export {Heading, SubHeading, Typography} from './Typography';
 export {Margin, Stack} from './Utils';
 
 // typings
