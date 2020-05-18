@@ -1,16 +1,23 @@
 export {SlideUpView} from './Animations';
 export {BaseButton, PrimaryButton} from './Buttons';
+// Checkbox
+export {CheckBox, CheckBoxItem} from './CheckBox';
+// Icons
+import * as Icons from './Icons';
+export {Icons};
 export {
   IconAdd,
   IconDivide,
   IconMinus,
   IconTimes,
+  IconCheck,
   IconClose,
   IconCaretBottom,
   IconCaretLeft,
   IconCaretRight,
   IconCaretTop,
 } from './Icons';
+// Inputs
 export {VerificationInput} from './Inputs';
 export {BaseLabel} from './Labels';
 export {RadioButton, RadioButtonItem} from './RadioButtons';
