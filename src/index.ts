@@ -13,7 +13,7 @@ export {
 } from './Icons';
 export {VerificationInput} from './Inputs';
 export {BaseLabel} from './Labels';
-import {RadioButton, RadioButtonItem} from './RadioButtons';
+export {RadioButton, RadioButtonItem} from './RadioButtons';
 export {Snackbar} from './Snackbar';
 export {
   ThemeProvider,
