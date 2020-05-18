@@ -20,20 +20,20 @@ const styles = StyleSheet.create({
 type Props = {
   onValueChange: (value: boolean) => void;
   disabled?: boolean;
-  value: boolean;
+  checked: boolean;
   color?: string;
 };
 export const CheckBox: React.FC<Props> = ({
   color,
   disabled,
-  value,
+  checked,
   onValueChange,
 }) => {
   const {primaryColor, white} = useColors();
   const checkedColor = color || primaryColor;
   const handleValueChange = React.useCallback(() => {
-    onValueChange(!value);
-  }, [value, onValueChange]);
+    onValueChange(!checked);
+  }, [checked, onValueChange]);
 
   return (
     <TouchableOpacity disabled={disabled} onPress={handleValueChange}>
@@ -41,9 +41,9 @@ export const CheckBox: React.FC<Props> = ({
         style={[
           styles.container,
           disabled && styles.disabled,
-          value && {borderColor: checkedColor, backgroundColor: checkedColor},
+          checked && {borderColor: checkedColor, backgroundColor: checkedColor},
         ]}>
-        {value && <IconCheck color={white} />}
+        {checked && <IconCheck color={white} />}
       </View>
     </TouchableOpacity>
   );

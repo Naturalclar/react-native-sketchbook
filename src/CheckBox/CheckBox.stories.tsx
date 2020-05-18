@@ -13,17 +13,17 @@ const Story = () => {
   const {secondaryColor} = useColors();
   return (
     <Stack space="xsmall">
-      <CheckBox value={true} onValueChange={() => {}} />
+      <CheckBox checked={true} onValueChange={() => {}} />
       <CheckBox
-        value={value}
+        checked={value}
         onValueChange={() => setValue(!value)}
         color={secondaryColor}
       />
-      <CheckBox value={false} onValueChange={() => {}} disabled />
-      <CheckBox value={true} onValueChange={() => {}} disabled />
-      <CheckBoxItem value label="First" onValueChange={() => {}} />
+      <CheckBox checked={false} onValueChange={() => {}} disabled />
+      <CheckBox checked={true} onValueChange={() => {}} disabled />
+      <CheckBoxItem checked label="First" onValueChange={() => {}} />
       <CheckBoxItem
-        value={value}
+        checked={value}
         label="Second"
         onValueChange={() => {
           setValue(!value);
@@ -31,7 +31,7 @@ const Story = () => {
         color={secondaryColor}
       />
       <CheckBoxItem
-        value={false}
+        checked={false}
         label="Third"
         disabled
         onValueChange={() => {}}
