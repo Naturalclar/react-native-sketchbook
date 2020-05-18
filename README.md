@@ -20,7 +20,8 @@ Demo: https://react-native-sketchbook.now.sh/
 - **Customizable**
 - **Fully written in TypeScript**
 - **Full support for Web**
-- **Support Dark Theme**
+- **Supports Dark Theme**
+- **No External Dependencies**
 
 ## Tech Stack
 
