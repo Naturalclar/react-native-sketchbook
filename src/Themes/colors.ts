@@ -7,10 +7,12 @@ export const lightTheme = {
   disabledColor: 'rgba(0,0,0,0.4)',
   overlay: 'rgba(0,0,0,0.4)',
   // TextColors
-  baseTextColor: '#222',
+  baseTextColor: '#555',
+  lightTextColor: '#aaa',
   disabledTextColor: '#ccc',
   // backgroundColors
-  baseBackgroundColor: '#eee',
+  baseBackgroundColor: '#fff',
+  dimBackgroundColor: '#eee',
   // Const Colors (limit to black and white)
   white: '#fff',
   black: '#000',
@@ -19,12 +21,14 @@ export const lightTheme = {
 export const darkTheme = {
   ...lightTheme,
   baseTextColor: '#eee',
+  lightTextColor: '#aaa',
   baseBackgroundColor: '#222',
+  dimBackgroundColor: '#3d3d3d',
 };
 
-export const DefaultTheme = {
+export const DefaultColorTheme = {
   light: lightTheme,
   dark: darkTheme,
-};
+} as const;
 
 export type Color = keyof typeof lightTheme;

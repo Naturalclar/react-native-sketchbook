@@ -18,7 +18,6 @@ export const Typography: React.FC<TypographyProps> = ({
   return (
     <Text
       style={[
-        style,
         {
           color: textColor,
         },
@@ -27,6 +26,7 @@ export const Typography: React.FC<TypographyProps> = ({
               fontSize: size,
             }
           : null,
+        style,
       ]}
       {...rest}
     />

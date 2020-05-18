@@ -1,17 +1,15 @@
 import React from 'react';
 import {ColorSchemeName} from 'react-native';
-import {DefaultTheme} from './colors';
-
-type Colors = Record<string, string>;
+import {DefaultTheme, Theme} from './theme';
 
 type ThemeProp = {
-  theme: ColorSchemeName;
-  colors: Record<'light' | 'dark', Colors>;
+  appearance: ColorSchemeName;
+  theme: Theme;
 };
 
 const ThemeContext = React.createContext<ThemeProp>({
-  theme: 'light',
-  colors: DefaultTheme,
+  appearance: 'light',
+  theme: DefaultTheme,
 });
 
 const {Provider} = ThemeContext;
@@ -20,19 +18,33 @@ export const useTheme = () => {
   return React.useContext(ThemeContext).theme;
 };
 
+export const useAppearance = () => {
+  return React.useContext(ThemeContext).appearance;
+};
+
 export const ThemeProvider: React.FC<Partial<ThemeProp>> = ({
-  theme,
-  colors = DefaultTheme,
+  appearance,
+  theme = DefaultTheme,
   children,
 }) => {
-  return <Provider value={{theme, colors}}>{children}</Provider>;
+  return <Provider value={{appearance, theme}}>{children}</Provider>;
 };
 
 export const useColors = () => {
-  const theme = useTheme();
-  const colors = React.useContext(ThemeContext).colors;
-  if (theme === 'dark') {
+  const appearance = useAppearance();
+  const {colors} = React.useContext(ThemeContext).theme;
+  if (appearance === 'dark') {
     return colors.dark;
   }
   return colors.light;
+};
+
+export const useFontSizes = () => {
+  const {fontSizes} = React.useContext(ThemeContext).theme;
+  return fontSizes;
+};
+
+export const useSpaceSizes = () => {
+  const {spaceSizes} = React.useContext(ThemeContext).theme;
+  return spaceSizes;
 };

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Typography, TypographyProps} from './Typography';
-import {fontSize} from '../Themes';
+import {useFontSizes} from '../Themes';
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
@@ -10,11 +10,12 @@ const styles = StyleSheet.create({
 });
 
 export const Heading: React.FC<TypographyProps> = ({style, ...rest}) => {
+  const {xlarge} = useFontSizes();
   return (
     <Typography
       {...rest}
       style={[styles.heading, style]}
-      size={fontSize.xlarge}
+      size={xlarge}
       accessibilityRole={'header'}
     />
   );

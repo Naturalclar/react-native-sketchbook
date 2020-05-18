@@ -1,16 +1,19 @@
 import React from 'react';
 import {View} from 'react-native';
-import {MarginSize, marginSize} from '../Themes';
+import {SpaceSize, useSpaceSizes} from '../Themes';
 
 type Props = {
-  size: MarginSize;
+  size: SpaceSize;
 };
 
-export const Margin: React.FC<Props> = ({size}) => (
-  <View
-    style={{
-      marginRight: marginSize[size],
-      marginBottom: marginSize[size],
-    }}
-  />
-);
+export const Margin: React.FC<Props> = ({size}) => {
+  const spaceSize = useSpaceSizes();
+  return (
+    <View
+      style={{
+        marginRight: spaceSize[size],
+        marginBottom: spaceSize[size],
+      }}
+    />
+  );
+};

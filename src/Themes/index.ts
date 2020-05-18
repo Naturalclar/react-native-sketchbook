@@ -1,5 +1,14 @@
-export {ThemeProvider, useColors} from './ThemeProvider';
-export {fontSize, marginSize} from './size';
+export {
+  ThemeProvider,
+  useAppearance,
+  useColors,
+  useFontSizes,
+  useSpaceSizes,
+} from './ThemeProvider';
+export {DefaultFontSize, DefaultSpaceSize} from './size';
+export {DefaultColorTheme} from './colors';
+export {DefaultTheme} from './theme';
 // typings
-export type {Color} from './colors';
-export type {FontSize, MarginSize} from './size';
+export {Theme} from './theme';
+export {Color} from './colors';
+export {FontSize, SpaceSize} from './size';

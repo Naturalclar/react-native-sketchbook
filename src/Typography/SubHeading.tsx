@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export const Heading: React.FC<TypographyProps> = ({style, ...rest}) => {
+export const SubHeading: React.FC<TypographyProps> = ({style, ...rest}) => {
   return (
     <Typography
       {...rest}

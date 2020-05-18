@@ -25,13 +25,15 @@ export const BaseButton: React.FC<Props> = ({
   style,
   leadingComponent,
   tailingComponent,
+  ...rest
 }) => {
   return (
     <TouchableOpacity
       onPress={onPress}
       onLongPress={onLongPress}
       style={[styles.container, style]}
-      accessibilityRole="button">
+      accessibilityRole="button"
+      {...rest}>
       {leadingComponent && leadingComponent}
       {children}
       {tailingComponent && tailingComponent}
