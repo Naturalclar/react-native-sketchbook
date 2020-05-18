@@ -42,7 +42,7 @@ export const RadioButtonItem: React.FC<Props> = ({
             <View style={styles.container}>
               <RadioButton value={value} color={color} disabled={disabled} />
               <Margin size="xsmall" />
-              <Typography color={disabled && disabledTextColor}>
+              <Typography color={disabled ? disabledTextColor : undefined}>
                 {label}
               </Typography>
             </View>
