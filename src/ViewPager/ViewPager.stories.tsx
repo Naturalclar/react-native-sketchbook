@@ -7,16 +7,26 @@ import {
 import {Typography} from '../Typography';
 import {View} from 'react-native';
 
-const pageData = [{text: 'Hello'}, {text: 'World!'}, {text: 'ViewPager'}];
+const pageData = [
+  {text: 'Hello', color: 'red'},
+  {text: 'World!', color: 'blue'},
+  {text: 'ViewPager', color: 'green'},
+];
 
 const Page = ({data}) => (
-  <View>
-    <Typography>{data.text}</Typography>
+  <View
+    style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: data.color,
+    }}>
+    <Typography color={'white'}>{data.text}</Typography>
   </View>
 );
 
 const Story = () => (
-  <ViewPager>
+  <ViewPager initialIndex={1}>
     {pageData.map((data, index) => {
       return <Page key={index} data={data} />;
     })}
