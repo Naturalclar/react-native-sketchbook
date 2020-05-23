@@ -34,7 +34,7 @@ export {
   DefaultTheme,
 } from './Themes';
 export {Heading, SubHeading, Typography} from './Typography';
-export {Margin, Stack} from './Utils';
+export {Margin, Stack, Row, isAndroid, isIOS, isIPad, isWeb} from './Utils';
 
 // typings
 export {Color, FontSize, SpaceSize, Theme} from './Themes';
