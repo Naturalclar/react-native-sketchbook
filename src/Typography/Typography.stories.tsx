@@ -5,12 +5,16 @@ import {
 } from '../../.storybook/StoryDecorator';
 import {Heading} from './Heading';
 import {SubHeading} from './SubHeading';
+import {LabelText} from './LabelText';
+import {Paragraph} from './Paragraph';
 
 const Story = () => {
   return (
     <>
       <Heading>Heading</Heading>
+      <LabelText>LabelText</LabelText>
       <SubHeading>SubHeading</SubHeading>
+      <Paragraph>Paragraph</Paragraph>
     </>
   );
 };

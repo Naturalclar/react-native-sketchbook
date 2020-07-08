@@ -5,17 +5,17 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   heading: {
-    fontWeight: '700',
+    fontWeight: '600',
   },
 });
 
-export const Heading: React.FC<TypographyProps> = ({style, ...rest}) => {
-  const {xlarge} = useFontSizes();
+export const LabelText: React.FC<TypographyProps> = ({style, ...rest}) => {
+  const {small} = useFontSizes();
   return (
     <Typography
       style={[styles.heading, style]}
-      size={xlarge}
-      accessibilityRole={'header'}
+      size={small}
+      accessibilityRole={'text'}
       {...rest}
     />
   );
