@@ -33,7 +33,13 @@ export {
   DefaultSpaceSize,
   DefaultTheme,
 } from './Themes';
-export {Heading, SubHeading, Typography} from './Typography';
+export {
+  Paragraph,
+  LabelText,
+  Heading,
+  SubHeading,
+  Typography,
+} from './Typography';
 export {Margin, Stack, Row, isAndroid, isIOS, isIPad, isWeb} from './Utils';
 
 // typings

@@ -13,10 +13,10 @@ export const SubHeading: React.FC<TypographyProps> = ({style, ...rest}) => {
   const {large} = useFontSizes();
   return (
     <Typography
-      {...rest}
       style={[styles.heading, style]}
       size={large}
       accessibilityRole={'header'}
+      {...rest}
     />
   );
 };
