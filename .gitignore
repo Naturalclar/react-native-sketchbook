@@ -9,3 +9,7 @@ storybook-static
 yarn-error.log
 
 .now
+
+# reg-suit
+.reg
+__screenshots__
