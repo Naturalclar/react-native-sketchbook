@@ -2,9 +2,10 @@
   "name": "react-native-sketchbook",
   "version": "0.0.2-alpha.15",
   "description": "Design System for React Native",
-  "author": "Jesse Katsumata <jesse.katsumata@gmail.com>",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "keywords": [
+    "react-native",
+    "design-system"
+  ],
   "homepage": "https://github.com/Naturalclar/react-native-sketchbook#readme",
   "bugs": {
     "url": "https://github.com/Naturalclar/react-native-sketchbook/issues"
@@ -14,13 +15,24 @@
     "url": "git+https://github.com/Naturalclar/react-native-sketchbook.git"
   },
   "license": "MIT",
+  "author": "Jesse Katsumata <jesse.katsumata@gmail.com>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "keywords": [
-    "react-native",
-    "design-system"
-  ],
+  "scripts": {
+    "build": "tsc",
+    "build-storybook": "build-storybook",
+    "deploy": "now",
+    "lint": "eslint src --ext .ts,.tsx --cache",
+    "prepare": "yarn build",
+    "storybook": "start-storybook -p 6006",
+    "type-check": "tsc --noEmit",
+    "reg-suit": "reg-suit run",
+    "storycap:all": "rm -rf ./__screenshots__ && yarn storycap http://localhost:6006 --serverCmd 'yarn storybook --ci' --viewport '414x736' --serverTimeout '200000'"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@react-native-community/eslint-config": "^2.0.0",
@@ -41,16 +53,11 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native-web": "^0.13.1",
+    "reg-keygen-git-hash-plugin": "^0.8.5",
+    "reg-notify-github-plugin": "^0.8.5",
+    "reg-publish-s3-plugin": "^0.9.0",
+    "reg-suit": "^0.10.2",
+    "storycap": "^2.3.5",
     "typescript": "^3.8.3"
-  },
-  "dependencies": {},
-  "scripts": {
-    "prepare": "yarn build",
-    "build": "tsc",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "lint": "eslint src --ext .ts,.tsx --cache",
-    "type-check": "tsc --noEmit",
-    "deploy": "now"
   }
 }

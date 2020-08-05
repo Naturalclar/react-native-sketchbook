@@ -1,0 +1,16 @@
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": "__screenshots__",
+    "thresholdRate": 0
+  },
+  "plugins": {
+    "reg-keygen-git-hash-plugin": true,
+    "reg-notify-github-plugin": {
+      "clientId": "MzK1NDYzNzcw0S9KTUwu0c1LLMksS9Utzk4tSc5Iys/P1jc0Bymx1PdLLCktSsxJzkksAgA="
+    },
+    "reg-publish-s3-plugin": {
+      "bucketName": "reg-publish-bucket-d8a689ab-46be-45db-9995-d4265e7ac00e"
+    }
+  }
+}
