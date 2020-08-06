@@ -50,9 +50,10 @@ jobs:
         node-version: [10.18.1]
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: workaround for detached HEAD
         run: git checkout ${GITHUB_REF#refs/heads/} || git checkout -b ${GITHUB_REF#refs/heads/} && git pull
-        continue-on-error: true
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
