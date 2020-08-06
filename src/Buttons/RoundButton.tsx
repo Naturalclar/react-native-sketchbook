@@ -14,13 +14,14 @@ type Props = {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
-    borderRadius: 28,
+    padding: 24,
+    borderRadius: 40,
     justifyContent: 'center',
     alignItems: 'center',
     opacity: 1,
   },
   label: {
+    fontSize: 24,
     fontWeight: '700',
   },
   disabled: {
