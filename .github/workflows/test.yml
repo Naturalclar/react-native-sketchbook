@@ -9,6 +9,8 @@ jobs:
         node-version: [10.18.1]
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: master
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
