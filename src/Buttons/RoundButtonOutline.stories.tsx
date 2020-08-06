@@ -12,9 +12,9 @@ const Story = () => {
   return (
     <Stack space={'small'} style={{padding: 24}}>
       <Typography>Round Button Outline</Typography>
-      <RoundButtonOutline label="Hello World!" onPress={() => {}} />
+      <RoundButtonOutline label="Changed Text" onPress={() => {}} />
       <Typography>Disabled</Typography>
-      <RoundButtonOutline label="Hello World!" onPress={() => {}} disabled />
+      <RoundButtonOutline label="Changed Text" onPress={() => {}} disabled />
     </Stack>
   );
 };
