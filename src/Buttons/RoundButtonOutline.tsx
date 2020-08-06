@@ -14,7 +14,7 @@ type Props = {
 const styles = StyleSheet.create({
   container: {
     padding: 14,
-    borderRadius: 28,
+    borderRadius: 40,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: StyleSheet.hairlineWidth,
