@@ -1,5 +1,5 @@
 name: CI
-on: pull_request
+on: push
 
 jobs:
   lint:
@@ -41,12 +41,19 @@ jobs:
       - run: yarn
       - run: yarn type-check
   visual-regression:
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     runs-on: ubuntu-18.04
     strategy:
       matrix:
         node-version: [10.18.1]
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: workaround for detached HEAD
+        run: git checkout ${GITHUB_REF#refs/heads/} || git checkout -b ${GITHUB_REF#refs/heads/} && git pull
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
