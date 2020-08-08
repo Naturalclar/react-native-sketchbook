@@ -11,3 +11,4 @@ export {IconCaretTop} from './IconCaretTop';
 // Utils
 export {IconClose} from './IconClose';
 export {IconCheck} from './IconCheck';
+export {IconPencil} from './IconPencil';
