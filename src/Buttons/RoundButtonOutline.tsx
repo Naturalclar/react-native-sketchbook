@@ -14,7 +14,7 @@ type Props = {
 const styles = StyleSheet.create({
   container: {
     padding: 14,
-    borderRadius: 28,
+    borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: StyleSheet.hairlineWidth,
@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
 });
 
 export const RoundButtonOutline: React.FC<Props> = ({
-  label,
   color,
   onPress,
   disabled = false,
@@ -45,7 +44,7 @@ export const RoundButtonOutline: React.FC<Props> = ({
         disabled ? styles.disabled : null,
       ]}>
       <Typography style={styles.label} color={buttonColor}>
-        {label}
+        "Tech Stand 最高"
       </Typography>
     </BaseButton>
   );
