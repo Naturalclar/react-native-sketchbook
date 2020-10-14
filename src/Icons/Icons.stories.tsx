@@ -9,8 +9,6 @@ import * as Icons from './index';
 import {View, FlatList, StyleSheet} from 'react-native';
 import {useColors} from '../Themes';
 
-console.log(Object.keys(Icons));
-
 const icons = Object.keys(Icons).map((key) => {
   return {
     name: key,
