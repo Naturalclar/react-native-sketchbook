@@ -1,6 +1,6 @@
 {
   "name": "react-native-sketchbook",
-  "version": "0.0.2-alpha.15",
+  "version": "0.0.2-alpha.16",
   "description": "Design System for React Native",
   "keywords": [
     "react-native",
@@ -48,7 +48,6 @@
     "babel-loader": "^8.1.0",
     "babel-preset-expo": "^8.1.0",
     "eslint": "^6.8.0",
-    "vercel": "^20.1.2",
     "prettier": "^2.0.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -58,6 +57,7 @@
     "reg-publish-s3-plugin": "^0.9.0",
     "reg-suit": "^0.10.2",
     "storycap": "^3.0.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "vercel": "^20.1.2"
   }
 }
