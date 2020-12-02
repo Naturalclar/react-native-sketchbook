@@ -1,13 +1,5 @@
 import * as React from 'react';
-import {Pressable, PressableProps, StyleSheet, View} from 'react-native';
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
+import {Pressable, PressableProps, StyleSheet} from 'react-native';
 
 type Props = {
   /**
@@ -31,15 +23,16 @@ export const BaseButton: React.FC<Props> = ({
     <Pressable
       style={(state) => ({
         opacity: state.pressed ? 0.4 : 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
         ...StyleSheet.flatten(style),
       })}
       accessibilityRole="button"
       {...rest}>
-      <View style={styles.container}>
-        {leadingComponent && leadingComponent}
-        {children}
-        {tailingComponent && tailingComponent}
-      </View>
+      {leadingComponent && leadingComponent}
+      {children}
+      {tailingComponent && tailingComponent}
     </Pressable>
   );
 };
