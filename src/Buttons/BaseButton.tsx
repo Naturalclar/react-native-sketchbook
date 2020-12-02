@@ -1,9 +1,5 @@
 import * as React from 'react';
-import {
-  TouchableOpacity,
-  TouchableOpacityProps,
-  StyleSheet,
-} from 'react-native';
+import {Pressable, PressableProps, StyleSheet, View} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -14,29 +10,36 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
+  /**
+   * Component to be displayed on the left side of the button
+   */
   leadingComponent?: React.ReactNode;
+  /**
+   * Component to be displayed on the right side of the button
+   */
   tailingComponent?: React.ReactNode;
-} & TouchableOpacityProps;
+} & PressableProps;
 
 export const BaseButton: React.FC<Props> = ({
-  onPress,
-  onLongPress,
   children,
-  style,
+  style = {},
   leadingComponent,
   tailingComponent,
   ...rest
 }) => {
   return (
-    <TouchableOpacity
-      onPress={onPress}
-      onLongPress={onLongPress}
-      style={[styles.container, style]}
+    <Pressable
+      style={(state) => ({
+        opacity: state.pressed ? 0.4 : 1,
+        ...StyleSheet.flatten(style),
+      })}
       accessibilityRole="button"
       {...rest}>
-      {leadingComponent && leadingComponent}
-      {children}
-      {tailingComponent && tailingComponent}
-    </TouchableOpacity>
+      <View style={styles.container}>
+        {leadingComponent && leadingComponent}
+        {children}
+        {tailingComponent && tailingComponent}
+      </View>
+    </Pressable>
   );
 };
