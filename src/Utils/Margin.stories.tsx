@@ -3,7 +3,7 @@ import {
   LightThemeDecorator,
   DarkThemeDecorator,
 } from '../../.storybook/StoryDecorator';
-import {View} from 'react-native';
+import {Row} from './Row';
 import {Typography} from '../Typography';
 import {Margin} from './Margin';
 
@@ -15,7 +15,7 @@ const Story = () => (
     <Margin size={'medium'} />
     <Typography>Between Components</Typography>
     <Margin size={'medium'} />
-    <View style={{flexDirection: 'row'}}>
+    <Row>
       <Typography>Can</Typography>
       <Margin size={'medium'} />
       <Typography>Also</Typography>
@@ -23,7 +23,7 @@ const Story = () => (
       <Typography>Be</Typography>
       <Margin size={'medium'} />
       <Typography>Placed Horizontally</Typography>
-    </View>
+    </Row>
   </>
 );
 
