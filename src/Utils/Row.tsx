@@ -11,5 +11,5 @@ const styles = StyleSheet.create({
  * A View Component whose default flexDiretion is row
  */
 export const Row: React.FC<ViewProps> = ({style, ...rest}) => {
-  return <View style={[styles.default, style]} {...rest} />;
+  return <View style={[styles.default, StyleSheet.flatten(style)]} {...rest} />;
 };
