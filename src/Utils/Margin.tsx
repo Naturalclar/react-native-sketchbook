@@ -20,6 +20,10 @@ type Props = {
   size: SpaceSize;
 };
 
+/**
+ * Margin
+ * - A component that provides set amounts of margin to right and bottom
+ */
 export const Margin: React.FC<Props> = ({size}) => {
   const spaceSize = useSpaceSizes();
   return (
