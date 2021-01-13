@@ -40,7 +40,16 @@ export {
   SubHeading,
   Typography,
 } from './Typography';
-export {Margin, Stack, Row, isAndroid, isIOS, isIPad, isWeb} from './Utils';
+export {
+  Margin,
+  Stack,
+  Row,
+  Flex,
+  isAndroid,
+  isIOS,
+  isIPad,
+  isWeb,
+} from './Utils';
 
 // typings
 export {Color, FontSize, SpaceSize, Theme} from './Themes';
