@@ -24,7 +24,7 @@
   "scripts": {
     "build": "tsc",
     "build-storybook": "build-storybook",
-    "deploy": "now",
+    "deploy": "vercel",
     "lint": "eslint src --ext .ts,.tsx --cache",
     "prepare": "yarn build",
     "storybook": "start-storybook -p 6006",
