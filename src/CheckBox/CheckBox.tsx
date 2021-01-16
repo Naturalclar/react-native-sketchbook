@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
     height: 16,
     alignItems: 'center',
     justifyContent: 'center',
-    borderColor: '#555',
   },
   disabled: {
     opacity: 0.4,
@@ -21,16 +20,19 @@ type Props = {
   onValueChange: (value: boolean) => void;
   disabled?: boolean;
   checked: boolean;
+  uncheckedColor?: string;
   color?: string;
 };
 export const CheckBox: React.FC<Props> = ({
   color,
   disabled,
   checked,
+  uncheckedColor,
   onValueChange,
 }) => {
   const {primaryColor, white} = useColors();
   const checkedColor = color || primaryColor;
+  const borderColor = uncheckedColor ?? '#555';
   const handleValueChange = React.useCallback(() => {
     onValueChange(!checked);
   }, [checked, onValueChange]);
@@ -40,6 +42,7 @@ export const CheckBox: React.FC<Props> = ({
       <View
         style={[
           styles.container,
+          {borderColor},
           disabled && styles.disabled,
           checked && {borderColor: checkedColor, backgroundColor: checkedColor},
         ]}>
