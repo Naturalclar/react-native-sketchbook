@@ -19,6 +19,11 @@ const Story = () => {
         onValueChange={() => setValue(!value)}
         color={secondaryColor}
       />
+      <CheckBox
+        checked={false}
+        onValueChange={() => {}}
+        uncheckedColor="green"
+      />
       <CheckBox checked={false} onValueChange={() => {}} disabled />
       <CheckBox checked={true} onValueChange={() => {}} disabled />
       <CheckBoxItem checked label="First" onValueChange={() => {}} />
@@ -34,6 +39,13 @@ const Story = () => {
         checked={false}
         label="Third"
         disabled
+        onValueChange={() => {}}
+      />
+      <CheckBoxItem
+        checked={false}
+        label="Fourth"
+        textColor="blue"
+        uncheckedColor="blue"
         onValueChange={() => {}}
       />
     </Stack>

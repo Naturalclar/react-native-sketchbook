@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, Pressable} from 'react-native';
 import {useColors} from '../Themes';
 import {IconCheck} from '../Icons';
 const styles = StyleSheet.create({
@@ -10,41 +10,54 @@ const styles = StyleSheet.create({
     height: 16,
     alignItems: 'center',
     justifyContent: 'center',
-    borderColor: '#555',
   },
   disabled: {
     opacity: 0.4,
   },
 });
 
-type Props = {
+export type CheckBoxProps = {
   onValueChange: (value: boolean) => void;
   disabled?: boolean;
+  /**
+   * State of CheckBox
+   */
   checked: boolean;
+  /**
+   * Color of border when unchecked
+   */
+  uncheckedColor?: string;
+  /**
+   * Color of CheckBox
+   */
   color?: string;
 };
-export const CheckBox: React.FC<Props> = ({
+
+export const CheckBox: React.FC<CheckBoxProps> = ({
   color,
   disabled,
   checked,
+  uncheckedColor,
   onValueChange,
 }) => {
   const {primaryColor, white} = useColors();
   const checkedColor = color || primaryColor;
+  const borderColor = uncheckedColor ?? '#555';
   const handleValueChange = React.useCallback(() => {
     onValueChange(!checked);
   }, [checked, onValueChange]);
 
   return (
-    <TouchableOpacity disabled={disabled} onPress={handleValueChange}>
+    <Pressable disabled={disabled} onPress={handleValueChange}>
       <View
         style={[
           styles.container,
+          {borderColor},
           disabled && styles.disabled,
           checked && {borderColor: checkedColor, backgroundColor: checkedColor},
         ]}>
         {checked && <IconCheck color={white} />}
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
