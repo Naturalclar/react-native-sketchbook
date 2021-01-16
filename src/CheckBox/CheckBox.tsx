@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, Pressable} from 'react-native';
 import {useColors} from '../Themes';
 import {IconCheck} from '../Icons';
 const styles = StyleSheet.create({
@@ -16,14 +16,24 @@ const styles = StyleSheet.create({
   },
 });
 
-type Props = {
+export type CheckBoxProps = {
   onValueChange: (value: boolean) => void;
   disabled?: boolean;
+  /**
+   * State of CheckBox
+   */
   checked: boolean;
+  /**
+   * Color of border when unchecked
+   */
   uncheckedColor?: string;
+  /**
+   * Color of CheckBox
+   */
   color?: string;
 };
-export const CheckBox: React.FC<Props> = ({
+
+export const CheckBox: React.FC<CheckBoxProps> = ({
   color,
   disabled,
   checked,
@@ -38,7 +48,7 @@ export const CheckBox: React.FC<Props> = ({
   }, [checked, onValueChange]);
 
   return (
-    <TouchableOpacity disabled={disabled} onPress={handleValueChange}>
+    <Pressable disabled={disabled} onPress={handleValueChange}>
       <View
         style={[
           styles.container,
@@ -48,6 +58,6 @@ export const CheckBox: React.FC<Props> = ({
         ]}>
         {checked && <IconCheck color={white} />}
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
