@@ -11,6 +11,7 @@ type Props = {
   alignItems?: FlexStyle['alignItems'];
   justifyContent?: FlexStyle['justifyContent'];
   alignContent?: FlexStyle['alignContent'];
+  alignSelf?: FlexStyle['alignSelf'];
 } & ViewProps;
 
 /**
@@ -22,13 +23,14 @@ export const Row: React.FC<Props> = ({
   alignItems,
   alignContent,
   justifyContent,
+  alignSelf,
   ...rest
 }) => {
   return (
     <View
       style={[
         styles.default,
-        {alignItems, alignContent, justifyContent},
+        {alignItems, alignContent, justifyContent, alignSelf},
         StyleSheet.flatten(style),
       ]}
       {...rest}
