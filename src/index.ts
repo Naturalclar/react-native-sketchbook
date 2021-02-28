@@ -45,6 +45,7 @@ export {
   Stack,
   Row,
   Flex,
+  StaticPage,
   isAndroid,
   isIOS,
   isIPad,
