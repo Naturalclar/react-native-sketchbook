@@ -1,15 +1,23 @@
 import React from 'react';
-import {Text, TextProps} from 'react-native';
+import {StyleSheet, Text, TextProps} from 'react-native';
 import {useColors} from '../Themes';
 
 export type TypographyProps = {
   color?: string;
   size?: number;
+  bold?: boolean;
 } & TextProps;
+
+const styles = StyleSheet.create({
+  bold: {
+    fontWeight: '700',
+  },
+});
 
 export const Typography: React.FC<TypographyProps> = ({
   color,
   size,
+  bold,
   style,
   ...rest
 }) => {
@@ -21,6 +29,7 @@ export const Typography: React.FC<TypographyProps> = ({
         {
           color: textColor,
         },
+        bold ? styles.bold : null,
         size
           ? {
               fontSize: size,
