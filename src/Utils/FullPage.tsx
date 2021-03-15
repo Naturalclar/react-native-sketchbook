@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {StyleSheet, SafeAreaView} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {useColors} from '../Themes';
 
 const styles = StyleSheet.create({
@@ -11,14 +11,12 @@ type Props = {
 };
 
 /**
- * Template Component that represents a page within safearea
+ * Template Component that represents a page that takes up the whole page including outside of safearea
  */
-export const StaticPage: React.FC<Props> = ({background, children}) => {
+export const FullPage: React.FC<Props> = ({background, children}) => {
   const {baseBackgroundColor} = useColors();
   const color = background ? background : baseBackgroundColor;
   return (
-    <SafeAreaView style={[styles.container, {backgroundColor: color}]}>
-      {children}
-    </SafeAreaView>
+    <View style={[styles.container, {backgroundColor: color}]}>{children}</View>
   );
 };
