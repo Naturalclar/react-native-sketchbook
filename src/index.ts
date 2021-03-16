@@ -19,9 +19,13 @@ export {
 } from './Icons';
 // Inputs
 export {VerificationInput} from './Inputs';
+// Labels
 export {BaseLabel} from './Labels';
+// RadioButtons
 export {RadioButton, RadioButtonItem} from './RadioButtons';
+// SideBar
 export {Snackbar} from './Snackbar';
+// Themes
 export {
   ThemeProvider,
   useAppearance,
@@ -33,6 +37,7 @@ export {
   DefaultSpaceSize,
   DefaultTheme,
 } from './Themes';
+// Typography
 export {
   Paragraph,
   LabelText,
@@ -40,12 +45,14 @@ export {
   SubHeading,
   Typography,
 } from './Typography';
+// Utils
 export {
   Margin,
   Stack,
   Row,
   Flex,
   StaticPage,
+  FullPage,
   isAndroid,
   isIOS,
   isIPad,
