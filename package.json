@@ -49,7 +49,7 @@
     "babel-preset-expo": "^8.1.0",
     "eslint": "^7.17.0",
     "prettier": "^2.0.5",
-    "react": "16.13.1",
+    "react": "16.14.0",
     "react-dom": "16.13.1",
     "react-native-web": "^0.14.8",
     "reg-keygen-git-hash-plugin": "^0.10.11",
