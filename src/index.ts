@@ -1,4 +1,7 @@
 export {SlideUpView} from './Animations';
+// Avatar
+export {Avatar, AvatarGroup} from './Avatars';
+// Buttons
 export {BaseButton, PrimaryButton} from './Buttons';
 // Checkbox
 export {CheckBox, CheckBoxItem} from './CheckBox';
