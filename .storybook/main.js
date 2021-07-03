@@ -4,12 +4,7 @@ const externalLibs = [path.resolve(__dirname, '../node_modules/react-native')];
 
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
-  addons: [
-    '@storybook/addon-actions',
-    '@storybook/addon-links',
-    '@storybook/addon-knobs',
-    '@storybook/addon-viewport',
-  ],
+  addons: ['@storybook/addon-essentials'],
   webpackFinal: (config) => {
     config.module.rules.push({
       test: /\.tsx?$/,
@@ -41,7 +36,7 @@ module.exports = {
       'react-native$': require.resolve('react-native-web'),
     };
 
-    config.resolve.extensions.push('.ts', '.tsx', '.web.js', '.web.tsx');
+    config.resolve.extensions.unshift('.web.js', '.web.tsx', '.ts', '.tsx');
 
     return config;
   },
