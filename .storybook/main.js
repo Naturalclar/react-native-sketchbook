@@ -3,7 +3,7 @@ const path = require('path');
 const externalLibs = [path.resolve(__dirname, '../node_modules/react-native')];
 
 module.exports = {
-  stories: ['../src/**/*.stories.tsx'],
+  stories: ['../src/**/*.stories.@(tsx|mdx)'],
   addons: ['@storybook/addon-essentials'],
   webpackFinal: (config) => {
     config.module.rules.push({

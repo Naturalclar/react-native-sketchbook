@@ -1,0 +1,49 @@
+import {Meta, Story, Canvas, ArgsTable} from '@storybook/addon-docs';
+import {action} from '@storybook/addon-actions';
+import {BaseButton} from './BaseButton';
+import {Typography} from '../Typography';
+
+<Meta title={'Buttons/BaseButton'} component={BaseButton} />
+
+# BaseButton
+
+Base Button Icon
+
+## Props
+
+<ArgsTable of={BaseButton} />
+
+export const Template = (args) => (
+  <BaseButton {...args}>
+    <Typography>Button</Typography>
+  </BaseButton>
+);
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      onPress: action('onPress'),
+      style: {},
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="With Leading Component"
+    args={{
+      onPress: action('onPress'),
+      style: {},
+      leadingComponent: <Typography>{'\u2714'}</Typography>,
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="With Tailing Component"
+    args={{
+      onPress: action('onPress'),
+      style: {},
+      tailingComponent: <Typography>{'\u2714'}</Typography>,
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
