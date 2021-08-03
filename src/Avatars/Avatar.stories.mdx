@@ -1,0 +1,27 @@
+import {Meta, Story, Canvas, ArgsTable} from '@storybook/addon-docs';
+import {Avatar} from './Avatar';
+
+<Meta title={'Avatars/Avatar'} component={Avatar} />
+
+# Avatar
+
+Component that displays user icon.
+
+## Props
+
+<ArgsTable of={Avatar} />
+
+export const Template = (args) => <Avatar {...args} />;
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      source: {
+        size: 30,
+        uri: 'https://www.github.com/Naturalclar.png',
+      },
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
