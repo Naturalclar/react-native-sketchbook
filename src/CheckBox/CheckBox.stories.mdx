@@ -1,0 +1,62 @@
+import {
+  Meta,
+  Story,
+  Canvas,
+  ArgsTable,
+  Description,
+} from '@storybook/addon-docs';
+import {action} from '@storybook/addon-actions';
+import {CheckBox, CheckBoxItem} from './CheckBox';
+import {Typography} from '../Typography';
+
+<Meta title={'Buttons/CheckBox'} component={CheckBox} />
+
+# CheckBox
+
+<Description of={CheckBox} />
+
+## Props
+
+<ArgsTable of={CheckBox} />
+
+export const Template = (args) => <CheckBox {...args} />;
+
+<Canvas>
+  <Story
+    name="Unchecked"
+    args={{
+      checked: false,
+      onValueChanged: action('onValueChanged'),
+      disabled: false,
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Checked"
+    args={{
+      checked: true,
+      onValueChanged: action('onValueChanged'),
+      disabled: false,
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Colored"
+    args={{
+      checked: true,
+      onValueChanged: action('onValueChanged'),
+      disabled: false,
+      color: 'red',
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Disabled"
+    args={{
+      checked: true,
+      onValueChanged: action('onValueChanged'),
+      disabled: true,
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
