@@ -33,6 +33,9 @@ export type CheckBoxProps = {
   color?: string;
 };
 
+/**
+ * CheckBox Component
+ */
 export const CheckBox: React.FC<CheckBoxProps> = ({
   color,
   disabled,
