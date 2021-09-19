@@ -2362,20 +2362,10 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@^14.0.10":
-  version "14.17.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.17.3.tgz#6d327abaa4be34a74e421ed6409a0ae2f47f4c3d"
-  integrity sha512-e6ZowgGJmTuXa3GyaPbTGxX17tnThl2aSSizrFthQ7m9uLGZBXiGhgE55cjRZTF5kjZvYn9EOPOMljdjwbflxw==
-
-"@types/node@^12.6.8":
-  version "12.12.53"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.53.tgz#be0d375933c3d15ef2380dafb3b0350ea7021129"
-  integrity sha512-51MYTDTyCziHb70wtGNFRwB4l+5JNvdqzFSkbDvpbftEgVUBEE+T5f7pROhWMp/fxp07oNIEQZd5bbfAH22ohQ==
-
-"@types/node@^14.11.2":
-  version "14.17.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.17.9.tgz#b97c057e6138adb7b720df2bd0264b03c9f504fd"
-  integrity sha512-CMjgRNsks27IDwI785YMY0KLt3co/c0cQ5foxHYv/shC2w8oOnVwz5Ubq1QG5KzrcW+AXk6gzdnxIkDnTvzu3g==
+"@types/node@*", "@types/node@^14.0.0", "@types/node@^14.0.10", "@types/node@^14.11.2":
+  version "14.17.17"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.17.17.tgz#4ec7b71bbcb01a4e55455b60b18b1b6a783fe31d"
+  integrity sha512-niAjcewgEYvSPCZm3OaM9y6YQrL2SEPH9PymtE6fuZAvFiP6ereCcvApGl2jKTq7copTIguX3PBvfP08LN4LvQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -4847,10 +4837,10 @@ detect-port@^1.3.0:
     address "^1.0.1"
     debug "^2.6.0"
 
-devtools-protocol@0.0.854822:
-  version "0.0.854822"
-  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.854822.tgz#eac3a5260a6b3b4e729a09fdc0c77b0d322e777b"
-  integrity sha512-xd4D8kHQtB0KtWW0c9xBZD5LVtm9chkMOfs/3Yn01RhT/sFIsVtzTtypfKoFfWBaL+7xCYLxjOLkhwPXaX/Kcg==
+devtools-protocol@0.0.869402:
+  version "0.0.869402"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.869402.tgz#03ade701761742e43ae4de5dc188bcd80f156d8d"
+  integrity sha512-VvlVYY+VDJe639yHs5PHISzdWTLL3Aw8rO4cvUtwvoxFd6FHbE4OpHHcde52M6096uYYazAmd4l0o5VuFRO2WA==
 
 diff@^4.0.1:
   version "4.0.2"
@@ -9531,13 +9521,13 @@ pupa@^2.0.1:
   dependencies:
     escape-goat "^2.0.0"
 
-puppeteer-core@8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-8.0.0.tgz#4f56cc24675a8e993b0610a284f064a84910f4ec"
-  integrity sha512-kRTiGh42+4eiw9tl489p//8Zpg3LWmz0K3mOpv0qj5PsCV7jE43SLIi0E50suLh8OghXsFhJFoE98vEmXUnDew==
+puppeteer-core@9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-9.1.1.tgz#0c189c3275967d65c39270e6b146e559baca3d47"
+  integrity sha512-zbedbitVIGhmgz0nt7eIdLsnaoVZSlNJfBivqm2w67T8LR2bU1dvnruDZ8nQO0zn++Iet7zHbAOdnuS5+H2E7A==
   dependencies:
     debug "^4.1.0"
-    devtools-protocol "0.0.854822"
+    devtools-protocol "0.0.869402"
     extract-zip "^2.0.0"
     https-proxy-agent "^5.0.0"
     node-fetch "^2.6.1"
@@ -10924,35 +10914,35 @@ storybook-addon-outline@^1.4.1:
     ts-dedent "^2.1.1"
 
 storycap@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/storycap/-/storycap-3.0.4.tgz#1ecc6a4f876c3949fc2aef7e4816544eb7eb8216"
-  integrity sha512-Mpw/nReKvITHEgl2KYHwLGskNaRgZLo9j2YdD+Gxn6sj+J9iZOW7BiAmM3HUkrFmFUioEYhshxbUqbad7S9aHg==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/storycap/-/storycap-3.1.0.tgz#012b902f1a16a595514e4b567cf28cc098e10e6d"
+  integrity sha512-6qcuJn1cWjqN/92+Ilji04uXlKbgN+LtgbHXqZeWvBfqf0fWx6vNwdF6sNXqnUy3fBIG/RZ+CQ7WAlyyFariOQ==
   dependencies:
     "@types/minimatch" "^3.0.3"
     "@types/mkdirp" "^1.0.0"
-    "@types/node" "^12.6.8"
+    "@types/node" "^14.0.0"
     "@types/rimraf" "^3.0.0"
     "@types/wait-on" "^5.0.0"
     "@types/yargs" "^16.0.0"
     core-js "^3.2.1"
     minimatch "^3.0.4"
     mkdirp "^1.0.0"
-    puppeteer-core "8.0.0"
+    puppeteer-core "9.1.1"
     rimraf "^3.0.0"
     sanitize-filename "^1.6.3"
-    storycrawler "^3.0.4"
+    storycrawler "^3.1.0"
     yargs "^16.0.0"
 
-storycrawler@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/storycrawler/-/storycrawler-3.0.4.tgz#4a0a669667a20b6fb5c5c4f89b33147363ed6a2e"
-  integrity sha512-6t6zW1aA9wJwmwhjO13EPDyQdH4ORfnpGeJ2MvMQtuiJbrLXl+FyLsuiaAu5KBWXTg5uZdNt08ovtyVf6TtZEg==
+storycrawler@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/storycrawler/-/storycrawler-3.1.0.tgz#3adf2c0ab4faf19386f831e1cc6c034852786710"
+  integrity sha512-ebgkMoPICBKcEOijlSMVwb7qALyAAjfqpP7/BDrAxQ77uzrOJfi4LYDAO/1oJJN3DmcuxKRd2bhdDbEK8UgmcA==
   dependencies:
     "@types/chalk" "^2.2.0"
-    "@types/node" "^12.6.8"
+    "@types/node" "^14.0.0"
     "@types/wait-on" "^5.0.0"
     chalk "^2.4.1"
-    puppeteer-core "8.0.0"
+    puppeteer-core "9.1.1"
     wait-on "^5.0.0"
 
 stream-browserify@^2.0.1:
