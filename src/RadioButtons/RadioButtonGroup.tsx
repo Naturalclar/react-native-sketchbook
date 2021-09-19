@@ -10,9 +10,8 @@ export type RadioButtonContextType = {
   onValueChange: (item: string) => void;
 } | null;
 
-export const RadioButtonContext = React.createContext<RadioButtonContextType>(
-  null,
-);
+export const RadioButtonContext =
+  React.createContext<RadioButtonContextType>(null);
 
 export const RadioButtonGroup: React.FC<Props> = ({
   onValueChange,

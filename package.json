@@ -43,8 +43,9 @@
     "@types/react-native": "^0.64.5",
     "babel-loader": "^8.1.0",
     "babel-preset-expo": "^8.1.0",
-    "eslint": "^7.17.0",
-    "prettier": "^2.0.5",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-native-web": "^0.17.1",
@@ -53,10 +54,11 @@
     "reg-publish-s3-plugin": "^0.10.16",
     "reg-suit": "^0.10.16",
     "storycap": "^3.0.4",
-    "typescript": "^4.1.3",
+    "typescript": "^4.4.3",
     "vercel": "^21.2.2"
   },
   "resolutions": {
-    "typescript":"4"
+    "typescript": "^4.4.3",
+    "prettier": "^2.4.1"
   }
 }
