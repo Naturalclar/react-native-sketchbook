@@ -1,0 +1,36 @@
+import {Meta, Story, Canvas, ArgsTable} from '@storybook/addon-docs';
+import {action} from '@storybook/addon-actions';
+import {RoundButton} from './RoundButton';
+import {Typography} from '../Typography';
+
+<Meta title={'Buttons/RoundButton'} component={RoundButton} />
+
+# RoundButton
+
+Example of Button Icon extended from Base Button
+
+## Props
+
+<ArgsTable of={RoundButton} />
+
+export const Template = (args) => <RoundButton {...args} />;
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      onPress: action('onPress'),
+      label: 'Hello World',
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Disabled"
+    args={{
+      onPress: action('onPress'),
+      label: 'Disabled',
+      disabled: true,
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
