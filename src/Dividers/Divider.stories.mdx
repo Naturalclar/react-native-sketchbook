@@ -1,0 +1,33 @@
+import {Meta, Story, Canvas, ArgsTable} from '@storybook/addon-docs';
+import {action} from '@storybook/addon-actions';
+import {Divider} from './Divider';
+
+<Meta
+  title={'Dividers/Divider'}
+  component={Divider}
+  parameters={{layout: 'padded'}}
+/>
+
+# Divider
+
+Divider Component
+
+## Props
+
+<ArgsTable of={Divider} />
+
+export const Template = (args) => <Divider {...args} />;
+
+<Canvas>
+  <Story name="Default" args={{size: 1}}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="WithColor"
+    args={{
+      size: 1,
+      color: 'red',
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

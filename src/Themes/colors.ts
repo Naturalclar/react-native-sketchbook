@@ -6,6 +6,7 @@ export const lightTheme = {
   warningColor: 'rgb(255,159,10)',
   disabledColor: 'rgba(0,0,0,0.4)',
   overlay: 'rgba(0,0,0,0.4)',
+  borderColor: '#dcdcdc',
   // TextColors
   baseTextColor: '#555',
   lightTextColor: '#aaa',
