@@ -5,6 +5,8 @@ export {Avatar, AvatarGroup} from './Avatars';
 export {BaseButton, PrimaryButton} from './Buttons';
 // Checkbox
 export {CheckBox, CheckBoxItem} from './CheckBox';
+// Dividers
+export {Divider} from './Dividers';
 // Icons
 import * as Icons from './Icons';
 export {Icons};
