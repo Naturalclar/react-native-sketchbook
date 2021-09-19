@@ -1,20 +1,28 @@
 import * as React from 'react';
-import {View} from 'react-native';
+import {StyleSheet, View, ViewProps} from 'react-native';
 import {useColors} from '../Themes';
 
 export type DividerProps = {
   size?: number;
   color?: string;
-};
-export const Divider: React.FC<DividerProps> = ({size = 1, color}) => {
+} & ViewProps;
+export const Divider: React.FC<DividerProps> = ({
+  size = 1,
+  color,
+  style,
+  ...rest
+}) => {
   const {borderColor} = useColors();
-  const style = React.useMemo(
-    () => ({
-      height: size,
-      backgroundColor: color ? color : borderColor,
-    }),
-    [size, borderColor, color],
+  const memoizedStyle = React.useMemo(
+    () => [
+      {
+        height: size,
+        backgroundColor: color ? color : borderColor,
+      },
+      StyleSheet.flatten(style),
+    ],
+    [size, style, borderColor, color],
   );
-  return <View style={style} />;
+  return <View {...rest} style={memoizedStyle} />;
 };
 Divider.displayName = 'Divider';

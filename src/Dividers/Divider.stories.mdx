@@ -19,7 +19,7 @@ Divider Component
 export const Template = (args) => <Divider {...args} />;
 
 <Canvas>
-  <Story name="Default" args={{size: 1}}>
+  <Story name="Default" args={{size: 1, style: {}}}>
     {Template.bind({})}
   </Story>
   <Story
@@ -27,6 +27,7 @@ export const Template = (args) => <Divider {...args} />;
     args={{
       size: 1,
       color: 'red',
+      style: {},
     }}>
     {Template.bind({})}
   </Story>
