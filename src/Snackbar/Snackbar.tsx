@@ -67,14 +67,20 @@ export const Snackbar: React.FC<Props> = ({
   }, [animated]);
 
   React.useEffect(() => {
+    let timerId: number;
     if (visible) {
       appear();
-      setTimeout(() => {
+      timerId = setTimeout(() => {
         onDismiss();
       }, duration);
     } else {
       hide();
     }
+    return () => {
+      if (timerId) {
+        clearTimeout(timerId);
+      }
+    };
   }, [visible, animated, appear, hide, duration, onDismiss]);
   return (
     <SafeAreaView pointerEvents="box-none" style={styles.container}>
