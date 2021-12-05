@@ -64,5 +64,7 @@ export {
   isWeb,
 } from './Utils';
 
+export * from './Samples/LoginPage';
+
 // typings
 export {Color, FontSize, SpaceSize, Theme} from './Themes';
