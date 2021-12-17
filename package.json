@@ -42,7 +42,7 @@
     "@storybook/theming": "^6.4.7",
     "@types/react-native": "^0.64.5",
     "babel-loader": "^8.1.0",
-    "babel-preset-expo": "^8.1.0",
+    "babel-preset-expo": "^9.0.2",
     "eslint": "^7.32.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
