@@ -2687,34 +2687,34 @@
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
-"@vercel/build-utils@2.8.1-canary.0":
-  version "2.8.1-canary.0"
-  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-2.8.1-canary.0.tgz#9b3cbf405809ab9ac80c5e8f725f0dbba04eb490"
-  integrity sha512-xNC9bsXYkhjkXQ4RMTSUyYh4JPCJIFy7Sr1Gx8mCv9nRc6yu7TqEOeu16oJUO6IeBFS3XyfoKAwCDk7ElVhJfg==
+"@vercel/build-utils@2.14.0":
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-2.14.0.tgz#b3c5b1db1a9c4969ec9b424b972f8c2ce9107929"
+  integrity sha512-Jdl0FkEJbAdB5oqpolIK4m/FO9GtFK86gKpFJt5jdnd5tMLWdPf2vr8uZkxvfs8wW5KdYXt660OSoWHpfdYu5w==
 
-"@vercel/go@1.1.8":
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/@vercel/go/-/go-1.1.8.tgz#18c10c0e608f83d5c67546b01b7267f943c0b01d"
-  integrity sha512-vqW1ALevLbgyIJ5YwJU05BwStWPflyB+tt0Au9Ko00BX3TOdsyzl8CX2ARtMtYW8+qtkn51z2CfasA0mC3D8vA==
+"@vercel/go@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@vercel/go/-/go-1.3.0.tgz#daa322b0fe48790c21190088916d9d13b0c6bef4"
+  integrity sha512-eMt4xPq658dFEpmkpXLoj+PX6k15ovwvXX0FlCAcMiQW8JkQcHVXnROnWpngsyMOfTFocYciMAsebtavYwQ6gw==
 
-"@vercel/node@1.9.1-canary.0":
-  version "1.9.1-canary.0"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-1.9.1-canary.0.tgz#6f2dcf30ab8be3c9df3b7591bc4f6a36c2d84ed7"
-  integrity sha512-dZUxOuB7YvQIYK7HwhQal0AfPI++NT4fyaWFcH173hK+C4ILlamfmWIWR9v/w0jdbaYb2tuaYPd/4gumAcsyRg==
+"@vercel/node@1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-1.13.0.tgz#619595e1c90afeb1ad68ea6fa3652f7b3f682245"
+  integrity sha512-AqdUuJC0+r3q1lcL+Knjb+dHsSDSCRfwFPJ7odRkHO7sfoAkhJI4RussIDFTF7Yvt0e+GmWuYGFAgwSiv4FWEg==
   dependencies:
     "@types/node" "*"
     ts-node "8.9.1"
-    typescript "3.9.3"
+    typescript "4.3.4"
 
-"@vercel/python@1.2.5-canary.1":
-  version "1.2.5-canary.1"
-  resolved "https://registry.yarnpkg.com/@vercel/python/-/python-1.2.5-canary.1.tgz#75ed821baf4ca88962d7deec6a9238cf8681396f"
-  integrity sha512-xiITthPmixLaef+XZYNHEDO53EpQUdUUKTNFk9Rt4aePSwniHdIaHkAuLELDM/69LUoPYZiwsI5oeUOXQyr5Kw==
+"@vercel/python@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@vercel/python/-/python-2.2.0.tgz#87b63e606698d4880b32f1a76f0ebbc43115a4da"
+  integrity sha512-6DQxYZtB5IOkpeVSmjjKkTOLQcUmslVWwI+7GRNabairY0qqdoW7gfWctMQDNrJ3hy8vVdc9jOMBeRKWTyrDYQ==
 
-"@vercel/ruby@1.2.6-canary.0":
-  version "1.2.6-canary.0"
-  resolved "https://registry.yarnpkg.com/@vercel/ruby/-/ruby-1.2.6-canary.0.tgz#5bad358895c46059344fd23a93066f63acb83462"
-  integrity sha512-m9mIcnOrx/mdMUUr7Ns6/Atv82qgNhlhGLKsZOM/AsifqJqsFZB3/5K8MTEkYN36Bf5pjxh3rIWg9KveKuZUSQ==
+"@vercel/ruby@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@vercel/ruby/-/ruby-1.3.0.tgz#dc0f4fd945bdb87c1b8d8f82503ca67a90bbe662"
+  integrity sha512-98PTOukChScYXekWbDxPQEUCoX66W4188yx4Q4qiLTJgYRHsvQ5oWtNL5N0sz80mmYCk6aJglwnPE1d7tvgAmQ==
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -11694,7 +11694,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.9.3, typescript@^4.4.3:
+typescript@4.3.4, typescript@^4.4.3:
   version "4.4.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"
   integrity sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==
@@ -12073,16 +12073,16 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-vercel@^21.2.2:
-  version "21.2.2"
-  resolved "https://registry.yarnpkg.com/vercel/-/vercel-21.2.2.tgz#dbaa974ec114aa711ccd06167a2ce81adde5aae5"
-  integrity sha512-bLg1yY9lsO8JS8QP8i/J/sbsC9oL0RsU/K6Z/OseOScBBlBdVkY3iesEPAZ0ODXcpP6Fw6Jojw73E6K4RWj96A==
+vercel@^24.0.0:
+  version "24.0.0"
+  resolved "https://registry.yarnpkg.com/vercel/-/vercel-24.0.0.tgz#efc8df16c5e8fbe88f19acd42403b5a9093c2522"
+  integrity sha512-RMIfXipcbyONxWCUgzh6yaDEFlzMFLV+3ug+mGeQg45F9JmUfwXHiiLUDEWDnt9598CEN0V0P0DcKUCOQNNX6w==
   dependencies:
-    "@vercel/build-utils" "2.8.1-canary.0"
-    "@vercel/go" "1.1.8"
-    "@vercel/node" "1.9.1-canary.0"
-    "@vercel/python" "1.2.5-canary.1"
-    "@vercel/ruby" "1.2.6-canary.0"
+    "@vercel/build-utils" "2.14.0"
+    "@vercel/go" "1.3.0"
+    "@vercel/node" "1.13.0"
+    "@vercel/python" "2.2.0"
+    "@vercel/ruby" "1.3.0"
     update-notifier "4.1.0"
 
 verror@1.10.0:
