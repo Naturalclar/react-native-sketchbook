@@ -48,7 +48,7 @@
     "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-native-web": "^0.17.1",
+    "react-native-web": "^0.18.0",
     "reg-keygen-git-hash-plugin": "^0.10.16",
     "reg-notify-github-plugin": "^0.10.16",
     "reg-publish-s3-plugin": "^0.10.16",
