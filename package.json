@@ -40,7 +40,7 @@
     "@storybook/addons": "^6.4.7",
     "@storybook/react": "^6.4.7",
     "@storybook/theming": "^6.4.7",
-    "@types/react-native": "^0.64.5",
+    "@types/react-native": "^0.69.3",
     "babel-loader": "^8.1.0",
     "babel-preset-expo": "^8.1.0",
     "eslint": "^7.32.0",
