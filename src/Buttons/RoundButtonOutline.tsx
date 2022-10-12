@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import {StyleSheet} from 'react-native';
 import {useColors} from '../Themes';
 import {BaseButton} from './BaseButton';
@@ -27,26 +27,25 @@ const styles = StyleSheet.create({
   },
 });
 
-export const RoundButtonOutline: React.FC<Props> = ({
-  label,
-  color,
-  onPress,
-  disabled = false,
-}) => {
-  const {primaryColor} = useColors();
-  const buttonColor = color ? color : primaryColor;
-  return (
-    <BaseButton
-      onPress={onPress}
-      disabled={disabled}
-      style={[
-        styles.container,
-        {borderColor: buttonColor},
-        disabled ? styles.disabled : null,
-      ]}>
-      <Typography style={styles.label} color={buttonColor}>
-        {label}
-      </Typography>
-    </BaseButton>
-  );
-};
+export const RoundButtonOutline: React.FC<Props> = React.memo(
+  ({label, color, onPress, disabled = false}) => {
+    const {primaryColor} = useColors();
+    const buttonColor = color ? color : primaryColor;
+    return (
+      <BaseButton
+        onPress={onPress}
+        disabled={disabled}
+        style={[
+          styles.container,
+          {borderColor: buttonColor},
+          disabled ? styles.disabled : null,
+        ]}>
+        <Typography style={styles.label} color={buttonColor}>
+          {label}
+        </Typography>
+      </BaseButton>
+    );
+  },
+);
+
+RoundButtonOutline.displayName = 'RoundButtonOutline';
