@@ -29,18 +29,21 @@ type Props = {
   disabled?: boolean;
 };
 
-export const PrimaryButton: React.FC<Props> = ({onPress, label, disabled}) => {
-  const {primaryColor, white} = useColors();
-  const spaceSize = useSpaceSizes();
-  return (
-    <BaseButton
-      style={[
-        styles.container,
-        {padding: spaceSize.medium, backgroundColor: primaryColor},
-        disabled ? styles.disabled : styles.container,
-      ]}
-      onPress={onPress}>
-      <Typography color={white}>{label}</Typography>
-    </BaseButton>
-  );
-};
+export const PrimaryButton: React.FC<Props> = React.memo(
+  ({onPress, label, disabled}) => {
+    const {primaryColor, white} = useColors();
+    const spaceSize = useSpaceSizes();
+    return (
+      <BaseButton
+        style={[
+          styles.container,
+          {padding: spaceSize.medium, backgroundColor: primaryColor},
+          disabled ? styles.disabled : styles.container,
+        ]}
+        onPress={onPress}>
+        <Typography color={white}>{label}</Typography>
+      </BaseButton>
+    );
+  },
+);
+PrimaryButton.displayName = 'PrimaryButton';

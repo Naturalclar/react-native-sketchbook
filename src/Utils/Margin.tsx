@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import {View} from 'react-native';
 import {SpaceSize, useSpaceSizes} from '../Themes';
 
@@ -24,7 +24,7 @@ type Props = {
  * Margin
  * - A component that provides set amounts of margin to right and bottom
  */
-export const Margin: React.FC<Props> = ({size}) => {
+export const Margin: React.FC<Props> = React.memo(({size}) => {
   const spaceSize = useSpaceSizes();
   return (
     <View
@@ -34,4 +34,6 @@ export const Margin: React.FC<Props> = ({size}) => {
       }}
     />
   );
-};
+});
+
+Margin.displayName = 'Margin';

@@ -12,27 +12,24 @@ type Props = {
   tailingComponent?: React.ReactNode;
 } & PressableProps;
 
-export const BaseButton: React.FC<Props> = ({
-  children,
-  style = {},
-  leadingComponent,
-  tailingComponent,
-  ...rest
-}) => {
-  return (
-    <Pressable
-      style={(state) => ({
-        opacity: state.pressed ? 0.4 : 1,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        ...StyleSheet.flatten(style),
-      })}
-      accessibilityRole="button"
-      {...rest}>
-      {leadingComponent && leadingComponent}
-      {children}
-      {tailingComponent && tailingComponent}
-    </Pressable>
-  );
-};
+export const BaseButton: React.FC<Props> = React.memo(
+  ({children, style = {}, leadingComponent, tailingComponent, ...rest}) => {
+    return (
+      <Pressable
+        style={(state) => ({
+          opacity: state.pressed ? 0.4 : 1,
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+          ...StyleSheet.flatten(style),
+        })}
+        accessibilityRole="button"
+        {...rest}>
+        {leadingComponent && leadingComponent}
+        {children}
+        {tailingComponent && tailingComponent}
+      </Pressable>
+    );
+  },
+);
+BaseButton.displayName = 'BaseButton';
