@@ -27,10 +27,14 @@
     "deploy": "vercel",
     "lint": "eslint src --ext .ts,.tsx --cache",
     "prepare": "yarn build",
-    "storybook": "start-storybook -p 6006",
-    "type-check": "tsc --noEmit",
     "reg-suit": "reg-suit run",
-    "storycap:all": "rm -rf ./__screenshots__ && yarn storycap http://localhost:6006 --serverCmd 'yarn storybook --ci' --viewport '414x736' --serverTimeout '200000'"
+    "storybook": "start-storybook -p 6006",
+    "storycap:all": "rm -rf ./__screenshots__ && yarn storycap http://localhost:6006 --serverCmd 'yarn storybook --ci' --viewport '414x736' --serverTimeout '200000'",
+    "type-check": "tsc --noEmit"
+  },
+  "resolutions": {
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
   },
   "dependencies": {},
   "devDependencies": {
@@ -57,8 +61,7 @@
     "typescript": "^4.4.3",
     "vercel": "^21.2.2"
   },
-  "resolutions": {
-    "typescript": "^4.4.3",
-    "prettier": "^2.4.1"
+  "engines": {
+    "node": "16"
   }
 }
