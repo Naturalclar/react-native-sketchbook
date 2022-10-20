@@ -13,7 +13,7 @@ type Props = {
 /**
  * Template Component that represents a page that takes up the whole page including outside of safearea
  */
-export const FullPage: React.FC<Props> = React.memo(
+export const FullPage: React.FC<React.PropsWithChildren<Props>> = React.memo(
   ({background, children}) => {
     const {baseBackgroundColor} = useColors();
     const color = background ? background : baseBackgroundColor;

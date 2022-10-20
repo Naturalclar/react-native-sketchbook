@@ -22,11 +22,9 @@ export const useAppearance = () => {
   return React.useContext(ThemeContext).appearance;
 };
 
-export const ThemeProvider: React.FC<Partial<ThemeProp>> = ({
-  appearance,
-  theme = DefaultTheme,
-  children,
-}) => {
+export const ThemeProvider: React.FC<
+  React.PropsWithChildren<Partial<ThemeProp>>
+> = ({appearance, theme = DefaultTheme, children}) => {
   return <Provider value={{appearance, theme}}>{children}</Provider>;
 };
 

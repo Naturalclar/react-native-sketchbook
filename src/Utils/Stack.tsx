@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
  * Stack
  * - A View component whose children will be provided with set amounts of margin
  */
-export const Stack: React.FC<Props> = React.memo(
+export const Stack: React.FC<React.PropsWithChildren<Props>> = React.memo(
   ({children, type = 'vertical', space, style = {}}) => {
     const childArray = React.Children.toArray(children);
 

@@ -36,7 +36,7 @@ type Props = {
   onAction?: () => void;
   duration?: number;
 };
-export const Snackbar: React.FC<Props> = ({
+export const Snackbar: React.FC<React.PropsWithChildren<Props>> = ({
   children,
   visible,
   onDismiss,
