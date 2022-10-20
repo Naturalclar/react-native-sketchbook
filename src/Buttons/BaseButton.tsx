@@ -12,7 +12,7 @@ type Props = {
   tailingComponent?: React.ReactNode;
 } & PressableProps;
 
-export const BaseButton: React.FC<Props> = React.memo(
+export const BaseButton: React.FC<React.PropsWithChildren<Props>> = React.memo(
   ({children, style = {}, leadingComponent, tailingComponent, ...rest}) => {
     return (
       <Pressable

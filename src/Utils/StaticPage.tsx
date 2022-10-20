@@ -13,7 +13,10 @@ type Props = {
 /**
  * Template Component that represents a page within safearea
  */
-export const StaticPage: React.FC<Props> = ({background, children}) => {
+export const StaticPage: React.FC<React.PropsWithChildren<Props>> = ({
+  background,
+  children,
+}) => {
   const {baseBackgroundColor} = useColors();
   const color = background ? background : baseBackgroundColor;
   return (
