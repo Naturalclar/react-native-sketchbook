@@ -46,7 +46,7 @@
     "@storybook/theming": "^6.4.7",
     "@types/react-native": "^0.70.6",
     "babel-loader": "^8.1.0",
-    "babel-preset-expo": "^8.1.0",
+    "babel-preset-expo": "^9.2.0",
     "eslint": "^7.32.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
@@ -55,11 +55,11 @@
     "react-native-web": "^0.18.9",
     "reg-keygen-git-hash-plugin": "^0.12.1",
     "reg-notify-github-plugin": "^0.10.16",
-    "reg-publish-s3-plugin": "^0.10.16",
+    "reg-publish-s3-plugin": "^0.12.1",
     "reg-suit": "^0.10.16",
     "storycap": "^3.0.4",
     "typescript": "^4.4.3",
-    "vercel": "^21.2.2"
+    "vercel": "^28.4.12"
   },
   "engines": {
     "node": "16"
