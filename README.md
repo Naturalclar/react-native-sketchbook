@@ -33,9 +33,16 @@ Demo: https://react-native-sketchbook.now.sh/
 
 ## Usage
 
+Using yarn:
+
 ```
 yarn add react-native-sketchbook
 ```
+
+Using npm:
+
+```
+pnpm i react-native-sketchbook
 
 ## Docs
 
