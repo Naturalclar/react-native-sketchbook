@@ -11,6 +11,7 @@ specifiers:
   '@storybook/addons': ^6.4.7
   '@storybook/react': ^6.4.7
   '@storybook/theming': ^6.4.7
+  '@types/react': ^18
   '@types/react-native': ^0.70.6
   babel-loader: ^8.1.0
   babel-preset-expo: ^9.2.0
@@ -35,6 +36,7 @@ devDependencies:
   '@storybook/addons': 6.5.15_biqbaboplfbrettd7655fr4n2y
   '@storybook/react': 6.5.15_kp3z37xn2pnqdchjji45fgnuvu
   '@storybook/theming': 6.5.15_biqbaboplfbrettd7655fr4n2y
+  '@types/react': 18.0.26
   '@types/react-native': 0.70.8
   babel-loader: 8.3.0_@babel+core@7.20.12
   babel-preset-expo: 9.2.2_@babel+core@7.20.12
