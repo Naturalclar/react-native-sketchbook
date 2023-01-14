@@ -29,7 +29,7 @@
     "prepare": "npm run build",
     "reg-suit": "reg-suit run",
     "storybook": "start-storybook -p 6006",
-    "storycap:all": "rm -rf ./__screenshots__ && npm run storycap http://localhost:6006 --serverCmd 'npm run storybook --ci' --viewport '414x736' --serverTimeout '200000'",
+    "storycap:all": "rm -rf ./__screenshots__ && npx storycap http://localhost:6006 --serverCmd 'npm run storybook --ci' --viewport '414x736' --serverTimeout '200000'",
     "type-check": "tsc --noEmit"
   },
   "resolutions": {
