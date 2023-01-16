@@ -46,7 +46,7 @@
     "@storybook/theming": "^6.4.7",
     "@types/react-native": "^0.70.6",
     "@types/react": "^18",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^9.1.2",
     "babel-preset-expo": "^9.2.0",
     "eslint": "^7.32.0",
     "eslint-plugin-prettier": "^4.0.0",
