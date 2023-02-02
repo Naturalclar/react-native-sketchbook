@@ -58,7 +58,7 @@
     "reg-notify-github-plugin": "^0.10.16",
     "reg-publish-s3-plugin": "^0.12.1",
     "reg-suit": "^0.10.16",
-    "storycap": "^3.0.4",
+    "storycap": "^4.0.0",
     "typescript": "^4.4.3",
     "vercel": "^28.4.12"
   },
