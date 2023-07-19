@@ -1,10 +1,9 @@
-import {addParameters, addDecorator} from '@storybook/react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {StoryDecorator} from './StoryDecorator';
 
-addDecorator(StoryDecorator);
 
-addParameters({
+
+const preview = {
   layout: 'fullscreen',
   options: {
     panelPosition: 'right',
@@ -13,4 +12,7 @@ addParameters({
     viewports: INITIAL_VIEWPORTS,
     defaultViewport: 'iphone6',
   },
-});
+  decorators: [StoryDecorator],
+}
+
+export default preview
