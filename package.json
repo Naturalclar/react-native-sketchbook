@@ -32,10 +32,6 @@
     "storycap:all": "rm -rf ./__screenshots__ && npx storycap http://localhost:6006 --serverCmd 'npm run storybook --ci' --viewport '414x736' --serverTimeout '200000'",
     "type-check": "tsc --noEmit"
   },
-  "resolutions": {
-    "prettier": "^2.4.1",
-    "typescript": "^4.4.3"
-  },
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@react-native-community/eslint-config": "^3.2.0",
