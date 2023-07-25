@@ -40,7 +40,7 @@ devDependencies:
     version: 8.3.0(@babel/core@7.22.9)(webpack@5.88.2)
   babel-preset-expo:
     specifier: ^9.5.0
-    version: 9.5.0(@babel/core@7.22.9)
+    version: 9.5.1(@babel/core@7.22.9)
   eslint:
     specifier: ^8.45.0
     version: 8.45.0
@@ -5244,8 +5244,8 @@ packages:
       - '@babel/core'
     dev: true
 
-  /babel-preset-expo@9.5.0(@babel/core@7.22.9):
-    resolution: {integrity: sha512-c5YPPro5g0rVf6WtednbCdRPFkZ+VT43/DhQQNh8rRubDxvKHT1bq0EUG0cgm5M61hXjTwgLJn9YzxX1TeBm/g==}
+  /babel-preset-expo@9.5.1(@babel/core@7.22.9):
+    resolution: {integrity: sha512-dOLhi5C1hNOAMFYjRlsP1axswMSf9MxX7zsez9kmwrm46cyev2l2ThQ8VdDig/YdwhNScd7sQ/lovrOTObk4Hg==}
     dependencies:
       '@babel/plugin-proposal-decorators': 7.22.7(@babel/core@7.22.9)
       '@babel/plugin-proposal-export-namespace-from': 7.18.9(@babel/core@7.22.9)
@@ -5254,7 +5254,7 @@ packages:
       '@babel/preset-env': 7.22.9(@babel/core@7.22.9)
       babel-plugin-module-resolver: 5.0.0
       babel-plugin-react-native-web: 0.18.12
-      metro-react-native-babel-preset: 0.76.5(@babel/core@7.22.9)
+      metro-react-native-babel-preset: 0.76.7(@babel/core@7.22.9)
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -9766,8 +9766,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /metro-react-native-babel-preset@0.76.5(@babel/core@7.22.9):
-    resolution: {integrity: sha512-IlVKeTon5fef77rQ6WreSmrabmbc3dEsLwr/sL80fYjobjsD8FRCnOlbaJdgUf2SMJmSIoawgjh5Yeebv+gJzg==}
+  /metro-react-native-babel-preset@0.76.7(@babel/core@7.22.9):
+    resolution: {integrity: sha512-R25wq+VOSorAK3hc07NW0SmN8z9S/IR0Us0oGAsBcMZnsgkbOxu77Mduqf+f4is/wnWHc5+9bfiqdLnaMngiVw==}
     engines: {node: '>=16'}
     peerDependencies:
       '@babel/core': '*'
