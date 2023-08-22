@@ -40,7 +40,7 @@ devDependencies:
     version: 8.3.0(@babel/core@7.22.9)(webpack@5.88.2)
   babel-preset-expo:
     specifier: ^9.5.0
-    version: 9.5.0(@babel/core@7.22.9)
+    version: 9.5.2(@babel/core@7.22.9)
   eslint:
     specifier: ^8.45.0
     version: 8.45.0
@@ -5244,8 +5244,8 @@ packages:
       - '@babel/core'
     dev: true
 
-  /babel-preset-expo@9.5.0(@babel/core@7.22.9):
-    resolution: {integrity: sha512-c5YPPro5g0rVf6WtednbCdRPFkZ+VT43/DhQQNh8rRubDxvKHT1bq0EUG0cgm5M61hXjTwgLJn9YzxX1TeBm/g==}
+  /babel-preset-expo@9.5.2(@babel/core@7.22.9):
+    resolution: {integrity: sha512-hU1G1TDiikuXV6UDZjPnX+WdbjbtidDiYhftMEVrZQSst45pDPVBWbM41TUKrpJMwv4FypsLzK+378gnMPRVWQ==}
     dependencies:
       '@babel/plugin-proposal-decorators': 7.22.7(@babel/core@7.22.9)
       '@babel/plugin-proposal-export-namespace-from': 7.18.9(@babel/core@7.22.9)
@@ -5254,7 +5254,7 @@ packages:
       '@babel/preset-env': 7.22.9(@babel/core@7.22.9)
       babel-plugin-module-resolver: 5.0.0
       babel-plugin-react-native-web: 0.18.12
-      metro-react-native-babel-preset: 0.76.5(@babel/core@7.22.9)
+      metro-react-native-babel-preset: 0.76.8(@babel/core@7.22.9)
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -7497,6 +7497,7 @@ packages:
 
   /file-uri-to-path@1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: true
 
   /file-uri-to-path@2.0.0:
@@ -9766,8 +9767,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /metro-react-native-babel-preset@0.76.5(@babel/core@7.22.9):
-    resolution: {integrity: sha512-IlVKeTon5fef77rQ6WreSmrabmbc3dEsLwr/sL80fYjobjsD8FRCnOlbaJdgUf2SMJmSIoawgjh5Yeebv+gJzg==}
+  /metro-react-native-babel-preset@0.76.8(@babel/core@7.22.9):
+    resolution: {integrity: sha512-Ptza08GgqzxEdK8apYsjTx2S8WDUlS2ilBlu9DR1CUcHmg4g3kOkFylZroogVAUKtpYQNYwAvdsjmrSdDNtiAg==}
     engines: {node: '>=16'}
     peerDependencies:
       '@babel/core': '*'
@@ -10414,6 +10415,7 @@ packages:
 
   /node-addon-api@1.7.2:
     resolution: {integrity: sha512-ibPK3iA+vaY1eEjESkQkM0BbCqFOaZMiXRTtdB0u7b4djtY6JnsjvPdUHVMg6xQt3B8fpTTWHI9A+ADjM9frzg==}
+    requiresBuild: true
     dev: true
     optional: true
 
