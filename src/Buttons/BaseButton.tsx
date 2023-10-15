@@ -1,5 +1,6 @@
 import * as React from 'react';
-import {Pressable, PressableProps, StyleSheet} from 'react-native';
+import {PressableProps, StyleSheet} from 'react-native';
+import {PressableOpacity} from 'src/Utils';
 
 type Props = {
   /**
@@ -15,9 +16,8 @@ type Props = {
 export const BaseButton: React.FC<React.PropsWithChildren<Props>> = React.memo(
   ({children, style = {}, leadingComponent, tailingComponent, ...rest}) => {
     return (
-      <Pressable
+      <PressableOpacity
         style={(state) => ({
-          opacity: state.pressed ? 0.4 : 1,
           flexDirection: 'row',
           justifyContent: 'center',
           alignItems: 'center',
@@ -28,7 +28,7 @@ export const BaseButton: React.FC<React.PropsWithChildren<Props>> = React.memo(
         {leadingComponent && leadingComponent}
         {children}
         {tailingComponent && tailingComponent}
-      </Pressable>
+      </PressableOpacity>
     );
   },
 );
