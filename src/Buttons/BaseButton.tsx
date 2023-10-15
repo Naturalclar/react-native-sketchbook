@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {PressableProps, StyleSheet} from 'react-native';
-import {PressableOpacity} from 'src/Utils';
+import {PressableProps, StyleProp, ViewStyle, StyleSheet} from 'react-native';
+import {PressableOpacity} from '../Utils';
 
 type Props = {
   /**
@@ -11,18 +11,14 @@ type Props = {
    * Component to be displayed on the right side of the button
    */
   tailingComponent?: React.ReactNode;
+  style?: StyleProp<ViewStyle>;
 } & PressableProps;
 
 export const BaseButton: React.FC<React.PropsWithChildren<Props>> = React.memo(
-  ({children, style = {}, leadingComponent, tailingComponent, ...rest}) => {
+  ({children, style, leadingComponent, tailingComponent, ...rest}) => {
     return (
       <PressableOpacity
-        style={(state) => ({
-          flexDirection: 'row',
-          justifyContent: 'center',
-          alignItems: 'center',
-          ...StyleSheet.flatten(style),
-        })}
+        style={[styles.container, style]}
         accessibilityRole="button"
         {...rest}>
         {leadingComponent && leadingComponent}
@@ -33,3 +29,11 @@ export const BaseButton: React.FC<React.PropsWithChildren<Props>> = React.memo(
   },
 );
 BaseButton.displayName = 'BaseButton';
+
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});

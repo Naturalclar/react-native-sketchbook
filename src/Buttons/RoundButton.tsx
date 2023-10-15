@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
     borderRadius: 28,
     justifyContent: 'center',
     alignItems: 'center',
-    opacity: 1,
   },
   label: {
     fontWeight: '700',
