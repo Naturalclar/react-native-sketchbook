@@ -31,7 +31,7 @@ devDependencies:
     version: 7.1.0(react-dom@18.2.0)(react@18.2.0)
   '@types/react':
     specifier: ^18.2.15
-    version: 18.2.15
+    version: 18.2.31
   '@types/react-native':
     specifier: ^0.70.14
     version: 0.70.14
@@ -2332,7 +2332,7 @@ packages:
       react: '>=16'
     dependencies:
       '@types/mdx': 2.0.5
-      '@types/react': 18.2.15
+      '@types/react': 18.2.31
       react: 18.2.0
     dev: true
 
@@ -4010,11 +4010,11 @@ packages:
   /@types/react-native@0.70.14:
     resolution: {integrity: sha512-Kwc+BYBrnDqvacNxKp1UtcZJnJJnTih2NYmi/ieAKlHdxEPN6sYMwmIwgHdoLHggvml6bf3DYRaH2jt+gzaLjw==}
     dependencies:
-      '@types/react': 18.2.15
+      '@types/react': 18.2.31
     dev: true
 
-  /@types/react@18.2.15:
-    resolution: {integrity: sha512-oEjE7TQt1fFTFSbf8kkNuc798ahTUzn3Le67/PWjE8MAfYAD/qB7O8hSTcromLFqHCt9bcdOg5GXMokzTjJ5SA==}
+  /@types/react@18.2.31:
+    resolution: {integrity: sha512-c2UnPv548q+5DFh03y8lEDeMfDwBn9G3dRwfkrxQMo/dOtRHUUO57k6pHvBIfH/VF4Nh+98mZ5aaSe+2echD5g==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
@@ -7497,6 +7497,7 @@ packages:
 
   /file-uri-to-path@1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: true
 
   /file-uri-to-path@2.0.0:
@@ -10414,6 +10415,7 @@ packages:
 
   /node-addon-api@1.7.2:
     resolution: {integrity: sha512-ibPK3iA+vaY1eEjESkQkM0BbCqFOaZMiXRTtdB0u7b4djtY6JnsjvPdUHVMg6xQt3B8fpTTWHI9A+ADjM9frzg==}
+    requiresBuild: true
     dev: true
     optional: true
 
