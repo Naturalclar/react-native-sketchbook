@@ -44,7 +44,7 @@
     "@types/react": "^18.2.15",
     "@types/react-native": "^0.70.14",
     "babel-loader": "^8.3.0",
-    "babel-preset-expo": "^9.5.0",
+    "babel-preset-expo": "^10.0.1",
     "eslint": "^8.45.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-storybook": "^0.6.12",
