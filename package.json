@@ -39,7 +39,7 @@
     "@storybook/addon-mdx-gfm": "^7.1.0",
     "@storybook/addons": "^7.1.0",
     "@storybook/react": "^7.1.0",
-    "@storybook/react-webpack5": "^7.1.0",
+    "@storybook/react-webpack5": "^8.0.5",
     "@storybook/theming": "^7.1.0",
     "@types/react": "^18.2.15",
     "@types/react-native": "^0.70.14",
