@@ -31,7 +31,7 @@ devDependencies:
     version: 7.1.0(react-dom@18.2.0)(react@18.2.0)
   '@types/react':
     specifier: ^18.2.15
-    version: 18.2.15
+    version: 18.2.74
   '@types/react-native':
     specifier: ^0.70.14
     version: 0.70.14
@@ -2336,7 +2336,7 @@ packages:
       react: '>=16'
     dependencies:
       '@types/mdx': 2.0.5
-      '@types/react': 18.2.15
+      '@types/react': 18.2.74
       react: 18.2.0
     dev: true
 
@@ -4117,14 +4117,13 @@ packages:
   /@types/react-native@0.70.14:
     resolution: {integrity: sha512-Kwc+BYBrnDqvacNxKp1UtcZJnJJnTih2NYmi/ieAKlHdxEPN6sYMwmIwgHdoLHggvml6bf3DYRaH2jt+gzaLjw==}
     dependencies:
-      '@types/react': 18.2.15
+      '@types/react': 18.2.74
     dev: true
 
-  /@types/react@18.2.15:
-    resolution: {integrity: sha512-oEjE7TQt1fFTFSbf8kkNuc798ahTUzn3Le67/PWjE8MAfYAD/qB7O8hSTcromLFqHCt9bcdOg5GXMokzTjJ5SA==}
+  /@types/react@18.2.74:
+    resolution: {integrity: sha512-9AEqNZZyBx8OdZpxzQlaFEVCSFUM2YXJH46yPOiOpm078k6ZLOCcuAzGum/zK8YBwY+dbahVNbHrbgrAwIRlqw==}
     dependencies:
       '@types/prop-types': 15.7.5
-      '@types/scheduler': 0.16.3
       csstype: 3.1.2
     dev: true
 
@@ -4139,10 +4138,6 @@ packages:
     dependencies:
       '@types/glob': 8.1.0
       '@types/node': 20.4.2
-    dev: true
-
-  /@types/scheduler@0.16.3:
-    resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
     dev: true
 
   /@types/semver@7.5.0:
