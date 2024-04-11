@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, StyleSheet, ViewProps, FlexStyle} from 'react-native';
+import {View, StyleSheet, type ViewProps, type FlexStyle} from 'react-native';
 
 type Props = {
   flex?: number;

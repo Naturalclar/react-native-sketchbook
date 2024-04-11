@@ -1,5 +1,5 @@
-import * as React from 'react';
-import {StyleSheet, View, ViewProps, TouchableOpacity} from 'react-native';
+import type * as React from 'react';
+import {StyleSheet, View, type ViewProps, TouchableOpacity} from 'react-native';
 import {IconClose} from '../Icons';
 import {Margin} from '../Utils';
 import {useColors, useSpaceSizes} from '../Themes';

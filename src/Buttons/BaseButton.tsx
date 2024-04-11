@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {PressableProps, StyleProp, ViewStyle, StyleSheet} from 'react-native';
+import {type PressableProps, type StyleProp, type ViewStyle, StyleSheet} from 'react-native';
 import {PressableOpacity} from '../Utils';
 
 type Props = {

@@ -1,5 +1,5 @@
-import * as React from 'react';
-import {Pressable, PressableProps, StyleProp, ViewStyle} from 'react-native';
+import type * as React from 'react';
+import {Pressable, type PressableProps, type StyleProp, type ViewStyle} from 'react-native';
 
 type Props = {
   style?: StyleProp<ViewStyle>;

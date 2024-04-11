@@ -1,5 +1,5 @@
-import * as React from 'react';
-import {Typography, TypographyProps} from './Typography';
+import type * as React from 'react';
+import {Typography, type TypographyProps} from './Typography';
 import {useFontSizes} from '../Themes';
 
 export const Paragraph: React.FC<TypographyProps> = ({style, ...rest}) => {

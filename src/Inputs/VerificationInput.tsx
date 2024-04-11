@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {
-  TextInput,
-  TextInputProps,
-  View,
   StyleSheet,
+  TextInput,
+  type TextInputProps,
   TouchableOpacity,
+  View,
 } from 'react-native';
 import {useColors} from '../Themes';
 import {Typography} from '../Typography';
@@ -63,14 +63,15 @@ export const VerificationInput: React.FC<Props> = ({
   const InputRef = React.useRef<TextInput>(null);
   const handleFocus = React.useCallback(() => {
     if (InputRef) {
-      InputRef.current && InputRef.current.focus();
+      InputRef.current?.focus();
     }
-  }, [InputRef]);
+  }, []);
   const renderCell = () => {
     const currentValue = value || '';
     const valueArray = getArray(currentValue, length);
     return valueArray.map((char, index) => {
       return (
+        // biome-ignore lint/suspicious/noArrayIndexKey: the order of the array is fixed
         <TouchableOpacity key={index} onPress={handleFocus}>
           <View
             style={[
@@ -80,7 +81,8 @@ export const VerificationInput: React.FC<Props> = ({
                 ...StyleSheet.flatten(styles.focused),
                 borderColor: secondaryColor,
               },
-            ]}>
+            ]}
+          >
             <Typography style={styles.character}>{char}</Typography>
           </View>
         </TouchableOpacity>
@@ -97,7 +99,7 @@ export const VerificationInput: React.FC<Props> = ({
         autoCorrect={false}
         autoCapitalize="characters"
         onChangeText={(text) => {
-          onChangeText && onChangeText(truncate(text, length));
+          onChangeText?.(truncate(text, length));
         }}
         returnKeyType="done"
         value={value}

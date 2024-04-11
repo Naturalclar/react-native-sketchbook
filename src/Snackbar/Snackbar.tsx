@@ -81,7 +81,7 @@ export const Snackbar: React.FC<React.PropsWithChildren<Props>> = ({
         clearTimeout(timerId);
       }
     };
-  }, [visible, animated, appear, hide, duration, onDismiss]);
+  }, [visible, appear, hide, duration, onDismiss]);
   return (
     <SafeAreaView pointerEvents="box-none" style={styles.container}>
       <Animated.View
@@ -99,14 +99,16 @@ export const Snackbar: React.FC<React.PropsWithChildren<Props>> = ({
               },
             ],
           },
-        ]}>
+        ]}
+      >
         <View style={styles.body}>{children}</View>
         {onAction ? (
           <TouchableOpacity
             onPress={() => {
               onAction();
               onDismiss();
-            }}>
+            }}
+          >
             <Typography color={white}>{actionLabel}</Typography>
           </TouchableOpacity>
         ) : null}
