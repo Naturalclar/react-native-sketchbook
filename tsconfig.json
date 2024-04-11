@@ -4,7 +4,7 @@
     "target": "es6",
     "module": "commonjs",
     "lib": ["es2020"],
-    "jsx": "react",
+    "jsx": "react-jsx",
     "declaration": true,
     "declarationMap": true,
     "skipLibCheck": true,
@@ -14,7 +14,7 @@
     "outDir": "dist",
     "rootDir": "src",
     "baseUrl": ".",
-    "types":["react-native"],
+    "types": ["react-native"]
   },
   "include": ["src"],
   "exclude": ["**/*.stories.tsx"]
