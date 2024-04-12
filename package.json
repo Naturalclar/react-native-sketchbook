@@ -38,7 +38,6 @@
     "@biomejs/biome": "^1.6.4",
     "@react-native-community/eslint-config": "^3.2.0",
     "@storybook/addon-essentials": "^7.1.0",
-    "@storybook/addon-mdx-gfm": "^7.1.0",
     "@storybook/addons": "^7.1.0",
     "@storybook/react": "^7.1.0",
     "@storybook/react-webpack5": "^8.0.8",
