@@ -46,7 +46,7 @@
     "@types/react": "^18.2.15",
     "@types/react-native": "^0.70.14",
     "babel-loader": "^8.3.0",
-    "babel-preset-expo": "^9.5.0",
+    "babel-preset-expo": "^10.0.1",
     "react-dom": "^18.2.0",
     "react-native-web": "^0.19.7",
     "reg-keygen-git-hash-plugin": "^0.12.2",
