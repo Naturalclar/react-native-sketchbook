@@ -37,11 +37,11 @@
     "@babel/core": "^7.22.9",
     "@biomejs/biome": "^1.6.4",
     "@react-native-community/eslint-config": "^3.2.0",
-    "@storybook/addon-essentials": "^7.1.0",
-    "@storybook/addons": "^7.1.0",
-    "@storybook/react": "^7.1.0",
-    "@storybook/react-webpack5": "^8.0.8",
-    "@storybook/theming": "^7.1.0",
+    "@storybook/addon-essentials": "^7",
+    "@storybook/addons": "^7",
+    "@storybook/react": "^7",
+    "@storybook/react-webpack5": "^7",
+    "@storybook/theming": "^7",
     "@types/react": "^18.2.15",
     "@types/react-native": "^0.70.14",
     "babel-loader": "^8.3.0",
@@ -52,17 +52,13 @@
     "reg-notify-github-plugin": "^0.10.17",
     "reg-publish-s3-plugin": "^0.12.2",
     "reg-suit": "^0.12.2",
-    "storybook": "^7.1.0",
+    "storybook": "^7",
     "storycap": "^4.2.0",
     "typescript": "^4.9.5",
-    "vercel": "^31.0.4"
+    "vercel": "^31.0.4",
+    "@react-native/babel-preset": "0.75.0-main"
   },
   "engines": {
     "node": ">=16"
-  },
-  "dependencies": {
-    "@react-native/babel-preset": "0.75.0-main",
-    "@storybook/global": "^5.0.0",
-    "puppeteer": "^22.6.4"
   }
 }
