@@ -11,7 +11,7 @@ module.exports = {
         {
           loader: "babel-loader",
           options: {
-            presets: ["babel-preset-expo"],
+            presets: ["@react-native/babel-preset"],
           },
         },
       ],
@@ -23,7 +23,7 @@ module.exports = {
         {
           loader: "babel-loader",
           options: {
-            presets: ["babel-preset-expo"],
+            presets: ["@react-native/babel-preset"],
           },
         },
       ],
