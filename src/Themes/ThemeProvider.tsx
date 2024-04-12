@@ -1,6 +1,6 @@
 import React from 'react';
-import {ColorSchemeName} from 'react-native';
-import {DefaultTheme, Theme} from './theme';
+import type {ColorSchemeName} from 'react-native';
+import {DefaultTheme, type Theme} from './theme';
 
 type ThemeProp = {
   appearance: ColorSchemeName;

@@ -1,5 +1,5 @@
-import * as React from 'react';
-import {RadioButtonContext, RadioButtonContextType} from './RadioButtonGroup';
+import type * as React from 'react';
+import {RadioButtonContext, type RadioButtonContextType} from './RadioButtonGroup';
 import {TouchableOpacity, View, StyleSheet} from 'react-native';
 import {RadioButton} from './RadioButton';
 import {Margin} from '../Utils';

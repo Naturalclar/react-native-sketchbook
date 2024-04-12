@@ -1,5 +1,5 @@
-import React from 'react';
-import {StyleSheet, Text, TextProps} from 'react-native';
+import type React from 'react';
+import {StyleSheet, Text, type TextProps} from 'react-native';
 import {useColors} from '../Themes';
 
 export type TypographyProps = {

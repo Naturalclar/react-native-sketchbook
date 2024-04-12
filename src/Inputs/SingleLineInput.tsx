@@ -1,8 +1,9 @@
-import React, {useCallback, useRef, useState} from 'react';
+import type * as React from 'react';
+import {useCallback, useRef, useState} from 'react';
 import {
   TextInput,
   StyleSheet,
-  TextInputProps,
+  type TextInputProps,
   View,
   TouchableOpacity,
   LayoutAnimation,
@@ -52,9 +53,9 @@ export const SingleLineInput: React.FC<Props> = ({
   const InputRef = useRef<TextInput>(null);
   const handleFocus = useCallback(() => {
     if (InputRef) {
-      InputRef.current && InputRef.current.focus();
+      InputRef.current?.focus();
     }
-  }, [InputRef]);
+  }, []);
   const [isFocused, setFocus] = useState(false);
   const setAnimation = () => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);

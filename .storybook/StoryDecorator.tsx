@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 import { ThemeProvider } from '../src/Themes';
 import { View } from 'react-native';
 

@@ -8,6 +8,9 @@ devDependencies:
   '@babel/core':
     specifier: ^7.22.9
     version: 7.22.9
+  '@biomejs/biome':
+    specifier: ^1.6.4
+    version: 1.6.4
   '@react-native-community/eslint-config':
     specifier: ^3.2.0
     version: 3.2.0(eslint@8.45.0)(prettier@3.0.0)(typescript@4.9.5)
@@ -41,18 +44,12 @@ devDependencies:
   babel-preset-expo:
     specifier: ^9.5.0
     version: 9.5.0(@babel/core@7.22.9)
-  eslint:
-    specifier: ^8.45.0
-    version: 8.45.0
   eslint-plugin-prettier:
     specifier: ^5.0.0
     version: 5.0.0(eslint@8.45.0)(prettier@3.0.0)
   eslint-plugin-storybook:
     specifier: ^0.8.0
     version: 0.8.0(eslint@8.45.0)(typescript@4.9.5)
-  prettier:
-    specifier: ^3.0.0
-    version: 3.0.0
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1694,6 +1691,94 @@ packages:
   /@base2/pretty-print-object@1.0.1:
     resolution: {integrity: sha512-4iri8i1AqYHJE2DstZYkyEprg6Pq6sKx3xn5FpySk9sNhH7qN2LLlHJCfDTZRILNwQNPD7mATWM0TBui7uC1pA==}
     dev: true
+
+  /@biomejs/biome@1.6.4:
+    resolution: {integrity: sha512-3groVd2oWsLC0ZU+XXgHSNbq31lUcOCBkCcA7sAQGBopHcmL+jmmdoWlY3S61zIh+f2mqQTQte1g6PZKb3JJjA==}
+    engines: {node: '>=14.21.3'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@biomejs/cli-darwin-arm64': 1.6.4
+      '@biomejs/cli-darwin-x64': 1.6.4
+      '@biomejs/cli-linux-arm64': 1.6.4
+      '@biomejs/cli-linux-arm64-musl': 1.6.4
+      '@biomejs/cli-linux-x64': 1.6.4
+      '@biomejs/cli-linux-x64-musl': 1.6.4
+      '@biomejs/cli-win32-arm64': 1.6.4
+      '@biomejs/cli-win32-x64': 1.6.4
+    dev: true
+
+  /@biomejs/cli-darwin-arm64@1.6.4:
+    resolution: {integrity: sha512-2WZef8byI9NRzGajGj5RTrroW9BxtfbP9etigW1QGAtwu/6+cLkdPOWRAs7uFtaxBNiKFYA8j/BxV5zeAo5QOQ==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-darwin-x64@1.6.4:
+    resolution: {integrity: sha512-uo1zgM7jvzcoDpF6dbGizejDLCqNpUIRkCj/oEK0PB0NUw8re/cn1EnxuOLZqDpn+8G75COLQTOx8UQIBBN/Kg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-linux-arm64-musl@1.6.4:
+    resolution: {integrity: sha512-Hp8Jwt6rjj0wCcYAEN6/cfwrrPLLlGOXZ56Lei4Pt4jy39+UuPeAVFPeclrrCfxyL1wQ2xPrhd/saTHSL6DoJg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-linux-arm64@1.6.4:
+    resolution: {integrity: sha512-wAOieaMNIpLrxGc2/xNvM//CIZg7ueWy3V5A4T7gDZ3OL/Go27EKE59a+vMKsBCYmTt7jFl4yHz0TUkUbodA/w==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-linux-x64-musl@1.6.4:
+    resolution: {integrity: sha512-wqi0hr8KAx5kBO0B+m5u8QqiYFFBJOSJVSuRqTeGWW+GYLVUtXNidykNqf1JsW6jJDpbkSp2xHKE/bTlVaG2Kg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-linux-x64@1.6.4:
+    resolution: {integrity: sha512-qTWhuIw+/ePvOkjE9Zxf5OqSCYxtAvcTJtVmZT8YQnmY2I62JKNV2m7tf6O5ViKZUOP0mOQ6NgqHKcHH1eT8jw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-win32-arm64@1.6.4:
+    resolution: {integrity: sha512-Wp3FiEeF6v6C5qMfLkHwf4YsoNHr/n0efvoC8jCKO/kX05OXaVExj+1uVQ1eGT7Pvx0XVm/TLprRO0vq/V6UzA==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-win32-x64@1.6.4:
+    resolution: {integrity: sha512-mz183Di5hTSGP7KjNWEhivcP1wnHLGmOxEROvoFsIxMYtDhzJDad4k5gI/1JbmA0xe4n52vsgqo09tBhrMT/Zg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /@colors/colors@1.5.0:
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -4570,14 +4655,14 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.22.9
-      '@babel/generator': 7.22.9
-      '@babel/parser': 7.22.7
+      '@babel/generator': 7.24.4
+      '@babel/parser': 7.24.4
       '@babel/plugin-syntax-jsx': 7.22.5(@babel/core@7.22.9)
       '@babel/plugin-syntax-typescript': 7.22.5(@babel/core@7.22.9)
       '@babel/preset-env': 7.22.9(@babel/core@7.22.9)
       '@babel/preset-typescript': 7.22.5(@babel/core@7.22.9)
-      '@babel/traverse': 7.22.8
-      '@babel/types': 7.22.5
+      '@babel/traverse': 7.24.1
+      '@babel/types': 7.24.0
       '@npmcli/package-json': 2.0.0
       '@remix-run/server-runtime': 1.18.1
       '@vanilla-extract/integration': 6.2.1(@types/node@14.18.33)

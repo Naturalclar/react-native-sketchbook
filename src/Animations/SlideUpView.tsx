@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react';
-import {Animated, Easing, ViewProps} from 'react-native';
+import type React from 'react';
+import {useEffect} from 'react';
+import {Animated, Easing, type ViewProps} from 'react-native';
 
 /**
  * SlideUpView
@@ -14,8 +15,7 @@ export const SlideUpView: React.FC<ViewProps> = ({children, style}) => {
       easing: Easing.out(Easing.quad),
       useNativeDriver: true,
     }).start();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [appear]);
 
   return (
     <Animated.View
@@ -32,7 +32,8 @@ export const SlideUpView: React.FC<ViewProps> = ({children, style}) => {
           ],
         },
         style,
-      ]}>
+      ]}
+    >
       {children}
     </Animated.View>
   );

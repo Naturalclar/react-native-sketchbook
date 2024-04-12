@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Margin} from './Margin';
-import {View, StyleSheet, StyleProp, ViewStyle} from 'react-native';
-import {SpaceSize} from '../Themes';
+import {View, StyleSheet, type StyleProp, type ViewStyle} from 'react-native';
+import type {SpaceSize} from '../Themes';
 
 type Props = {
   /**
@@ -41,6 +41,7 @@ export const Stack: React.FC<React.PropsWithChildren<Props>> = React.memo(
       <View style={[style, type === 'horizontal' && styles.horizontal]}>
         {childArray.map((child, index) => {
           return (
+            // biome-ignore lint/suspicious/noArrayIndexKey: Order of children is fixed
             <React.Fragment key={index}>
               {child}
               <Margin size={space} />
