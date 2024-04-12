@@ -27,10 +27,10 @@
     "deploy": "vercel",
     "lint": "biome lint .",
     "format": "biome lint . --apply",
-    "prepare": "npm run build",
+    "prepare": "pnpm build",
     "reg-suit": "reg-suit run",
     "storybook": "storybook dev -p 6006",
-    "storycap:all": "rm -rf ./__screenshots__ && npx storycap http://localhost:6006 --serverCmd 'npm run storybook --ci' --viewport '414x736' --serverTimeout '200000'",
+    "storycap:all": "rm -rf ./__screenshots__ && npx storycap http://localhost:6006 --serverCmd 'npx http-server storybook-static -p 6006' --viewport '414x736' --serverTimeout '200000'",
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
@@ -60,5 +60,8 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "dependencies": {
+    "puppeteer": "^22.6.4"
   }
 }
