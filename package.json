@@ -51,7 +51,7 @@
     "reg-keygen-git-hash-plugin": "^0.12.2",
     "reg-notify-github-plugin": "^0.10.17",
     "reg-publish-s3-plugin": "^0.12.2",
-    "reg-suit": "^0.12.2",
+    "reg-suit": "^0.14.3",
     "storybook": "~7.5.0",
     "storycap": "^4.2.0",
     "typescript": "^4.9.5",
