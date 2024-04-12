@@ -30,7 +30,7 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
       - name: Run Lint
-        run: npm run lint
+        run: pnpm lint
   typecheck:
     runs-on: ubuntu-latest
     strategy:
@@ -58,7 +58,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install Dependencies
         run: pnpm install
-      - run: npm run type-check
+      - run: pnpm type-check
   visual-regression:
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -98,6 +98,6 @@ jobs:
       - name: Build Storybook
         run: pnpm build-storybook
       - name: Capture Screenshots
-        run: npm run storycap:all
+        run: pnpm storycap:all
       - name: Run visual-regression test
-        run: npm run reg-suit
+        run: pnpm reg-suit
