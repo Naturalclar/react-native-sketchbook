@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("node:path");
 const externalLibs = [path.resolve(__dirname, "../node_modules/react-native")];
 module.exports = {
   stories: ["../src/**/*.stories.@(tsx|mdx)"],
