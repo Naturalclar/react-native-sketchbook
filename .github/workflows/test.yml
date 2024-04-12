@@ -95,6 +95,8 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install Dependencies
         run: pnpm install
+      - name: Build Storybook
+        run: pnpm build-storybook
       - name: Capture Screenshots
         run: npm run storycap:all
       - name: Run visual-regression test
