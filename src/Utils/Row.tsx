@@ -20,7 +20,15 @@ type Props = {
  * - A View Component whose default flexDiretion is row
  */
 export const Row: React.FC<Props> = React.memo(
-  ({ style, alignItems, alignContent, justifyContent, alignSelf, ...rest }) => {
+  ({
+    style,
+    alignItems,
+    alignContent,
+    justifyContent,
+    alignSelf,
+    gap,
+    ...rest
+  }) => {
     return (
       <View
         style={[
