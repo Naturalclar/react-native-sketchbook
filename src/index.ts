@@ -12,21 +12,21 @@ export {
 export {CheckBox, CheckBoxItem} from './CheckBox';
 // Dividers
 export {Divider} from './Dividers';
+
 // Icons
-import * as Icons from './Icons';
-export {Icons};
+export * as Icons from './Icons';
 export {
   IconAdd,
-  IconDivide,
-  IconMinus,
-  IconTimes,
-  IconCheck,
-  IconClose,
   IconCaretBottom,
   IconCaretLeft,
   IconCaretRight,
   IconCaretTop,
+  IconCheck,
+  IconClose,
+  IconDivide,
+  IconMinus,
   IconPencil,
+  IconTimes,
 } from './Icons';
 // Inputs
 export {SingleLineInput, VerificationInput} from './Inputs';
@@ -34,46 +34,44 @@ export {SingleLineInput, VerificationInput} from './Inputs';
 export {BaseLabel} from './Labels';
 // RadioButtons
 export {RadioButton, RadioButtonItem} from './RadioButtons';
+export * from './Samples/LoginPage';
 // SideBar
 export {Snackbar} from './Snackbar';
+// typings
+export type {Color, FontSize, SpaceSize, Theme} from './Themes';
 // Themes
 export {
+  DefaultColorTheme,
+  DefaultFontSize,
+  DefaultSpaceSize,
+  DefaultTheme,
   ThemeProvider,
   useAppearance,
   useColors,
   useFontSizes,
   useSpaceSizes,
-  DefaultColorTheme,
-  DefaultFontSize,
-  DefaultSpaceSize,
-  DefaultTheme,
 } from './Themes';
 // Typography
 export {
-  Paragraph,
-  LabelText,
   Heading,
+  LabelText,
+  Paragraph,
   SubHeading,
   Typography,
 } from './Typography';
 // Utils
 export {
-  Margin,
-  Stack,
-  XStack,
-  YStack,
-  Row,
   Flex,
-  PressableOpacity,
-  StaticPage,
   FullPage,
   isAndroid,
   isIOS,
   isIPad,
   isWeb,
+  Margin,
+  PressableOpacity,
+  Row,
+  Stack,
+  StaticPage,
+  XStack,
+  YStack,
 } from './Utils';
-
-export * from './Samples/LoginPage';
-
-// typings
-export type {Color, FontSize, SpaceSize, Theme} from './Themes';
