@@ -1,6 +1,4 @@
 {
   "version": 2,
-  "routes": [
-    { "src": "/(.*)", "dest": "storybook-static/$1" }
-  ]
+  "routes": [{ "src": "/(.*)", "dest": "storybook-static/$1" }]
 }

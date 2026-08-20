@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {View, StyleSheet, Pressable} from 'react-native';
-import {CheckBox} from './CheckBox';
-import {Margin} from '../Utils';
+import {Pressable, StyleSheet, View} from 'react-native';
 import {Typography} from '../Typography';
+import {Margin} from '../Utils';
+import {CheckBox} from './CheckBox';
 import type {CheckBoxProps} from './CheckBox';
 
 const styles = StyleSheet.create({

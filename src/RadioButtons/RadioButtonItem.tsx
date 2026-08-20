@@ -1,10 +1,13 @@
 import type * as React from 'react';
-import {RadioButtonContext, type RadioButtonContextType} from './RadioButtonGroup';
-import {TouchableOpacity, View, StyleSheet} from 'react-native';
-import {RadioButton} from './RadioButton';
-import {Margin} from '../Utils';
+import {StyleSheet, TouchableOpacity, View} from 'react-native';
 import {useColors} from '../Themes';
 import {Typography} from '../Typography';
+import {Margin} from '../Utils';
+import {RadioButton} from './RadioButton';
+import {
+  RadioButtonContext,
+  type RadioButtonContextType,
+} from './RadioButtonGroup';
 
 const styles = StyleSheet.create({
   container: {
@@ -38,7 +41,8 @@ export const RadioButtonItem: React.FC<Props> = ({
         return (
           <TouchableOpacity
             disabled={disabled}
-            onPress={() => context?.onValueChange(value)}>
+            onPress={() => context?.onValueChange(value)}
+          >
             <View style={styles.container}>
               <RadioButton value={value} color={color} disabled={disabled} />
               <Margin size="xsmall" />

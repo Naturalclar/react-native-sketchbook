@@ -1,6 +1,6 @@
-import * as React from "react";
-import { View } from "react-native";
-import { Row } from "../Utils/Row";
+import * as React from 'react';
+import {View} from 'react-native';
+import {Row} from '../Utils/Row';
 type AvatarGroupProps = {
   space?: number;
 };
@@ -24,22 +24,21 @@ type AvatarGroupProps = {
  * }
  * ```
  */
-export const AvatarGroup: React.FC<
-  React.PropsWithChildren<AvatarGroupProps>
-> = ({ children, space = -8 }) => {
-  const childElements = React.Children.toArray(children).filter((child) => {
-    return React.isValidElement(child);
-  });
+export const AvatarGroup: React.FC<React.PropsWithChildren<AvatarGroupProps>> =
+  ({children, space = -8}) => {
+    const childElements = React.Children.toArray(children).filter((child) => {
+      return React.isValidElement(child);
+    });
 
-  return (
-    <Row style={{ paddingLeft: -space }}>
-      {childElements.map((child) => {
-        return (
-          <View key={child.toString()} style={{ marginLeft: space }}>
-            {child}
-          </View>
-        );
-      })}
-    </Row>
-  );
-};
+    return (
+      <Row style={{paddingLeft: -space}}>
+        {childElements.map((child) => {
+          return (
+            <View key={child.toString()} style={{marginLeft: space}}>
+              {child}
+            </View>
+          );
+        })}
+      </Row>
+    );
+  };

@@ -1,11 +1,11 @@
 import type * as React from 'react';
+import {StyleSheet, TouchableOpacity, View} from 'react-native';
+import {useColors} from '../Themes';
 import {
-  RadioButtonGroup,
   RadioButtonContext,
   type RadioButtonContextType,
+  RadioButtonGroup,
 } from './RadioButtonGroup';
-import {TouchableOpacity, View, StyleSheet} from 'react-native';
-import {useColors} from '../Themes';
 
 type Props = {
   value: string;
@@ -48,7 +48,8 @@ export const RadioButton: React.FC<Props> & {
         return (
           <TouchableOpacity
             disabled={disabled}
-            onPress={() => context?.onValueChange(value)}>
+            onPress={() => context?.onValueChange(value)}
+          >
             <View style={[styles.outerCircle, {borderColor: buttonColor}]}>
               {checked && (
                 <View

@@ -3,6 +3,18 @@
   "organizeImports": {
     "enabled": true
   },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "bracketSpacing": false
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {

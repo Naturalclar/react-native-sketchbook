@@ -1,15 +1,15 @@
 import * as React from 'react';
 import {
   Animated,
+  Easing,
   SafeAreaView,
   StyleSheet,
-  Easing,
-  View,
   TouchableOpacity,
+  View,
 } from 'react-native';
 
-import {Typography} from '../Typography';
 import {useColors, useSpaceSizes} from '../Themes';
+import {Typography} from '../Typography';
 
 const styles = StyleSheet.create({
   container: {

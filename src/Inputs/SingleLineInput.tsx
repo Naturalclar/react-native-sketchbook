@@ -1,17 +1,17 @@
 import type * as React from 'react';
 import {useCallback, useRef, useState} from 'react';
 import {
-  TextInput,
-  StyleSheet,
-  type TextInputProps,
-  View,
-  TouchableOpacity,
   LayoutAnimation,
+  StyleSheet,
+  TextInput,
+  type TextInputProps,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 import {IconPencil} from '../Icons';
-import {Margin} from '../Utils';
-import {useFontSizes, useColors} from '../Themes';
+import {useColors, useFontSizes} from '../Themes';
 import {Typography} from '../Typography';
+import {Margin} from '../Utils';
 const styles = StyleSheet.create({
   label: {
     fontSize: 14,

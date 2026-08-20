@@ -1,11 +1,11 @@
 import * as React from 'react';
-import {View, StyleSheet} from 'react-native';
-import {Stack} from '../Utils';
+import {StyleSheet, View} from 'react-native';
 import {RoundButtonOutline} from '../Buttons';
 import {SingleLineInput} from '../Inputs';
-import {Typography} from '../Typography';
-import {StaticPage} from '../Utils';
 import {useColors} from '../Themes';
+import {Typography} from '../Typography';
+import {Stack} from '../Utils';
+import {StaticPage} from '../Utils';
 
 const styles = StyleSheet.create({
   container: {

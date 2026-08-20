@@ -1,5 +1,5 @@
 import type * as React from 'react';
-import {StyleSheet, SafeAreaView} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import {useColors} from '../Themes';
 
 const styles = StyleSheet.create({

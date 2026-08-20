@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {StyleSheet} from 'react-native';
 import {useColors} from '../Themes';
-import {BaseButton} from './BaseButton';
 import {Typography} from '../Typography';
+import {BaseButton} from './BaseButton';
 
 type Props = {
   label: string;
@@ -39,7 +39,8 @@ export const RoundButtonOutline: React.FC<Props> = React.memo(
           styles.container,
           {borderColor: buttonColor},
           disabled ? styles.disabled : null,
-        ]}>
+        ]}
+      >
         <Typography style={styles.label} color={buttonColor}>
           {label}
         </Typography>

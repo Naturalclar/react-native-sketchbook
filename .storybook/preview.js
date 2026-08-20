@@ -13,6 +13,6 @@ const preview = {
     },
   },
   decorators: [StoryDecorator],
-}
+};
 
-export default preview
+export default preview;

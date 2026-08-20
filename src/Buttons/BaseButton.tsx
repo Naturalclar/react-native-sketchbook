@@ -1,5 +1,10 @@
 import * as React from 'react';
-import {type PressableProps, type StyleProp, type ViewStyle, StyleSheet} from 'react-native';
+import {
+  type PressableProps,
+  type StyleProp,
+  StyleSheet,
+  type ViewStyle,
+} from 'react-native';
 import {PressableOpacity} from '../Utils';
 
 type Props = {
@@ -20,7 +25,8 @@ export const BaseButton: React.FC<React.PropsWithChildren<Props>> = React.memo(
       <PressableOpacity
         style={[styles.container, style]}
         accessibilityRole="button"
-        {...rest}>
+        {...rest}
+      >
         {leadingComponent && leadingComponent}
         {children}
         {tailingComponent && tailingComponent}

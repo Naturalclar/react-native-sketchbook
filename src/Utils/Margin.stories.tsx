@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-  LightThemeDecorator,
   DarkThemeDecorator,
+  LightThemeDecorator,
 } from '../../.storybook/StoryDecorator';
-import {Row} from './Row';
 import {Typography} from '../Typography';
 import {Margin} from './Margin';
+import {Row} from './Row';
 
 const Story = () => (
   <>

@@ -1,5 +1,5 @@
 import type React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {useColors} from '../Themes';
 
 const styles = StyleSheet.create({

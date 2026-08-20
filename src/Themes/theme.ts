@@ -1,5 +1,10 @@
-import {DefaultColorTheme, type Color} from './colors';
-import {DefaultFontSize, DefaultSpaceSize, type FontSize, type SpaceSize} from './size';
+import {type Color, DefaultColorTheme} from './colors';
+import {
+  DefaultFontSize,
+  DefaultSpaceSize,
+  type FontSize,
+  type SpaceSize,
+} from './size';
 
 export type Theme = {
   colors: Record<'light' | 'dark', Colors>;

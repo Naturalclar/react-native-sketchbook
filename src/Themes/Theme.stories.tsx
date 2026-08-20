@@ -1,10 +1,10 @@
 import * as React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import {useColors} from './ThemeProvider';
 
 import {
-  LightThemeDecorator,
   DarkThemeDecorator,
+  LightThemeDecorator,
 } from '../../.storybook/StoryDecorator';
 
 const styles = StyleSheet.create({

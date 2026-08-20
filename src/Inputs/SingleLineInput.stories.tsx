@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {
   DarkThemeDecorator,
   LightThemeDecorator,
 } from '../../.storybook/StoryDecorator';
-import {SingleLineInput} from './SingleLineInput';
 import {Margin} from '../Utils';
+import {SingleLineInput} from './SingleLineInput';
 
 const styles = StyleSheet.create({container: {padding: 24, flex: 1}});
 

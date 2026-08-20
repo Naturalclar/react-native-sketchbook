@@ -1,12 +1,12 @@
 import React from 'react';
-import {RadioButton} from './RadioButton';
 import {
-  LightThemeDecorator,
   DarkThemeDecorator,
+  LightThemeDecorator,
 } from '../../.storybook/StoryDecorator';
 import {useColors} from '../Themes';
-import {RadioButtonItem} from './RadioButtonItem';
 import {Stack} from '../Utils';
+import {RadioButton} from './RadioButton';
+import {RadioButtonItem} from './RadioButtonItem';
 
 const Story = () => {
   const [state, setState] = React.useState('First');
@@ -16,7 +16,8 @@ const Story = () => {
       onValueChange={(value) => {
         setState(value);
       }}
-      value={state}>
+      value={state}
+    >
       <Stack space="xsmall">
         <RadioButton value="First" />
         <RadioButton value="Second" color={secondaryColor} />

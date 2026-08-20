@@ -33,7 +33,8 @@ export const Avatar: React.FC<AvatarProps> = ({size = 36, source}) => {
           height: size,
           borderRadius: size / 2,
         },
-      ]}>
+      ]}
+    >
       <Image
         source={source}
         style={{width: size, height: size, borderRadius: size / 2}}
