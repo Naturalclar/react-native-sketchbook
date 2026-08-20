@@ -4,8 +4,7 @@ import {RoundButtonOutline} from '../Buttons';
 import {SingleLineInput} from '../Inputs';
 import {useColors} from '../Themes';
 import {Typography} from '../Typography';
-import {Stack} from '../Utils';
-import {StaticPage} from '../Utils';
+import {Stack, StaticPage} from '../Utils';
 
 const styles = StyleSheet.create({
   container: {

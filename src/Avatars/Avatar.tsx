@@ -1,6 +1,6 @@
 import type * as React from 'react';
-import {Image, View} from 'react-native';
 import type {ImageSourcePropType} from 'react-native';
+import {Image, View} from 'react-native';
 
 type AvatarProps = {
   size?: number;

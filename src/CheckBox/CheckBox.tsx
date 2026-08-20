@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Pressable, StyleSheet, View} from 'react-native';
 import {IconCheck} from '../Icons';
 import {useColors} from '../Themes';
+
 const styles = StyleSheet.create({
   container: {
     borderWidth: 2,

@@ -12,8 +12,8 @@ importers:
         specifier: ^7
         version: 7.24.4
       '@biomejs/biome':
-        specifier: ^1.6.4
-        version: 1.6.4
+        specifier: ^2.5.9
+        version: 2.5.9
       '@react-native/babel-preset':
         specifier: 0.75.0-main
         version: 0.75.0-main(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))
@@ -34,10 +34,10 @@ importers:
         version: 7.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@storybook/react':
         specifier: ~7.5.0
-        version: 7.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)
+        version: 7.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@7.0.2)
       '@storybook/react-webpack5':
         specifier: ~7.5.0
-        version: 7.5.3(@babel/core@7.24.4)(@swc/core@1.4.13)(esbuild@0.17.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@2.19.0)(typescript@4.9.5)(webpack-hot-middleware@2.25.4)
+        version: 7.5.3(@babel/core@7.24.4)(@swc/core@1.4.13)(esbuild@0.17.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@2.19.0)(typescript@7.0.2)(webpack-hot-middleware@2.25.4)
       '@storybook/theming':
         specifier: ~7.5.0
         version: 7.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -55,7 +55,7 @@ importers:
         version: 18.2.0(react@18.2.0)
       react-native:
         specifier: ^0.75
-        version: 0.75.5(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))(@types/react@18.2.15)(react@18.2.0)(typescript@4.9.5)
+        version: 0.75.5(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))(@types/react@18.2.15)(react@18.2.0)(typescript@7.0.2)
       react-native-web:
         specifier: ^0.19.7
         version: 0.19.7(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -78,11 +78,11 @@ importers:
         specifier: ^4.2.0
         version: 4.2.0
       typescript:
-        specifier: ^4.9.5
-        version: 4.9.5
+        specifier: ^7.0.2
+        version: 7.0.2
       vercel:
         specifier: ^31.0.4
-        version: 31.0.4(@swc/core@1.4.13)(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@4.9.5))
+        version: 31.0.4(@swc/core@1.4.13)(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@7.0.2))
 
 packages:
 
@@ -1315,55 +1315,55 @@ packages:
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
 
-  '@biomejs/biome@1.6.4':
-    resolution: {integrity: sha512-3groVd2oWsLC0ZU+XXgHSNbq31lUcOCBkCcA7sAQGBopHcmL+jmmdoWlY3S61zIh+f2mqQTQte1g6PZKb3JJjA==}
+  '@biomejs/biome@2.5.9':
+    resolution: {integrity: sha512-KkgCvdHB4IhtpHpF564plA9jo6fDOwWGQ/3jvreLzgOtRLEDoPqr7QO9qejNA8jKwDsSkAKr77hqBHnyUbIw4g==}
     engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@1.6.4':
-    resolution: {integrity: sha512-2WZef8byI9NRzGajGj5RTrroW9BxtfbP9etigW1QGAtwu/6+cLkdPOWRAs7uFtaxBNiKFYA8j/BxV5zeAo5QOQ==}
+  '@biomejs/cli-darwin-arm64@2.5.9':
+    resolution: {integrity: sha512-am22pX2aBqznqq1eMyIj/bZ++riF3Lk6ct7cbv+gQK0csFhr+d8O0RkOi2FF2qSgFgANbqNkIZ0/PxlnW2pLFg==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@1.6.4':
-    resolution: {integrity: sha512-uo1zgM7jvzcoDpF6dbGizejDLCqNpUIRkCj/oEK0PB0NUw8re/cn1EnxuOLZqDpn+8G75COLQTOx8UQIBBN/Kg==}
+  '@biomejs/cli-darwin-x64@2.5.9':
+    resolution: {integrity: sha512-l44KWDHLDvEnD0N/XcrVs7VXb3A18xL7QS3WB0eL93wbmk529ffIG55vleGCqaunpRUjLrdnjK05Qki1dsjylg==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@1.6.4':
-    resolution: {integrity: sha512-Hp8Jwt6rjj0wCcYAEN6/cfwrrPLLlGOXZ56Lei4Pt4jy39+UuPeAVFPeclrrCfxyL1wQ2xPrhd/saTHSL6DoJg==}
+  '@biomejs/cli-linux-arm64-musl@2.5.9':
+    resolution: {integrity: sha512-7ImVPwBLCtkmpR5esd8RHhTqW94f0JLJQum6AneYcy94jRm18TaPPm7slaigGzFhfgt3QiD1Vj52LKmBAnKizA==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-arm64@1.6.4':
-    resolution: {integrity: sha512-wAOieaMNIpLrxGc2/xNvM//CIZg7ueWy3V5A4T7gDZ3OL/Go27EKE59a+vMKsBCYmTt7jFl4yHz0TUkUbodA/w==}
+  '@biomejs/cli-linux-arm64@2.5.9':
+    resolution: {integrity: sha512-ICaK+IYaVZvKbBxX2rwrPT0DdUDMnE9Vm3nQGe+mltQPmUg19pONzkPWGdY4FCsoreDETWDynvdt4ysCbF5gNQ==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64-musl@1.6.4':
-    resolution: {integrity: sha512-wqi0hr8KAx5kBO0B+m5u8QqiYFFBJOSJVSuRqTeGWW+GYLVUtXNidykNqf1JsW6jJDpbkSp2xHKE/bTlVaG2Kg==}
+  '@biomejs/cli-linux-x64-musl@2.5.9':
+    resolution: {integrity: sha512-RXGaD0o1/pTTguYw1aeDJh9ad6Lfrui0fI7mBderTyGr7WuUJkBIttgLkR3XJyoxOkkgfBDspaUT8wXArTqLZw==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64@1.6.4':
-    resolution: {integrity: sha512-qTWhuIw+/ePvOkjE9Zxf5OqSCYxtAvcTJtVmZT8YQnmY2I62JKNV2m7tf6O5ViKZUOP0mOQ6NgqHKcHH1eT8jw==}
+  '@biomejs/cli-linux-x64@2.5.9':
+    resolution: {integrity: sha512-z22Q/zFYSvbIJfW1CbfZPu4X8PddS6Qd2ORbc6h+aT6EcwAxUF3m6fA4HjNvA3TU4X0dTJRwNPB165ES3PJXzg==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-win32-arm64@1.6.4':
-    resolution: {integrity: sha512-Wp3FiEeF6v6C5qMfLkHwf4YsoNHr/n0efvoC8jCKO/kX05OXaVExj+1uVQ1eGT7Pvx0XVm/TLprRO0vq/V6UzA==}
+  '@biomejs/cli-win32-arm64@2.5.9':
+    resolution: {integrity: sha512-nHK+/HHC+D0ogAHUxomgoSTdjImb6fmNNVTKmf0tyu4eDL1DqPKIHc+i+UL8+b0RnAu8224qo8F2tCVnaT0A3w==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@1.6.4':
-    resolution: {integrity: sha512-mz183Di5hTSGP7KjNWEhivcP1wnHLGmOxEROvoFsIxMYtDhzJDad4k5gI/1JbmA0xe4n52vsgqo09tBhrMT/Zg==}
+  '@biomejs/cli-win32-x64@2.5.9':
+    resolution: {integrity: sha512-Yiq0H56LjXSSw/hd9YkXgSLQfzyDJzbzU2TezozxyNw+uKWAqOtqGVvBfzKRRDiaFF5avGAhHdWKx7LtDOShUw==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
@@ -2922,6 +2922,126 @@ packages:
 
   '@types/yauzl@2.10.0':
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
+
+  '@typescript/typescript-aix-ppc64@7.0.2':
+    resolution: {integrity: sha512-MTKKkWB7p/0E9xi1d1tHtZ5PiLkGEMIq88pK2CubZjOsLtYTLqhgIgi6zepFa+9GHZ6h05NMCkQxGKiPXMxXtQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [ppc64]
+    os: [aix]
+
+  '@typescript/typescript-darwin-arm64@7.0.2':
+    resolution: {integrity: sha512-gowzar9MwS/aRWp6f3a4KUqzRjAZjOsmGNCM6LcTgXum+dBfgsBVMN+AgvOCCbguXyick6LJhpBszxMebJ8syA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@typescript/typescript-darwin-x64@7.0.2':
+    resolution: {integrity: sha512-SZ9xZInqApNlNGc9s0W1VSsktYSOe9cFqNOIqmN1Gs8SmkjKZYFt017G4VwPxASInODuAdbTW7sXiFUf893RgA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@typescript/typescript-freebsd-arm64@7.0.2':
+    resolution: {integrity: sha512-W5NH4y/J0plIIS5b2xvTEkU7JFxyqdMAOgf+Ilhl0vHQXKO5dZoxd+C/jEtq56c4F3wk71RB4BMRQ2XdI+bwYQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [freebsd]
+
+  '@typescript/typescript-freebsd-x64@7.0.2':
+    resolution: {integrity: sha512-UMGDx5sTpzNw3WiPebH7l90IWfJggEd+egHt/q6p7/Cm3zqoV7VxkGXt+3DxPIw8CcmvAB0j3sVVfbhX+M4Tpw==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@typescript/typescript-linux-arm64@7.0.2':
+    resolution: {integrity: sha512-Qh4eU4/y3yDjnfjjyPYihMj5/ODIlmt+Bzu17OI+fiSRDW57QmU5SiN63exPRNJPKUzcc1INa1NXdrJ+MqHjUQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@typescript/typescript-linux-arm@7.0.2':
+    resolution: {integrity: sha512-gffT3xPz9sR7j/YJExkyPntrI0P2EP9XbOyWzth2/Gs0RstK+90RBcO0ncXoXy/beYll1SXw846Nf2zdnEz0QQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm]
+    os: [linux]
+
+  '@typescript/typescript-linux-loong64@7.0.2':
+    resolution: {integrity: sha512-uEHck9i8hoAzXPiYRib1O7miOnz23SxIeVl6F4LXox+qov1K35jHcEW6VHKvZI+pyvl7fZEP4MCU5LYvIq1GuQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [loong64]
+    os: [linux]
+
+  '@typescript/typescript-linux-mips64el@7.0.2':
+    resolution: {integrity: sha512-R4KvAMnE43W5Qeqb0Ly56O3mWMWIAgsMyz36DCaycd5nbg/9kzm0liw3JocfRqyJY0KPmzFjbswozXyW0DnIYA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [mips64el]
+    os: [linux]
+
+  '@typescript/typescript-linux-ppc64@7.0.2':
+    resolution: {integrity: sha512-DORx5b3sd/4S7eayxm4FQv+A7CrkUIGRaHiwI8oiHTAI1fAPWhF4J0vAlkC8biAlHSVVwxMQ3tjZ2/DVbnQiiA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [ppc64]
+    os: [linux]
+
+  '@typescript/typescript-linux-riscv64@7.0.2':
+    resolution: {integrity: sha512-wf0jqEDOjrPRnKwYRyyJDRo11KMbvMFrU+q4zqKyChODBzvlkbhNQfKvLxQCcwTpdDaXSHZTVuh0JoCrKCUMHQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@typescript/typescript-linux-s390x@7.0.2':
+    resolution: {integrity: sha512-IkwJc3L7yhytWd/ewjyxNDfOmswCm9GWMJT/ue/dU4aZNbwZeYAetq42VyLmsmSjvoX7z74X6ZaYCtzAr0EuGw==}
+    engines: {node: '>=16.20.0'}
+    cpu: [s390x]
+    os: [linux]
+
+  '@typescript/typescript-linux-x64@7.0.2':
+    resolution: {integrity: sha512-EYdf2cNg7rgCWJnxCdJ+F3V39O8ihb37eHAu1LK8oAFizgTQbPOK7zHHXbPt8rX24COqODXeI3sIf0fCXG7H/A==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [linux]
+
+  '@typescript/typescript-netbsd-arm64@7.0.2':
+    resolution: {integrity: sha512-+polYF4MF04aPpO5FTkHran9yUQDSXqy5GiSDKpsll5jy3l3+g9QLhpf39T+ePtefhXLOGrLl0QIjkQP6VnelA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [netbsd]
+
+  '@typescript/typescript-netbsd-x64@7.0.2':
+    resolution: {integrity: sha512-8YIT0EHM/3dq10ZOVF/A7pc/YSMtbcecct4rWtexrnSCHOPcpC2KTLXfTCR6vDpnSiY12heNb1GiN/wu+T/FyA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [netbsd]
+
+  '@typescript/typescript-openbsd-arm64@7.0.2':
+    resolution: {integrity: sha512-APT8+ClYnuYm1u9+kgGXoMj2VzWzcymwh2gNSQVySHfkRDGOTVkoWLjCmOQSaO+PoqQ57B0flRp9SA+7GnnkzQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [openbsd]
+
+  '@typescript/typescript-openbsd-x64@7.0.2':
+    resolution: {integrity: sha512-yX7s+Q0Dln0Dt9tEzZsAjXXR/+ytBM7AlglaqyeMPxQszJ1JhlJdZ6jLA+IzldHtflX81em7lDao1xXu+aRRkg==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [openbsd]
+
+  '@typescript/typescript-sunos-x64@7.0.2':
+    resolution: {integrity: sha512-dLJDGaLZ1D4HPQn62u1n8mBDkJREwMsAkCdkwd4Ieqw+x3TUyTsqY0YiBCtE6H6OzzgGk3iuZ3vFWRS+E8/d1g==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [sunos]
+
+  '@typescript/typescript-win32-arm64@7.0.2':
+    resolution: {integrity: sha512-Gyl1Vy6OsWesLzmq+EP0Fb7b4Nid5232AvcA2SFcdYreldpNtYFFofPjnt62y9hQy7VTaZp65ICJjuAQRaVcIQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@typescript/typescript-win32-x64@7.0.2':
+    resolution: {integrity: sha512-0BQ3HkAHHlKLSp1qRvf3SUhGpGsDuhB/jgFw75guyqbxJqEaS0Cw/VFO8i2nHglJUzQCRtMMR/IBAKE3ETMC4g==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [win32]
 
   '@vanilla-extract/babel-plugin-debug-ids@1.0.3':
     resolution: {integrity: sha512-vm4jYu1xhSa6ofQ9AhIpR3DkAp4c+eoR1Rpm8/TQI4DmWbmGbOjYRcqV0aWsfaIlNhN4kFuxFMKBNN9oG6iRzA==}
@@ -7482,6 +7602,7 @@ packages:
   tar@6.1.15:
     resolution: {integrity: sha512-/zKt9UyngnxIT/EAGYuxaMYgOIJiP81ab9ZfkILq4oNLPFX50qyYmu7jRj9qeXoxmJHjGlbH0+cm2uy1WCs10A==}
     engines: {node: '>=10'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   telejson@7.2.0:
     resolution: {integrity: sha512-1QTEcJkJEhc8OnStBx/ILRu5J2p0GjvWsBx56bmZRqnrkdBMUe+nX92jxV+p3dB4CP6PZCdJMQJwCggkNBMzkQ==}
@@ -7689,6 +7810,11 @@ packages:
   typescript@4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
+    hasBin: true
+
+  typescript@7.0.2:
+    resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
+    engines: {node: '>=16.20.0'}
     hasBin: true
 
   ua-parser-js@1.0.35:
@@ -8855,13 +8981,13 @@ snapshots:
     dependencies:
       '@babel/core': 7.24.4
       '@babel/helper-create-regexp-features-plugin': 7.22.9(@babel/core@7.24.4)
-      '@babel/helper-plugin-utils': 7.24.0
+      '@babel/helper-plugin-utils': 7.26.5
 
   '@babel/plugin-proposal-unicode-property-regex@7.18.6(@babel/core@7.26.10)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/helper-create-regexp-features-plugin': 7.22.9(@babel/core@7.26.10)
-      '@babel/helper-plugin-utils': 7.24.0
+      '@babel/helper-plugin-utils': 7.26.5
 
   '@babel/plugin-syntax-async-generators@7.8.4(@babel/core@7.24.4)':
     dependencies:
@@ -8931,7 +9057,7 @@ snapshots:
   '@babel/plugin-syntax-flow@7.24.1(@babel/core@7.24.4)':
     dependencies:
       '@babel/core': 7.24.4
-      '@babel/helper-plugin-utils': 7.24.0
+      '@babel/helper-plugin-utils': 7.26.5
 
   '@babel/plugin-syntax-flow@7.26.0(@babel/core@7.24.4)':
     dependencies:
@@ -8986,7 +9112,7 @@ snapshots:
   '@babel/plugin-syntax-jsx@7.24.1(@babel/core@7.24.4)':
     dependencies:
       '@babel/core': 7.24.4
-      '@babel/helper-plugin-utils': 7.24.0
+      '@babel/helper-plugin-utils': 7.26.5
 
   '@babel/plugin-syntax-jsx@7.25.9(@babel/core@7.24.4)':
     dependencies:
@@ -10218,7 +10344,7 @@ snapshots:
       '@babel/helper-plugin-utils': 7.24.0
       '@babel/plugin-proposal-unicode-property-regex': 7.18.6(@babel/core@7.24.4)
       '@babel/plugin-transform-dotall-regex': 7.22.5(@babel/core@7.24.4)
-      '@babel/types': 7.24.0
+      '@babel/types': 7.26.10
       esutils: 2.0.3
 
   '@babel/preset-modules@0.1.5(@babel/core@7.26.10)':
@@ -10227,7 +10353,7 @@ snapshots:
       '@babel/helper-plugin-utils': 7.24.0
       '@babel/plugin-proposal-unicode-property-regex': 7.18.6(@babel/core@7.26.10)
       '@babel/plugin-transform-dotall-regex': 7.22.5(@babel/core@7.26.10)
-      '@babel/types': 7.24.0
+      '@babel/types': 7.26.10
       esutils: 2.0.3
 
   '@babel/preset-react@7.24.1(@babel/core@7.24.4)':
@@ -10349,39 +10475,39 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@biomejs/biome@1.6.4':
+  '@biomejs/biome@2.5.9':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 1.6.4
-      '@biomejs/cli-darwin-x64': 1.6.4
-      '@biomejs/cli-linux-arm64': 1.6.4
-      '@biomejs/cli-linux-arm64-musl': 1.6.4
-      '@biomejs/cli-linux-x64': 1.6.4
-      '@biomejs/cli-linux-x64-musl': 1.6.4
-      '@biomejs/cli-win32-arm64': 1.6.4
-      '@biomejs/cli-win32-x64': 1.6.4
+      '@biomejs/cli-darwin-arm64': 2.5.9
+      '@biomejs/cli-darwin-x64': 2.5.9
+      '@biomejs/cli-linux-arm64': 2.5.9
+      '@biomejs/cli-linux-arm64-musl': 2.5.9
+      '@biomejs/cli-linux-x64': 2.5.9
+      '@biomejs/cli-linux-x64-musl': 2.5.9
+      '@biomejs/cli-win32-arm64': 2.5.9
+      '@biomejs/cli-win32-x64': 2.5.9
 
-  '@biomejs/cli-darwin-arm64@1.6.4':
+  '@biomejs/cli-darwin-arm64@2.5.9':
     optional: true
 
-  '@biomejs/cli-darwin-x64@1.6.4':
+  '@biomejs/cli-darwin-x64@2.5.9':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@1.6.4':
+  '@biomejs/cli-linux-arm64-musl@2.5.9':
     optional: true
 
-  '@biomejs/cli-linux-arm64@1.6.4':
+  '@biomejs/cli-linux-arm64@2.5.9':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@1.6.4':
+  '@biomejs/cli-linux-x64-musl@2.5.9':
     optional: true
 
-  '@biomejs/cli-linux-x64@1.6.4':
+  '@biomejs/cli-linux-x64@2.5.9':
     optional: true
 
-  '@biomejs/cli-win32-arm64@1.6.4':
+  '@biomejs/cli-win32-arm64@2.5.9':
     optional: true
 
-  '@biomejs/cli-win32-x64@1.6.4':
+  '@biomejs/cli-win32-x64@2.5.9':
     optional: true
 
   '@colors/colors@1.5.0':
@@ -11066,11 +11192,11 @@ snapshots:
       execa: 5.1.1
       fast-glob: 3.3.3
 
-  '@react-native-community/cli-config@14.1.0(typescript@4.9.5)':
+  '@react-native-community/cli-config@14.1.0(typescript@7.0.2)':
     dependencies:
       '@react-native-community/cli-tools': 14.1.0
       chalk: 4.1.2
-      cosmiconfig: 9.0.0(typescript@4.9.5)
+      cosmiconfig: 9.0.0(typescript@7.0.2)
       deepmerge: 4.3.1
       fast-glob: 3.3.3
       joi: 17.9.2
@@ -11083,9 +11209,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@react-native-community/cli-doctor@14.1.0(typescript@4.9.5)':
+  '@react-native-community/cli-doctor@14.1.0(typescript@7.0.2)':
     dependencies:
-      '@react-native-community/cli-config': 14.1.0(typescript@4.9.5)
+      '@react-native-community/cli-config': 14.1.0(typescript@7.0.2)
       '@react-native-community/cli-platform-android': 14.1.0
       '@react-native-community/cli-platform-apple': 14.1.0
       '@react-native-community/cli-platform-ios': 14.1.0
@@ -11159,12 +11285,12 @@ snapshots:
     dependencies:
       joi: 17.9.2
 
-  '@react-native-community/cli@14.1.0(typescript@4.9.5)':
+  '@react-native-community/cli@14.1.0(typescript@7.0.2)':
     dependencies:
       '@react-native-community/cli-clean': 14.1.0
-      '@react-native-community/cli-config': 14.1.0(typescript@4.9.5)
+      '@react-native-community/cli-config': 14.1.0(typescript@7.0.2)
       '@react-native-community/cli-debugger-ui': 14.1.0
-      '@react-native-community/cli-doctor': 14.1.0(typescript@4.9.5)
+      '@react-native-community/cli-doctor': 14.1.0(typescript@7.0.2)
       '@react-native-community/cli-server-api': 14.1.0
       '@react-native-community/cli-tools': 14.1.0
       '@react-native-community/cli-types': 14.1.0
@@ -11387,12 +11513,12 @@ snapshots:
 
   '@react-native/normalize-colors@0.75.5': {}
 
-  '@react-native/virtualized-lists@0.75.5(@types/react@18.2.15)(react-native@0.75.5(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))(@types/react@18.2.15)(react@18.2.0)(typescript@4.9.5))(react@18.2.0)':
+  '@react-native/virtualized-lists@0.75.5(@types/react@18.2.15)(react-native@0.75.5(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))(@types/react@18.2.15)(react@18.2.0)(typescript@7.0.2))(react@18.2.0)':
     dependencies:
       invariant: 2.2.4
       nullthrows: 1.1.1
       react: 18.2.0
-      react-native: 0.75.5(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))(@types/react@18.2.15)(react@18.2.0)(typescript@4.9.5)
+      react-native: 0.75.5(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))(@types/react@18.2.15)(react@18.2.0)(typescript@7.0.2)
     optionalDependencies:
       '@types/react': 18.2.15
 
@@ -11681,7 +11807,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/builder-webpack5@7.5.3(esbuild@0.17.6)(typescript@4.9.5)':
+  '@storybook/builder-webpack5@7.5.3(esbuild@0.17.6)(typescript@7.0.2)':
     dependencies:
       '@babel/core': 7.24.4
       '@storybook/channels': 7.5.3
@@ -11702,7 +11828,7 @@ snapshots:
       constants-browserify: 1.0.0
       css-loader: 6.8.1(webpack@5.88.2(@swc/core@1.4.13)(esbuild@0.17.6))
       express: 4.18.2
-      fork-ts-checker-webpack-plugin: 8.0.0(typescript@4.9.5)(webpack@5.88.2(@swc/core@1.4.13)(esbuild@0.17.6))
+      fork-ts-checker-webpack-plugin: 8.0.0(typescript@7.0.2)(webpack@5.88.2(@swc/core@1.4.13)(esbuild@0.17.6))
       fs-extra: 11.1.1
       html-webpack-plugin: 5.5.3(webpack@5.88.2(@swc/core@1.4.13)(esbuild@0.17.6))
       path-browserify: 1.0.1
@@ -11720,7 +11846,7 @@ snapshots:
       webpack-hot-middleware: 2.25.4
       webpack-virtual-modules: 0.5.0
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 7.0.2
     transitivePeerDependencies:
       - '@swc/helpers'
       - encoding
@@ -12057,7 +12183,7 @@ snapshots:
 
   '@storybook/postinstall@7.5.3': {}
 
-  '@storybook/preset-react-webpack@7.5.3(@babel/core@7.24.4)(@swc/core@1.4.13)(esbuild@0.17.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@2.19.0)(typescript@4.9.5)(webpack-hot-middleware@2.25.4)':
+  '@storybook/preset-react-webpack@7.5.3(@babel/core@7.24.4)(@swc/core@1.4.13)(esbuild@0.17.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@2.19.0)(typescript@7.0.2)(webpack-hot-middleware@2.25.4)':
     dependencies:
       '@babel/preset-flow': 7.24.1(@babel/core@7.24.4)
       '@babel/preset-react': 7.24.1(@babel/core@7.24.4)
@@ -12065,8 +12191,8 @@ snapshots:
       '@storybook/core-webpack': 7.5.3
       '@storybook/docs-tools': 7.5.3
       '@storybook/node-logger': 7.5.3
-      '@storybook/react': 7.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)
-      '@storybook/react-docgen-typescript-plugin': 1.0.6--canary.9.0c3f3b7.0(typescript@4.9.5)(webpack@5.88.2(@swc/core@1.4.13)(esbuild@0.17.6))
+      '@storybook/react': 7.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@7.0.2)
+      '@storybook/react-docgen-typescript-plugin': 1.0.6--canary.9.0c3f3b7.0(typescript@7.0.2)(webpack@5.88.2(@swc/core@1.4.13)(esbuild@0.17.6))
       '@types/node': 18.16.19
       '@types/semver': 7.5.0
       babel-plugin-add-react-displayname: 0.0.5
@@ -12079,7 +12205,7 @@ snapshots:
       webpack: 5.88.2(@swc/core@1.4.13)(esbuild@0.17.6)
     optionalDependencies:
       '@babel/core': 7.24.4
-      typescript: 4.9.5
+      typescript: 7.0.2
     transitivePeerDependencies:
       - '@swc/core'
       - '@types/webpack'
@@ -12130,16 +12256,16 @@ snapshots:
 
   '@storybook/preview@7.5.3': {}
 
-  '@storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0(typescript@4.9.5)(webpack@5.88.2(@swc/core@1.4.13)(esbuild@0.17.6))':
+  '@storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0(typescript@7.0.2)(webpack@5.88.2(@swc/core@1.4.13)(esbuild@0.17.6))':
     dependencies:
       debug: 4.3.4
       endent: 2.1.0
       find-cache-dir: 3.3.2
       flat-cache: 3.0.4
       micromatch: 4.0.5
-      react-docgen-typescript: 2.2.2(typescript@4.9.5)
+      react-docgen-typescript: 2.2.2(typescript@7.0.2)
       tslib: 2.6.0
-      typescript: 4.9.5
+      typescript: 7.0.2
       webpack: 5.88.2(@swc/core@1.4.13)(esbuild@0.17.6)
     transitivePeerDependencies:
       - supports-color
@@ -12149,17 +12275,17 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@storybook/react-webpack5@7.5.3(@babel/core@7.24.4)(@swc/core@1.4.13)(esbuild@0.17.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@2.19.0)(typescript@4.9.5)(webpack-hot-middleware@2.25.4)':
+  '@storybook/react-webpack5@7.5.3(@babel/core@7.24.4)(@swc/core@1.4.13)(esbuild@0.17.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@2.19.0)(typescript@7.0.2)(webpack-hot-middleware@2.25.4)':
     dependencies:
-      '@storybook/builder-webpack5': 7.5.3(esbuild@0.17.6)(typescript@4.9.5)
-      '@storybook/preset-react-webpack': 7.5.3(@babel/core@7.24.4)(@swc/core@1.4.13)(esbuild@0.17.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@2.19.0)(typescript@4.9.5)(webpack-hot-middleware@2.25.4)
-      '@storybook/react': 7.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)
+      '@storybook/builder-webpack5': 7.5.3(esbuild@0.17.6)(typescript@7.0.2)
+      '@storybook/preset-react-webpack': 7.5.3(@babel/core@7.24.4)(@swc/core@1.4.13)(esbuild@0.17.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@2.19.0)(typescript@7.0.2)(webpack-hot-middleware@2.25.4)
+      '@storybook/react': 7.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@7.0.2)
       '@types/node': 18.16.19
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     optionalDependencies:
       '@babel/core': 7.24.4
-      typescript: 4.9.5
+      typescript: 7.0.2
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/helpers'
@@ -12175,7 +12301,7 @@ snapshots:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  '@storybook/react@7.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)':
+  '@storybook/react@7.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@7.0.2)':
     dependencies:
       '@storybook/client-logger': 7.5.3
       '@storybook/core-client': 7.5.3
@@ -12201,7 +12327,7 @@ snapshots:
       type-fest: 2.19.0
       util-deprecate: 1.0.2
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 7.0.2
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -12594,6 +12720,66 @@ snapshots:
       '@types/node': 20.4.2
     optional: true
 
+  '@typescript/typescript-aix-ppc64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-darwin-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-darwin-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-freebsd-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-freebsd-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-arm@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-loong64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-mips64el@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-ppc64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-riscv64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-s390x@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-netbsd-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-netbsd-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-openbsd-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-openbsd-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-sunos-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-win32-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-win32-x64@7.0.2':
+    optional: true
+
   '@vanilla-extract/babel-plugin-debug-ids@1.0.3':
     dependencies:
       '@babel/core': 7.26.10
@@ -12722,9 +12908,9 @@ snapshots:
       - encoding
       - supports-color
 
-  '@vercel/remix-builder@1.8.18(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@4.9.5))':
+  '@vercel/remix-builder@1.8.18(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@7.0.2))':
     dependencies:
-      '@remix-run/dev': '@vercel/remix-run-dev@1.18.1(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@4.9.5))'
+      '@remix-run/dev': '@vercel/remix-run-dev@1.18.1(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@7.0.2))'
       '@vercel/build-utils': 6.8.2
       '@vercel/nft': 0.22.5
       '@vercel/static-config': 2.0.17
@@ -12747,7 +12933,7 @@ snapshots:
       - ts-node
       - utf-8-validate
 
-  '@vercel/remix-run-dev@1.18.1(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@4.9.5))':
+  '@vercel/remix-run-dev@1.18.1(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@7.0.2))':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/generator': 7.26.10
@@ -12788,7 +12974,7 @@ snapshots:
       pidtree: 0.6.0
       postcss: 8.4.38
       postcss-discard-duplicates: 5.1.0(postcss@8.4.38)
-      postcss-load-config: 4.0.1(postcss@8.4.38)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@4.9.5))
+      postcss-load-config: 4.0.1(postcss@8.4.38)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@7.0.2))
       postcss-modules: 6.0.0(postcss@8.4.38)
       prettier: 2.8.8
       pretty-ms: 7.0.1
@@ -13801,14 +13987,14 @@ snapshots:
       path-type: 4.0.0
       yaml: 1.10.2
 
-  cosmiconfig@9.0.0(typescript@4.9.5):
+  cosmiconfig@9.0.0(typescript@7.0.2):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 7.0.2
 
   cp-file@9.1.0:
     dependencies:
@@ -14705,7 +14891,7 @@ snapshots:
 
   forever-agent@0.6.1: {}
 
-  fork-ts-checker-webpack-plugin@8.0.0(typescript@4.9.5)(webpack@5.88.2(@swc/core@1.4.13)(esbuild@0.17.6)):
+  fork-ts-checker-webpack-plugin@8.0.0(typescript@7.0.2)(webpack@5.88.2(@swc/core@1.4.13)(esbuild@0.17.6)):
     dependencies:
       '@babel/code-frame': 7.24.2
       chalk: 4.1.2
@@ -14719,7 +14905,7 @@ snapshots:
       schema-utils: 3.3.0
       semver: 7.6.0
       tapable: 2.2.1
-      typescript: 4.9.5
+      typescript: 7.0.2
       webpack: 5.88.2(@swc/core@1.4.13)(esbuild@0.17.6)
 
   form-data@2.3.3:
@@ -16921,13 +17107,13 @@ snapshots:
     dependencies:
       postcss: 8.4.38
 
-  postcss-load-config@4.0.1(postcss@8.4.38)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@4.9.5)):
+  postcss-load-config@4.0.1(postcss@8.4.38)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@7.0.2)):
     dependencies:
       lilconfig: 2.1.0
       yaml: 2.3.1
     optionalDependencies:
       postcss: 8.4.38
-      ts-node: 10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@4.9.5)
+      ts-node: 10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@7.0.2)
 
   postcss-modules-extract-imports@3.0.0(postcss@8.4.38):
     dependencies:
@@ -17172,9 +17358,9 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  react-docgen-typescript@2.2.2(typescript@4.9.5):
+  react-docgen-typescript@2.2.2(typescript@7.0.2):
     dependencies:
-      typescript: 4.9.5
+      typescript: 7.0.2
 
   react-docgen@5.4.3:
     dependencies:
@@ -17230,10 +17416,10 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  react-native@0.75.5(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))(@types/react@18.2.15)(react@18.2.0)(typescript@4.9.5):
+  react-native@0.75.5(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))(@types/react@18.2.15)(react@18.2.0)(typescript@7.0.2):
     dependencies:
       '@jest/create-cache-key-function': 29.7.0
-      '@react-native-community/cli': 14.1.0(typescript@4.9.5)
+      '@react-native-community/cli': 14.1.0(typescript@7.0.2)
       '@react-native-community/cli-platform-android': 14.1.0
       '@react-native-community/cli-platform-ios': 14.1.0
       '@react-native/assets-registry': 0.75.5
@@ -17242,7 +17428,7 @@ snapshots:
       '@react-native/gradle-plugin': 0.75.5
       '@react-native/js-polyfills': 0.75.5
       '@react-native/normalize-colors': 0.75.5
-      '@react-native/virtualized-lists': 0.75.5(@types/react@18.2.15)(react-native@0.75.5(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))(@types/react@18.2.15)(react@18.2.0)(typescript@4.9.5))(react@18.2.0)
+      '@react-native/virtualized-lists': 0.75.5(@types/react@18.2.15)(react-native@0.75.5(@babel/core@7.24.4)(@babel/preset-env@7.22.9(@babel/core@7.24.4))(@types/react@18.2.15)(react@18.2.0)(typescript@7.0.2))(react@18.2.0)
       abort-controller: 3.0.0
       anser: 1.4.10
       ansi-regex: 5.0.1
@@ -18339,6 +18525,27 @@ snapshots:
     optionalDependencies:
       '@swc/core': 1.4.13
 
+  ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@7.0.2):
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@tsconfig/node10': 1.0.9
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.4
+      '@types/node': 14.18.33
+      acorn: 8.10.0
+      acorn-walk: 8.2.0
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 7.0.2
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
+    optionalDependencies:
+      '@swc/core': 1.4.13
+    optional: true
+
   ts-toolbelt@6.15.5: {}
 
   tsconfig-paths@4.2.0:
@@ -18410,6 +18617,29 @@ snapshots:
   typedarray@0.0.6: {}
 
   typescript@4.9.5: {}
+
+  typescript@7.0.2:
+    optionalDependencies:
+      '@typescript/typescript-aix-ppc64': 7.0.2
+      '@typescript/typescript-darwin-arm64': 7.0.2
+      '@typescript/typescript-darwin-x64': 7.0.2
+      '@typescript/typescript-freebsd-arm64': 7.0.2
+      '@typescript/typescript-freebsd-x64': 7.0.2
+      '@typescript/typescript-linux-arm': 7.0.2
+      '@typescript/typescript-linux-arm64': 7.0.2
+      '@typescript/typescript-linux-loong64': 7.0.2
+      '@typescript/typescript-linux-mips64el': 7.0.2
+      '@typescript/typescript-linux-ppc64': 7.0.2
+      '@typescript/typescript-linux-riscv64': 7.0.2
+      '@typescript/typescript-linux-s390x': 7.0.2
+      '@typescript/typescript-linux-x64': 7.0.2
+      '@typescript/typescript-netbsd-arm64': 7.0.2
+      '@typescript/typescript-netbsd-x64': 7.0.2
+      '@typescript/typescript-openbsd-arm64': 7.0.2
+      '@typescript/typescript-openbsd-x64': 7.0.2
+      '@typescript/typescript-sunos-x64': 7.0.2
+      '@typescript/typescript-win32-arm64': 7.0.2
+      '@typescript/typescript-win32-x64': 7.0.2
 
   ua-parser-js@1.0.35: {}
 
@@ -18654,7 +18884,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vercel@31.0.4(@swc/core@1.4.13)(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@4.9.5)):
+  vercel@31.0.4(@swc/core@1.4.13)(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@7.0.2)):
     dependencies:
       '@vercel/build-utils': 6.8.2
       '@vercel/go': 2.5.1
@@ -18663,7 +18893,7 @@ snapshots:
       '@vercel/node': 2.15.6(@swc/core@1.4.13)
       '@vercel/python': 3.1.60
       '@vercel/redwood': 1.1.15
-      '@vercel/remix-builder': 1.8.18(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@4.9.5))
+      '@vercel/remix-builder': 1.8.18(@types/node@14.18.33)(terser@5.19.1)(ts-node@10.9.1(@swc/core@1.4.13)(@types/node@14.18.33)(typescript@7.0.2))
       '@vercel/ruby': 1.3.76
       '@vercel/static-build': 1.3.41(@swc/core@1.4.13)
     transitivePeerDependencies:

@@ -1,2 +1,2 @@
-export {VerificationInput} from './VerificationInput';
 export {SingleLineInput} from './SingleLineInput';
+export {VerificationInput} from './VerificationInput';
