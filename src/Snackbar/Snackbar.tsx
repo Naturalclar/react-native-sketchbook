@@ -67,7 +67,7 @@ export const Snackbar: React.FC<React.PropsWithChildren<Props>> = ({
   }, [animated]);
 
   React.useEffect(() => {
-    let timerId: number;
+    let timerId: ReturnType<typeof setTimeout>;
     if (visible) {
       appear();
       timerId = setTimeout(() => {
