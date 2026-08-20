@@ -35,7 +35,6 @@
   "devDependencies": {
     "@babel/core": "^7",
     "@biomejs/biome": "^1.6.4",
-    "@react-native-community/eslint-config": "^3.2.0",
     "@react-native/babel-preset": "0.75.0-main",
     "@storybook/addon-actions": "~7.5.0",
     "@storybook/addon-docs": "~7.5.0",

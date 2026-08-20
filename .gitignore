@@ -3,8 +3,6 @@ node_modules/
 dist
 # storybook generated files
 storybook-static
-# eslint cache
-.eslintcache
 
 .now
 
