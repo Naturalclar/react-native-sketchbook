@@ -31,7 +31,7 @@
     "reg-suit": "reg-suit run",
     "storybook": "storybook dev -p 6006",
     "storycap:all": "rm -rf ./__screenshots__ && npx storycap http://localhost:6006 --serverCmd 'npx http-server storybook-static -p 6006' --viewport '414x736' --serverTimeout '200000'",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc -p tsconfig.typecheck.json"
   },
   "devDependencies": {
     "@babel/core": "^7",

@@ -9,10 +9,10 @@ import * as Icons from './index';
 import {View, FlatList, StyleSheet} from 'react-native';
 import {useColors} from '../Themes';
 
-const icons = Object.keys(Icons).map((key) => {
+const icons = Object.entries(Icons).map(([name, component]) => {
   return {
-    name: key,
-    component: Icons[key],
+    name,
+    component,
   };
 });
 
