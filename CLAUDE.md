@@ -14,9 +14,9 @@ Package manager is **pnpm** (see `packageManager` in `package.json`).
 
 ```bash
 pnpm storybook          # dev server on :6006 — the primary dev loop
-pnpm type-check         # tsc --noEmit
-pnpm lint               # biome lint .
-pnpm format             # biome lint . --apply (auto-fixes)
+pnpm type-check         # tsc -p tsconfig.typecheck.json (covers src + stories + .storybook)
+pnpm lint               # biome check . (lint + formatting + import sorting)
+pnpm format             # biome check . --apply (auto-fixes)
 pnpm build              # tsc -> dist/ (this is what `prepare`/publish runs)
 pnpm build-storybook    # static build -> storybook-static/
 ```
@@ -75,13 +75,18 @@ a flex `View`. Every new story also becomes a visual-regression screenshot.
 `.storybook/main.js` aliases `react-native` → `react-native-web` and runs `.tsx`/`.jsx` through
 `@react-native/babel-preset`, which is why RN source works unchanged in the browser.
 
-### Build output
-`tsc` emits `dist/` from `src/` with declarations. `tsconfig.json` excludes `**/*.stories.tsx`, so
-`.tsx` stories are not type-checked by `pnpm type-check` or compiled — type errors there surface only
-when Storybook builds.
+### Build output and type-checking
+Two tsconfigs, on purpose. `tsconfig.json` drives `pnpm build`: it emits `dist/` from `src/` with
+declarations and excludes `**/*.stories.tsx` so stories stay out of the published package.
+`tsconfig.typecheck.json` extends it, drops that exclusion and adds `.storybook`, and is what
+`pnpm type-check` runs — so story and decorator type errors fail CI instead of only surfacing at
+Storybook build time. Widening what gets checked means editing the typecheck config; widening what
+gets *shipped* means editing the base one.
 
 ## Tooling notes
 
-- **Biome** (`biome.json`) is the linter/formatter — not ESLint, despite the lingering
-  `@react-native-community/eslint-config` dev dependency. Formatting in `src/` is inconsistent
-  (mixed quote styles); match the surrounding file rather than reformatting untouched code.
+- **Biome** (`biome.json`) is the linter *and* formatter — there is no ESLint config in the repo.
+  Both scripts run `biome check`, so `pnpm lint` in CI fails on unformatted code and unsorted
+  imports, not just lint rules. The config pins the two settings where Biome's defaults disagree
+  with this codebase: `indentStyle: space` and `quoteStyle`/`bracketSpacing` for single quotes and
+  `{noSpace}` braces. Run `pnpm format` rather than hand-formatting.
