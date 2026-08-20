@@ -12,6 +12,7 @@ import {IconPencil} from '../Icons';
 import {useColors, useFontSizes} from '../Themes';
 import {Typography} from '../Typography';
 import {Margin} from '../Utils';
+
 const styles = StyleSheet.create({
   label: {
     fontSize: 14,

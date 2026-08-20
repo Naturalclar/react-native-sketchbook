@@ -3,6 +3,7 @@ import {StyleSheet, TouchableOpacity, View, type ViewProps} from 'react-native';
 import {IconClose} from '../Icons';
 import {useColors, useSpaceSizes} from '../Themes';
 import {Margin} from '../Utils';
+
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
