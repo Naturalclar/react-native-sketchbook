@@ -31,15 +31,18 @@
     "reg-suit": "reg-suit run",
     "storybook": "storybook dev -p 6006",
     "storycap:all": "rm -rf ./__screenshots__ && npx storycap http://localhost:6006 --serverCmd 'npx http-server storybook-static -p 6006' --viewport '414x736' --serverTimeout '200000'",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc -p tsconfig.typecheck.json"
   },
   "devDependencies": {
     "@babel/core": "^7",
     "@biomejs/biome": "^1.6.4",
     "@react-native-community/eslint-config": "^3.2.0",
     "@react-native/babel-preset": "0.75.0-main",
+    "@storybook/addon-actions": "~7.5.0",
+    "@storybook/addon-docs": "~7.5.0",
     "@storybook/addon-essentials": "~7.5.0",
-    "@storybook/addons": "~7.5.0",
+    "@storybook/addon-viewport": "~7.5.0",
+    "@storybook/manager-api": "~7.5.0",
     "@storybook/react": "~7.5.0",
     "@storybook/react-webpack5": "~7.5.0",
     "@storybook/theming": "~7.5.0",
