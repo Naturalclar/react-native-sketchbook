@@ -42,7 +42,14 @@ yarn add react-native-sketchbook
 Using npm:
 
 ```
-pnpm i react-native-sketchbook
+npm i react-native-sketchbook
+```
+
+Using pnpm:
+
+```
+pnpm add react-native-sketchbook
+```
 
 ## Docs
 
