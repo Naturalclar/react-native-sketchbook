@@ -2,7 +2,12 @@ export {SlideUpView} from './Animations';
 // Avatar
 export {Avatar, AvatarGroup} from './Avatars';
 // Buttons
-export {BaseButton, PrimaryButton} from './Buttons';
+export {
+  BaseButton,
+  PrimaryButton,
+  RoundButton,
+  RoundButtonOutline,
+} from './Buttons';
 // Checkbox
 export {CheckBox, CheckBoxItem} from './CheckBox';
 // Dividers
@@ -21,9 +26,10 @@ export {
   IconCaretLeft,
   IconCaretRight,
   IconCaretTop,
+  IconPencil,
 } from './Icons';
 // Inputs
-export {VerificationInput} from './Inputs';
+export {SingleLineInput, VerificationInput} from './Inputs';
 // Labels
 export {BaseLabel} from './Labels';
 // RadioButtons
@@ -54,8 +60,11 @@ export {
 export {
   Margin,
   Stack,
+  XStack,
+  YStack,
   Row,
   Flex,
+  PressableOpacity,
   StaticPage,
   FullPage,
   isAndroid,
