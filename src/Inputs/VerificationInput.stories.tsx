@@ -1,10 +1,10 @@
 import React from 'react';
+import {View} from 'react-native';
 import {
   DarkThemeDecorator,
   LightThemeDecorator,
 } from '../../.storybook/StoryDecorator';
 import {VerificationInput} from './VerificationInput';
-import {View} from 'react-native';
 
 const Story = () => {
   const [value, setValue] = React.useState('');

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {StyleSheet} from 'react-native';
-import {BaseButton} from './BaseButton';
 import {useColors, useSpaceSizes} from '../Themes';
 import {Typography} from '../Typography';
+import {BaseButton} from './BaseButton';
 
 const styles = StyleSheet.create({
   container: {
@@ -40,7 +40,8 @@ export const PrimaryButton: React.FC<Props> = React.memo(
           {padding: spaceSize.medium, backgroundColor: primaryColor},
           disabled ? styles.disabled : styles.container,
         ]}
-        onPress={onPress}>
+        onPress={onPress}
+      >
         <Typography color={white}>{label}</Typography>
       </BaseButton>
     );

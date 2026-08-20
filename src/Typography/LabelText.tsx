@@ -1,7 +1,7 @@
 import type * as React from 'react';
-import {Typography, type TypographyProps} from './Typography';
-import {useFontSizes} from '../Themes';
 import {StyleSheet} from 'react-native';
+import {useFontSizes} from '../Themes';
+import {Typography, type TypographyProps} from './Typography';
 
 const styles = StyleSheet.create({
   heading: {

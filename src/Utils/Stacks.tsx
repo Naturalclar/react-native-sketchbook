@@ -1,5 +1,5 @@
-import * as React from "react";
-import { View, StyleSheet, type ViewProps, type FlexStyle } from "react-native";
+import * as React from 'react';
+import {type FlexStyle, StyleSheet, View, type ViewProps} from 'react-native';
 
 type StackProps = {
   gap?: number;
@@ -12,10 +12,10 @@ type StackProps = {
   borderRightWidth?: number;
   borderLeftWidth?: number;
   borderColor?: string;
-  alignItems?: FlexStyle["alignItems"];
-  justifyContent?: FlexStyle["justifyContent"];
-  alignContent?: FlexStyle["alignContent"];
-  alignSelf?: FlexStyle["alignSelf"];
+  alignItems?: FlexStyle['alignItems'];
+  justifyContent?: FlexStyle['justifyContent'];
+  alignContent?: FlexStyle['alignContent'];
+  alignSelf?: FlexStyle['alignSelf'];
 } & ViewProps;
 export const XStack = React.memo<StackProps>(
   ({
@@ -59,7 +59,7 @@ export const XStack = React.memo<StackProps>(
     />
   ),
 );
-XStack.displayName = "XStack";
+XStack.displayName = 'XStack';
 export const YStack = React.memo<StackProps>(
   ({
     gap,
@@ -101,10 +101,10 @@ export const YStack = React.memo<StackProps>(
     />
   ),
 );
-YStack.displayName = "YStack";
+YStack.displayName = 'YStack';
 
 const styles = StyleSheet.create({
   flexRow: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
 });

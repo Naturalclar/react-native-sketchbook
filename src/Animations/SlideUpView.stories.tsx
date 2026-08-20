@@ -1,10 +1,10 @@
 import React from 'react';
-import {SlideUpView} from './SlideUpView';
 import {
-  LightThemeDecorator,
   DarkThemeDecorator,
+  LightThemeDecorator,
 } from '../../.storybook/StoryDecorator';
 import {Typography} from '../Typography';
+import {SlideUpView} from './SlideUpView';
 
 const Story = () => (
   <SlideUpView>

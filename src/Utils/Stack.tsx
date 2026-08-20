@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {Margin} from './Margin';
-import {View, StyleSheet, type StyleProp, type ViewStyle} from 'react-native';
+import {type StyleProp, StyleSheet, View, type ViewStyle} from 'react-native';
 import type {SpaceSize} from '../Themes';
+import {Margin} from './Margin';
 
 type Props = {
   /**

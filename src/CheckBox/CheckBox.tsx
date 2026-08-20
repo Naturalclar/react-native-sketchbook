@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {View, StyleSheet, Pressable} from 'react-native';
-import {useColors} from '../Themes';
+import {Pressable, StyleSheet, View} from 'react-native';
 import {IconCheck} from '../Icons';
+import {useColors} from '../Themes';
 const styles = StyleSheet.create({
   container: {
     borderWidth: 2,
@@ -58,7 +58,8 @@ export const CheckBox: React.FC<CheckBoxProps> = ({
           {borderColor},
           disabled && styles.disabled,
           checked && {borderColor: checkedColor, backgroundColor: checkedColor},
-        ]}>
+        ]}
+      >
         {checked && <IconCheck color={white} />}
       </View>
     </Pressable>

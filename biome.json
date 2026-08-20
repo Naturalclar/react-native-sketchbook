@@ -11,7 +11,8 @@
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "single"
+      "quoteStyle": "single",
+      "bracketSpacing": false
     }
   },
   "linter": {

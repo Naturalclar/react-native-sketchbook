@@ -1,11 +1,11 @@
+import {action} from '@storybook/addon-actions';
 import * as React from 'react';
 import {
-  LightThemeDecorator,
   DarkThemeDecorator,
+  LightThemeDecorator,
 } from '../../.storybook/StoryDecorator';
-import {Snackbar} from './Snackbar';
 import {Typography} from '../Typography';
-import {action} from '@storybook/addon-actions';
+import {Snackbar} from './Snackbar';
 
 const Story = () => {
   const [visible, setVisible] = React.useState(true);
@@ -15,7 +15,8 @@ const Story = () => {
       onAction={action('onAction')}
       onDismiss={() => {
         setVisible(false);
-      }}>
+      }}
+    >
       <Typography color="white">Hello SnackBar!</Typography>
     </Snackbar>
   );

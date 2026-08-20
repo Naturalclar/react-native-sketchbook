@@ -1,10 +1,10 @@
-import React from 'react';
-import {LoginPage} from './LoginPage';
-import {
-  LightThemeDecorator,
-  DarkThemeDecorator,
-} from '../../.storybook/StoryDecorator';
 import {action} from '@storybook/addon-actions';
+import React from 'react';
+import {
+  DarkThemeDecorator,
+  LightThemeDecorator,
+} from '../../.storybook/StoryDecorator';
+import {LoginPage} from './LoginPage';
 
 const Story = () => {
   return <LoginPage onPressLogin={action('onPressLogin')} />;

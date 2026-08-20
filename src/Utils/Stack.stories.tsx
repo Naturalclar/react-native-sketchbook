@@ -1,10 +1,10 @@
 import React from 'react';
-import {Stack} from './Stack';
 import {
-  LightThemeDecorator,
   DarkThemeDecorator,
+  LightThemeDecorator,
 } from '../../.storybook/StoryDecorator';
 import {Typography} from '../Typography';
+import {Stack} from './Stack';
 
 const Story = () => (
   <>

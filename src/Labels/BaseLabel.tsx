@@ -1,8 +1,8 @@
 import type * as React from 'react';
-import {StyleSheet, View, type ViewProps, TouchableOpacity} from 'react-native';
+import {StyleSheet, TouchableOpacity, View, type ViewProps} from 'react-native';
 import {IconClose} from '../Icons';
-import {Margin} from '../Utils';
 import {useColors, useSpaceSizes} from '../Themes';
+import {Margin} from '../Utils';
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
@@ -43,7 +43,8 @@ export const BaseLabel: React.FC<Props> = ({
         },
         style,
       ]}
-      {...rest}>
+      {...rest}
+    >
       {leadingComponent && (
         <>
           {leadingComponent}

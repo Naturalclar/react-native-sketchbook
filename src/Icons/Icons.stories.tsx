@@ -1,13 +1,13 @@
 import React from 'react';
-import {Stack} from '../Utils';
-import {Typography} from '../Typography';
+import {FlatList, StyleSheet, View} from 'react-native';
 import {
-  LightThemeDecorator,
   DarkThemeDecorator,
+  LightThemeDecorator,
 } from '../../.storybook/StoryDecorator';
-import * as Icons from './index';
-import {View, FlatList, StyleSheet} from 'react-native';
 import {useColors} from '../Themes';
+import {Typography} from '../Typography';
+import {Stack} from '../Utils';
+import * as Icons from './index';
 
 const icons = Object.entries(Icons).map(([name, component]) => {
   return {

@@ -1,12 +1,12 @@
 import React from 'react';
 import {
-  LightThemeDecorator,
   DarkThemeDecorator,
+  LightThemeDecorator,
 } from '../../.storybook/StoryDecorator';
 import {Heading} from './Heading';
-import {SubHeading} from './SubHeading';
 import {LabelText} from './LabelText';
 import {Paragraph} from './Paragraph';
+import {SubHeading} from './SubHeading';
 
 const Story = () => {
   return (

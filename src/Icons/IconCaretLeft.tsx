@@ -25,7 +25,8 @@ export const IconCaretLeft: React.FC<Props> = ({size = 16, color}) => {
           height: size,
           width: size,
         },
-      ]}>
+      ]}
+    >
       <View
         style={[
           styles.icon,

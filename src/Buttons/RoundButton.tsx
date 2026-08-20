@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {StyleSheet} from 'react-native';
 import {useColors} from '../Themes';
-import {BaseButton} from './BaseButton';
 import {Typography} from '../Typography';
+import {BaseButton} from './BaseButton';
 
 type Props = {
   label: string;
@@ -39,7 +39,8 @@ export const RoundButton: React.FC<Props> = React.memo(
           styles.container,
           {backgroundColor},
           disabled ? styles.disabled : styles.container,
-        ]}>
+        ]}
+      >
         <Typography style={styles.label} color={textColor}>
           {label}
         </Typography>
