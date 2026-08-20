@@ -6,58 +6,32 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18, 20]
+        node-version: [20, 22]
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node-version }}
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 6.0.2
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "::set-output name=dir::$(pnpm store path)"
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
-        with:
-          path: ${{ steps.pnpm-cache.outputs.dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          cache: pnpm
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: Run Lint
         run: pnpm lint
   typecheck:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18, 20]
+        node-version: [20, 22]
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node-version }}
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 6.0.2
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "::set-output name=dir::$(pnpm store path)"
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
-        with:
-          path: ${{ steps.pnpm-cache.outputs.dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          cache: pnpm
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - run: pnpm type-check
   visual-regression:
     env:
@@ -66,35 +40,22 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [22]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: workaround for detached HEAD
         run: git checkout ${GITHUB_REF#refs/heads/} || git checkout -b ${GITHUB_REF#refs/heads/} && git pull
       - name: Setup Chrome
-        uses: browser-actions/setup-chrome@v1
-      - uses: actions/setup-node@v1
+        uses: browser-actions/setup-chrome@v2
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node-version }}
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 6.0.2
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "::set-output name=dir::$(pnpm store path)"
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
-        with:
-          path: ${{ steps.pnpm-cache.outputs.dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          cache: pnpm
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: Build Storybook
         run: pnpm build-storybook
       - name: Capture Screenshots
