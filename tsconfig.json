@@ -13,7 +13,6 @@
     "resolveJsonModule": true,
     "outDir": "dist",
     "rootDir": "src",
-    "baseUrl": ".",
     "types": ["react-native"]
   },
   "include": ["src"],
