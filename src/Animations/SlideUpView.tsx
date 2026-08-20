@@ -1,5 +1,5 @@
 import type React from 'react';
-import {useEffect} from 'react';
+import {useEffect, useRef} from 'react';
 import {Animated, Easing, type ViewProps} from 'react-native';
 
 /**
@@ -7,14 +7,16 @@ import {Animated, Easing, type ViewProps} from 'react-native';
  * Animated Component that will Slide Up on mount.
  */
 export const SlideUpView: React.FC<ViewProps> = ({children, style}) => {
-  const appear = new Animated.Value(0);
+  const appear = useRef(new Animated.Value(0)).current;
   useEffect(() => {
-    Animated.timing(appear, {
+    const animation = Animated.timing(appear, {
       toValue: 1,
       duration: 500,
       easing: Easing.out(Easing.quad),
       useNativeDriver: true,
-    }).start();
+    });
+    animation.start();
+    return () => animation.stop();
   }, [appear]);
 
   return (

@@ -76,4 +76,4 @@ export {
 export * from './Samples/LoginPage';
 
 // typings
-export {Color, FontSize, SpaceSize, Theme} from './Themes';
+export type {Color, FontSize, SpaceSize, Theme} from './Themes';
