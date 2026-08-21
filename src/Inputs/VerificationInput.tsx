@@ -2,6 +2,7 @@ import * as React from 'react';
 import {
   StyleSheet,
   TextInput,
+  type TextInputInstance,
   type TextInputProps,
   TouchableOpacity,
   View,
@@ -60,7 +61,7 @@ export const VerificationInput: React.FC<Props> = ({
   ...rest
 }) => {
   const {baseBackgroundColor, secondaryColor} = useColors();
-  const InputRef = React.useRef<TextInput>(null);
+  const InputRef = React.useRef<TextInputInstance>(null);
   const handleFocus = React.useCallback(() => {
     if (InputRef) {
       InputRef.current?.focus();

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {type FlexStyle, StyleSheet, View, type ViewProps} from 'react-native';
+import {StyleSheet, View, type ViewProps, type ViewStyle} from 'react-native';
 
 type StackProps = {
   gap?: number;
@@ -12,10 +12,10 @@ type StackProps = {
   borderRightWidth?: number;
   borderLeftWidth?: number;
   borderColor?: string;
-  alignItems?: FlexStyle['alignItems'];
-  justifyContent?: FlexStyle['justifyContent'];
-  alignContent?: FlexStyle['alignContent'];
-  alignSelf?: FlexStyle['alignSelf'];
+  alignItems?: ViewStyle['alignItems'];
+  justifyContent?: ViewStyle['justifyContent'];
+  alignContent?: ViewStyle['alignContent'];
+  alignSelf?: ViewStyle['alignSelf'];
 } & ViewProps;
 export const XStack = React.memo<StackProps>(
   ({
