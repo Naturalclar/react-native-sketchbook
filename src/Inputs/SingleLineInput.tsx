@@ -4,6 +4,7 @@ import {
   LayoutAnimation,
   StyleSheet,
   TextInput,
+  type TextInputInstance,
   type TextInputProps,
   TouchableOpacity,
   View,
@@ -51,7 +52,7 @@ export const SingleLineInput: React.FC<Props> = ({
   unit,
   ...rest
 }: Props) => {
-  const InputRef = useRef<TextInput>(null);
+  const InputRef = useRef<TextInputInstance>(null);
   const handleFocus = useCallback(() => {
     if (InputRef) {
       InputRef.current?.focus();

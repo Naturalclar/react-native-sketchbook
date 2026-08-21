@@ -40,7 +40,7 @@
   "devDependencies": {
     "@babel/core": "^7",
     "@biomejs/biome": "^2.5.9",
-    "@react-native/babel-preset": "0.75.0-main",
+    "@react-native/babel-preset": "0.87.0",
     "@storybook/addon-docs": "~9.1.20",
     "@storybook/react": "~9.1.20",
     "@storybook/react-webpack5": "~9.1.20",
@@ -48,7 +48,7 @@
     "babel-loader": "^8.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-native": "^0.75",
+    "react-native": "^0.87.0",
     "react-native-web": "^0.21.2",
     "reg-keygen-git-hash-plugin": "^0.12.2",
     "reg-notify-github-plugin": "^0.10.17",

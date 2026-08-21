@@ -1,10 +1,10 @@
 import * as React from 'react';
-import {type FlexStyle, StyleSheet, View, type ViewProps} from 'react-native';
+import {StyleSheet, View, type ViewProps, type ViewStyle} from 'react-native';
 
 type Props = {
   flex?: number;
-  alignItems?: FlexStyle['alignItems'];
-  justifyContent?: FlexStyle['justifyContent'];
+  alignItems?: ViewStyle['alignItems'];
+  justifyContent?: ViewStyle['justifyContent'];
 } & ViewProps;
 
 /**

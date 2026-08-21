@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {type FlexStyle, StyleSheet, View, type ViewProps} from 'react-native';
+import {StyleSheet, View, type ViewProps, type ViewStyle} from 'react-native';
 
 const styles = StyleSheet.create({
   default: {
@@ -8,10 +8,10 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  alignItems?: FlexStyle['alignItems'];
-  justifyContent?: FlexStyle['justifyContent'];
-  alignContent?: FlexStyle['alignContent'];
-  alignSelf?: FlexStyle['alignSelf'];
+  alignItems?: ViewStyle['alignItems'];
+  justifyContent?: ViewStyle['justifyContent'];
+  alignContent?: ViewStyle['alignContent'];
+  alignSelf?: ViewStyle['alignSelf'];
   gap?: number;
 } & ViewProps;
 

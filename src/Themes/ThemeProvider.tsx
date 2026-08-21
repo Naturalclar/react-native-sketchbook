@@ -24,7 +24,7 @@ export const useAppearance = () => {
 
 export const ThemeProvider: React.FC<
   React.PropsWithChildren<Partial<ThemeProp>>
-> = ({appearance, theme = DefaultTheme, children}) => {
+> = ({appearance = 'light', theme = DefaultTheme, children}) => {
   return <Provider value={{appearance, theme}}>{children}</Provider>;
 };
 
