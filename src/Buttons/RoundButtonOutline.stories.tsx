@@ -1,5 +1,5 @@
-import {action} from '@storybook/addon-actions';
 import type {Meta, StoryObj} from '@storybook/react';
+import {action} from 'storybook/actions';
 import {RoundButtonOutline} from './RoundButtonOutline';
 
 const meta: Meta<typeof RoundButtonOutline> = {

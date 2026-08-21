@@ -1,5 +1,5 @@
-import {action} from '@storybook/addon-actions';
 import {View} from 'react-native';
+import {action} from 'storybook/actions';
 import {
   DarkThemeDecorator,
   LightThemeDecorator,
