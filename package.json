@@ -57,7 +57,7 @@
     "storybook": "~9.1.20",
     "storycap": "^5.0.1",
     "typescript": "^7.0.2",
-    "vercel": "^31.0.4"
+    "vercel": "^59.3.0"
   },
   "engines": {
     "node": ">=16"
