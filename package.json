@@ -61,7 +61,7 @@
     "reg-publish-s3-plugin": "^0.12.2",
     "reg-suit": "^0.12.2",
     "storybook": "~8.6.18",
-    "storycap": "^4.2.0",
+    "storycap": "^5.0.1",
     "typescript": "^7.0.2",
     "vercel": "^31.0.4"
   },
