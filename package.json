@@ -45,7 +45,7 @@
     "@storybook/react": "~10.5.10",
     "@storybook/react-webpack5": "~10.5.10",
     "@types/react": "^19.2.18",
-    "babel-loader": "^8.3.0",
+    "babel-loader": "^10.1.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-native": "^0.87.0",

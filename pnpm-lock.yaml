@@ -30,8 +30,8 @@ importers:
         specifier: ^19.2.18
         version: 19.2.18
       babel-loader:
-        specifier: ^8.3.0
-        version: 8.3.0(@babel/core@7.24.4)(webpack@5.88.2(esbuild@0.27.0))
+        specifier: ^10.1.1
+        version: 10.1.1(@babel/core@7.24.4)(webpack@5.88.2(esbuild@0.27.0))
       react:
         specifier: ^19.2.8
         version: 19.2.8
@@ -67,7 +67,7 @@ importers:
         version: 7.0.2
       vercel:
         specifier: ^59.3.0
-        version: 59.3.0(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)(rollup@3.26.3)
+        version: 59.3.0(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(rollup@3.26.3)
 
 packages:
 
@@ -2323,12 +2323,18 @@ packages:
       react-native-b4a:
         optional: true
 
-  babel-loader@8.3.0:
-    resolution: {integrity: sha512-H8SvsMF+m9t15HNLMipppzkC+Y2Yq+v3SonZyU70RBL/h1gxPkH08Ot8pEE9Z4Kd+czyWJClmFS8qzIP9OZ04Q==}
-    engines: {node: '>= 8.9'}
+  babel-loader@10.1.1:
+    resolution: {integrity: sha512-JwKSzk2kjIe7mgPK+/lyZ2QAaJcpahNAdM+hgR2HI8D0OJVkdj8Rl6J3kaLYki9pwF7P2iWnD8qVv80Lq1ABtg==}
+    engines: {node: ^18.20.0 || ^20.10.0 || >=22.0.0}
     peerDependencies:
-      '@babel/core': ^7.0.0
-      webpack: '>=2'
+      '@babel/core': ^7.12.0 || ^8.0.0-beta.1
+      '@rspack/core': ^1.0.0 || ^2.0.0-0
+      webpack: '>=5.61.0'
+    peerDependenciesMeta:
+      '@rspack/core':
+        optional: true
+      webpack:
+        optional: true
 
   babel-plugin-polyfill-corejs2@0.4.13:
     resolution: {integrity: sha512-3sX/eOms8kd3q2KZ6DAhKPc0dgm525Gqq5NtWKZ7QYYZEv57OQ54KtblzJzH1lQF/eQxO8KjWGIK9IPUJNus5g==}
@@ -2375,9 +2381,6 @@ packages:
 
   bcrypt-pbkdf@1.0.2:
     resolution: {integrity: sha512-qeFIXtP4MSoi6NLqO12WfqARWWuCKi2Rn/9hJLEmtB5yTNr9DqFWkJRCf2qShWzPeAMRnOgCrq0sg/KLv5ES9w==}
-
-  big.js@5.2.2:
-    resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
 
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
@@ -2937,10 +2940,6 @@ packages:
 
   emoji-regex@9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
-
-  emojis-list@3.0.0:
-    resolution: {integrity: sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==}
-    engines: {node: '>= 4'}
 
   encodeurl@1.0.2:
     resolution: {integrity: sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w==}
@@ -3927,10 +3926,6 @@ packages:
   loader-runner@4.3.0:
     resolution: {integrity: sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==}
     engines: {node: '>=6.11.5'}
-
-  loader-utils@2.0.4:
-    resolution: {integrity: sha512-xXqpXoINfFhgua9xiqD8fPFHgkoq1mmmpE92WlDbm9rNRd/EbRb+Gqf908T2DMfuHjjJlksiK2RbHVOdD/MqSw==}
-    engines: {node: '>=8.9.0'}
 
   locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
@@ -5000,10 +4995,6 @@ packages:
 
   scheduler@0.27.0:
     resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
-
-  schema-utils@2.7.1:
-    resolution: {integrity: sha512-SHiNtMOUGWBQJwzISiVYKu82GiV4QYGePp3odlY1tuKO7gPtphAT5R/py0fA6xtbgLL/RvtJZnU9b8s0F1q0Xg==}
-    engines: {node: '>= 8.9.0'}
 
   schema-utils@3.3.0:
     resolution: {integrity: sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==}
@@ -7064,9 +7055,9 @@ snapshots:
   '@oxc-transform/binding-openharmony-arm64@0.111.0':
     optional: true
 
-  '@oxc-transform/binding-wasm32-wasi@0.111.0(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)':
+  '@oxc-transform/binding-wasm32-wasi@0.111.0(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.2.3(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)
+      '@napi-rs/wasm-runtime': 1.2.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -7368,9 +7359,9 @@ snapshots:
   '@rolldown/binding-openharmony-arm64@1.0.0-rc.1':
     optional: true
 
-  '@rolldown/binding-wasm32-wasi@1.0.0-rc.1(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)':
+  '@rolldown/binding-wasm32-wasi@1.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.2.3(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)
+      '@napi-rs/wasm-runtime': 1.2.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -7798,7 +7789,7 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
-  '@vercel/backends@0.8.39(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)(rollup@3.26.3)':
+  '@vercel/backends@0.8.39(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(rollup@3.26.3)':
     dependencies:
       '@vercel/build-utils': 14.2.0
       '@vercel/nft': 1.10.0(rollup@3.26.3)
@@ -7806,10 +7797,10 @@ snapshots:
       execa: 3.2.0
       fs-extra: 11.1.0
       get-port: 5.1.1
-      oxc-transform: 0.111.0(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)
+      oxc-transform: 0.111.0(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
       path-to-regexp: 8.3.0
       resolve.exports: 2.0.3
-      rolldown: 1.0.0-rc.1(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)
+      rolldown: 1.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
       srvx: 0.11.16
       ts-morph: 12.0.0
       tsx: 4.21.0
@@ -7835,9 +7826,9 @@ snapshots:
       cjs-module-lexer: 1.2.3
       es-module-lexer: 1.5.0
 
-  '@vercel/cervel@0.1.47(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)(rollup@3.26.3)':
+  '@vercel/cervel@0.1.47(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(rollup@3.26.3)':
     dependencies:
-      '@vercel/backends': 0.8.39(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)(rollup@3.26.3)
+      '@vercel/backends': 0.8.39(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(rollup@3.26.3)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -7877,9 +7868,9 @@ snapshots:
 
   '@vercel/error-utils@2.2.1': {}
 
-  '@vercel/express@0.1.130(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)(rollup@3.26.3)':
+  '@vercel/express@0.1.130(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(rollup@3.26.3)':
     dependencies:
-      '@vercel/cervel': 0.1.47(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)(rollup@3.26.3)
+      '@vercel/cervel': 0.1.47(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(rollup@3.26.3)
       '@vercel/nft': 1.10.0(rollup@3.26.3)
       '@vercel/node': 5.10.2(rollup@3.26.3)
       '@vercel/static-config': 3.4.1
@@ -8466,13 +8457,11 @@ snapshots:
 
   b4a@1.8.1: {}
 
-  babel-loader@8.3.0(@babel/core@7.24.4)(webpack@5.88.2(esbuild@0.27.0)):
+  babel-loader@10.1.1(@babel/core@7.24.4)(webpack@5.88.2(esbuild@0.27.0)):
     dependencies:
       '@babel/core': 7.24.4
-      find-cache-dir: 3.3.2
-      loader-utils: 2.0.4
-      make-dir: 3.1.0
-      schema-utils: 2.7.1
+      find-up: 5.0.0
+    optionalDependencies:
       webpack: 5.88.2(esbuild@0.27.0)
 
   babel-plugin-polyfill-corejs2@0.4.13(@babel/core@7.24.4):
@@ -8530,8 +8519,6 @@ snapshots:
   bcrypt-pbkdf@1.0.2:
     dependencies:
       tweetnacl: 0.14.5
-
-  big.js@5.2.2: {}
 
   bindings@1.5.0:
     dependencies:
@@ -9091,8 +9078,6 @@ snapshots:
 
   emoji-regex@9.2.2: {}
 
-  emojis-list@3.0.0: {}
-
   encodeurl@1.0.2: {}
 
   encodeurl@2.0.0: {}
@@ -9423,7 +9408,6 @@ snapshots:
     dependencies:
       locate-path: 6.0.0
       path-exists: 4.0.0
-    optional: true
 
   flat-cache@3.0.4:
     dependencies:
@@ -10166,12 +10150,6 @@ snapshots:
 
   loader-runner@4.3.0: {}
 
-  loader-utils@2.0.4:
-    dependencies:
-      big.js: 5.2.2
-      emojis-list: 3.0.0
-      json5: 2.2.3
-
   locate-path@5.0.0:
     dependencies:
       p-locate: 4.1.0
@@ -10179,7 +10157,6 @@ snapshots:
   locate-path@6.0.0:
     dependencies:
       p-locate: 5.0.0
-    optional: true
 
   lodash.debounce@4.0.8: {}
 
@@ -10781,7 +10758,7 @@ snapshots:
       '@oxc-resolver/binding-win32-arm64-msvc': 11.21.2
       '@oxc-resolver/binding-win32-x64-msvc': 11.21.2
 
-  oxc-transform@0.111.0(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0):
+  oxc-transform@0.111.0(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2):
     optionalDependencies:
       '@oxc-transform/binding-android-arm-eabi': 0.111.0
       '@oxc-transform/binding-android-arm64': 0.111.0
@@ -10799,7 +10776,7 @@ snapshots:
       '@oxc-transform/binding-linux-x64-gnu': 0.111.0
       '@oxc-transform/binding-linux-x64-musl': 0.111.0
       '@oxc-transform/binding-openharmony-arm64': 0.111.0
-      '@oxc-transform/binding-wasm32-wasi': 0.111.0(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)
+      '@oxc-transform/binding-wasm32-wasi': 0.111.0(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
       '@oxc-transform/binding-win32-arm64-msvc': 0.111.0
       '@oxc-transform/binding-win32-ia32-msvc': 0.111.0
       '@oxc-transform/binding-win32-x64-msvc': 0.111.0
@@ -10822,7 +10799,6 @@ snapshots:
   p-limit@3.1.0:
     dependencies:
       yocto-queue: 0.1.0
-    optional: true
 
   p-locate@4.1.0:
     dependencies:
@@ -10831,7 +10807,6 @@ snapshots:
   p-locate@5.0.0:
     dependencies:
       p-limit: 3.1.0
-    optional: true
 
   p-map@4.0.0:
     dependencies:
@@ -11444,7 +11419,7 @@ snapshots:
     dependencies:
       glob: 10.3.3
 
-  rolldown@1.0.0-rc.1(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0):
+  rolldown@1.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2):
     dependencies:
       '@oxc-project/types': 0.110.0
       '@rolldown/pluginutils': 1.0.0-rc.1
@@ -11459,7 +11434,7 @@ snapshots:
       '@rolldown/binding-linux-x64-gnu': 1.0.0-rc.1
       '@rolldown/binding-linux-x64-musl': 1.0.0-rc.1
       '@rolldown/binding-openharmony-arm64': 1.0.0-rc.1
-      '@rolldown/binding-wasm32-wasi': 1.0.0-rc.1(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)
+      '@rolldown/binding-wasm32-wasi': 1.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
       '@rolldown/binding-win32-arm64-msvc': 1.0.0-rc.1
       '@rolldown/binding-win32-x64-msvc': 1.0.0-rc.1
     transitivePeerDependencies:
@@ -11528,12 +11503,6 @@ snapshots:
   sax@1.2.1: {}
 
   scheduler@0.27.0: {}
-
-  schema-utils@2.7.1:
-    dependencies:
-      '@types/json-schema': 7.0.12
-      ajv: 6.12.6
-      ajv-keywords: 3.5.2(ajv@6.12.6)
 
   schema-utils@3.3.0:
     dependencies:
@@ -12278,9 +12247,9 @@ snapshots:
   vary@1.1.2:
     optional: true
 
-  vercel@59.3.0(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)(rollup@3.26.3):
+  vercel@59.3.0(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(rollup@3.26.3):
     dependencies:
-      '@vercel/backends': 0.8.39(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)(rollup@3.26.3)
+      '@vercel/backends': 0.8.39(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(rollup@3.26.3)
       '@vercel/blob': 2.8.0
       '@vercel/build-utils': 14.2.0
       '@vercel/cli-auth': 0.3.5
@@ -12288,7 +12257,7 @@ snapshots:
       '@vercel/container': 0.2.0
       '@vercel/detect-agent': 1.2.5
       '@vercel/elysia': 0.1.116(rollup@3.26.3)
-      '@vercel/express': 0.1.130(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)(rollup@3.26.3)
+      '@vercel/express': 0.1.130(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(rollup@3.26.3)
       '@vercel/fastify': 0.1.119(rollup@3.26.3)
       '@vercel/fun': 1.3.0
       '@vercel/go': 3.11.0
@@ -12580,8 +12549,7 @@ snapshots:
       buffer-crc32: 0.2.13
       fd-slicer: 1.1.0
 
-  yocto-queue@0.1.0:
-    optional: true
+  yocto-queue@0.1.0: {}
 
   zod@3.22.4: {}
 
