@@ -51,7 +51,7 @@
     "reg-notify-github-plugin": "^0.14.5",
     "reg-publish-s3-plugin": "^0.14.4",
     "reg-suit": "^0.14.5",
-    "storybook": "~10.5.10",
+    "storybook": "~10.6.2",
     "storycap": "^5.0.1",
     "typescript": "^7.0.2",
     "vercel": "^59.3.0",
